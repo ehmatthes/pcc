@@ -8,4 +8,4 @@ This is a collection of resources for [Python Crash Course](http://www.nostarch.
 
 The official release date is May of 2015, so you'll see a growing set of resources here between now and May.
 
-If you have any questions about Python Crash Course, feel free to get in touch: ehmatthes@gmail.com.
+If you have any questions about Python Crash Course, feel free to get in touch: ehmatthes@gmail.com; [@ehmatthes](http://twitter.com/ehmatthes/)
