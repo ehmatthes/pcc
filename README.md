@@ -12,5 +12,5 @@ If you have any questions about Python Crash Course, feel free to get in touch: 
 
 Downloading source code
 ---
-The simplest way to get the source code for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the right side of this page. This will download the source code files for the entire book, with a folder for each chapter.
+The simplest way to get the source code for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the right side of this page, which will download the source code files for the entire book.
 
