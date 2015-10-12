@@ -16,5 +16,5 @@ There are instructions for installing and configuring Python on each operating s
 
 <a href="source_code"></a>Downloading source code
 ---
-The simplest way to get the online resources for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the right side of this page, which will download the source code files (and other resources) for the entire book.
+The simplest way to get the online resources for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the right side of [this page](https://github.com/ehmatthes/pcc), which will download the source code files (and other resources) for the entire book.
 
