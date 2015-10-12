@@ -4,8 +4,8 @@ Chapter 1
 Setting Up
 ---
 
-Here you'll find a summary of setup instructions for each operating system.
+Python runs on all modern operating systems, but the setup process is slightly different on each operating system:
 
 - [Linux](linux_setup.md)
 - [OS X](osx_setup.md)
-- [Windows]()
+- [Windows](windows_setup.md)
