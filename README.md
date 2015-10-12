@@ -10,7 +10,14 @@ The official release date is November 2015, so you'll see a growing set of resou
 
 If you have any questions about Python Crash Course, feel free to get in touch: ehmatthes@gmail.com; [@ehmatthes](http://twitter.com/ehmatthes/)
 
-Downloading source code
+- [Setup Instructions](#setup_instructions)
+- [Downloading source code)(#source_code)
+
+<a href="setup_instructions"></a>Setup Instructions
+---
+There are instructions for installing and configuring Python on each operating system [here](chapter_01/README.md).
+
+<a href="source_code"></a>Downloading source code
 ---
 The simplest way to get the online resources for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the right side of this page, which will download the source code files (and other resources) for the entire book.
 
