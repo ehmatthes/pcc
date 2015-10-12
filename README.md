@@ -10,9 +10,6 @@ The official release date is November 2015, so you'll see a growing set of resou
 
 If you have any questions about Python Crash Course, feel free to get in touch: ehmatthes@gmail.com; [@ehmatthes](http://twitter.com/ehmatthes/)
 
-- [Setup Instructions](#setup_instructions)
-- [Downloading source code)(#source_code)
-
 <a href="setup_instructions"></a>Setup Instructions
 ---
 There are instructions for installing and configuring Python on each operating system [here](chapter_01/README.md).
