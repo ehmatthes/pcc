@@ -8,11 +8,11 @@ Installing Pygame
 
 Pygame is usually straightforward to install, but it can get tricky depending on your operating system and the version of Python you have installed. These instructions can help you get Pygame installed quickly, so you can focus on building games.
 
-- [Pygame on Linux](#pygame_linux)
+- [Pygame on Linux](#pygame-on-linux)
 - [Pygame on OS X](#pygame_osx)
 - [Pygame on Windows](#pygame_windows)
 
-<a href='pygame_linux'></a>Pygame on Linux
+Pygame on Linux
 ---
 
 ### Python 2.7
