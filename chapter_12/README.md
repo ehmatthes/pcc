@@ -81,8 +81,21 @@ To confirm the installation, start a Python terminal session and try to import P
 
 If this works, you're ready to start building Alien Invasion!
 
-
-
-
 <a href='pygame_windows'></a>Pygame on Windows
 ---
+
+To install Pygame on your version of Windows, find a Windows installer at [https://bitbucket.org/pygame/pygame/downloads/](https://bitbucket.org/pygame/pygame/downloads/) that matches the version of Python you're running. If you don't see an appropriate installer listed at Bitbucket, check [http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame](http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygame).
+
+Once you've downloaded the appropriate file, run the installer if it's a *.exe* file.
+
+If you have a file ending in *.whl*, copy the file to your project directory. You'll need pip set up, so if you haven't done that yet do so now. Then open a command window, navigate to the folder that you copied the installer to, and use pip to run the installer:
+
+    > python -m pip install --user pygame-1.9.2a0-cp35-none-win32.whl
+
+You can test if the installation was successful by starting a new Python terminal session and trying to import Pygame:
+
+    > python
+    >>> import pygame
+    >>>
+
+If this works, you're ready to start building Alien Invasion!
