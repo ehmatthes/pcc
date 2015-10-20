@@ -34,6 +34,8 @@ If you have more than one version of Python installed on your system, you should
 
 Here pip3 is set up to install to the same version of Python, but often times pip will install to Python 2. pip3, if you have it set up, should always install packages to the version of Python 3 you have installed.
 
+[top](#)
+
 ### Installing pip on Linux
 
 To install pip, go to [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py). Save the file if you're prompted to do so; if the code for *get-pip.py* appears in your browser, copy and paste the entire program into your text editor and save the file as *get-pip.py*.
@@ -56,6 +58,8 @@ Open a terminal and navigate to the folder containing *get-pip.py*, and run it w
 
 After the program runs, use the command `pip --version` (or `pip3 --version`) to make sure pip was installed correctly.
 
+[top](#)
+
 ### Upgrading pip on Linux
 
 Once you have pip installed, it's good to upgrade it from time to time. Usually pip will prompt you with instructions for how to upgrade it when necessary, but you can try to upgrade manually any time. For example, here's sample output for upgrading an out-of-date version of pip:
@@ -71,6 +75,8 @@ Once you have pip installed, it's good to upgrade it from time to time. Usually 
         Uninstalling pip-6.1.1:
            Successfully uninstalled pip-6.1.1
     Successfully installed pip-7.1.2
+
+[top](#)
 
 ### Installing Python packages with pip on Linux
 
@@ -96,6 +102,8 @@ Now you can start a Python terminal session, and import requests:
 
 Here we've used requests to retrieve Google's home page, and the status code of 200 tells us that the request was successful.
 
+[top](#)
+
 ### Uninstalling packages with pip on Linux
 
 If you ever want to uninstall a package, you can use requests to do so as well:
@@ -103,11 +111,13 @@ If you ever want to uninstall a package, you can use requests to do so as well:
     $ pip uninstall requests
     Uninstalling requests-2.8.1:
       /home/ehmatthes/.local/lib/python3.5/site-packages/requests-2.8.1.dist-info/DESCRIPTION.rst
-    ...
+      ...
     Proceed (y/n)? y
       Successfully uninstalled requests-2.8.1
 
 Pip lists all the files that will be removed, prompts you about whether to proceed, and then uninstalls the package.
+
+[top](#)
 
 
 
