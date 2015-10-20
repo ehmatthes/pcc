@@ -1,21 +1,21 @@
-Installing pip
+Pip: Installing Python Packages
 ===
 
 Pip is a special program used to install Python packages to your system. Pip is sometimes included automatically when Python is installed to your system, and sometimes you have to install it yourself. These instructions will help you check if pip is on your system, and help you upgrade or install it if necessary.
 
-- [Pip on Linux](#pip-onlLinux)
-    - [Checking for pip](#checking-for-pip)
-    - [Installing pip](#installing-pip)
-    - [Upgrading pip](#upgrading-pip)
-    - [Installing Python packages with pip](#installing-python-packages-with-pip)
-    - [Uninstalling packages with pip](#uninstalling-packages-with-pip)
+- [Pip on Linux](#pip-on-linux)
+    - [Checking for pip on Linux](#checking-for-pip-on-linux)
+    - [Installing pip on Linux](#installing-pip-on-linux)
+    - [Upgrading pip on Linux](#upgrading-pip-on-linux)
+    - [Installing Python packages with pip on Linux](#installing-python-packages-with-pip-on-linux)
+    - [Uninstalling packages with pip on Linux](#uninstalling-packages-with-pip-on-linux)
 - [Pip on OS X](#pip-on-os-x)
 - [Pip on Windows](#pip-on-windows)
 
 Pip on Linux
 ---
 
-### Checking for pip
+### Checking for pip on Linux
 
 First, check whether pip is installed on your system:
 
@@ -34,7 +34,7 @@ If you have more than one version of Python installed on your system, you should
 
 Here pip3 is set up to install to the same version of Python, but often times pip will install to Python 2. pip3, if you have it set up, should always install packages to the version of Python 3 you have installed.
 
-### Installing pip
+### Installing pip on Linux
 
 To install pip, go to [https://bootstrap.pypa.io/get-pip.py](https://bootstrap.pypa.io/get-pip.py). Save the file if you're prompted to do so; if the code for *get-pip.py* appears in your browser, copy and paste the entire program into your text editor and save the file as *get-pip.py*.
 
@@ -56,7 +56,7 @@ Open a terminal and navigate to the folder containing *get-pip.py*, and run it w
 
 After the program runs, use the command `pip --version` (or `pip3 --version`) to make sure pip was installed correctly.
 
-### Upgrading pip
+### Upgrading pip on Linux
 
 Once you have pip installed, it's good to upgrade it from time to time. Usually pip will prompt you with instructions for how to upgrade it when necessary, but you can try to upgrade manually any time. For example, here's sample output for upgrading an out-of-date version of pip:
 
@@ -72,7 +72,7 @@ Once you have pip installed, it's good to upgrade it from time to time. Usually 
            Successfully uninstalled pip-6.1.1
     Successfully installed pip-7.1.2
 
-### Installing Python packages with pip
+### Installing Python packages with pip on Linux
 
 Once you have pip installed, most Python packages can be installed in one line. For example, here's how you can install [Requests](http://docs.python-requests.org/en/latest/), which is used to make API calls from Python programs:
 
@@ -96,7 +96,7 @@ Now you can start a Python terminal session, and import requests:
 
 Here we've used requests to retrieve Google's home page, and the status code of 200 tells us that the request was successful.
 
-### Uninstalling packages with pip
+### Uninstalling packages with pip on Linux
 
 If you ever want to uninstall a package, you can use requests to do so as well:
 
