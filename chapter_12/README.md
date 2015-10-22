@@ -1,8 +1,6 @@
 Chapter 12
 ===
 
-- [Installing pip](installing_pip.md)
-
 Installing Pygame
 ---
 
@@ -44,7 +42,7 @@ If you want to enable some more advanced functionality in Pygame such as the abi
     $ sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcode-dev
     $ sudo apt-get install python-numpy
 
-You'll need pip for the next step; if you haven't set up pip yet, see the instructions for seting up pip. Enter the following to install Pygame:
+You'll need pip for the next step; if you haven't set up pip yet, see the [instructions for seting up pip](installing_pip.md). Enter the following to install Pygame:
 
     $ pip install --user hg+http://bitbucket.org/pygame/pygame
 
@@ -69,7 +67,7 @@ This installs the minimum number of packages needed to run Alien Invasion. If yo
 
     $ brew install sdl_mixer portmidi
 
-You'll need pip to install Pygame. Once you have pip set up correctly, issue the following command:
+You'll need [pip](installing_pip.md) to install Pygame. Once you have pip set up correctly, issue the following command:
 
     $ pip3 install --user  hg+http://bitbucket.org/pygame/pygame
 
@@ -88,7 +86,7 @@ To install Pygame on your version of Windows, find a Windows installer at [https
 
 Once you've downloaded the appropriate file, run the installer if it's a *.exe* file.
 
-If you have a file ending in *.whl*, copy the file to your project directory. You'll need pip set up, so if you haven't done that yet do so now. Then open a command window, navigate to the folder that you copied the installer to, and use pip to run the installer:
+If you have a file ending in *.whl*, copy the file to your project directory. You'll need [pip](installing_pip.md) set up, so if you haven't done that yet do so now. Then open a command window, navigate to the folder that you copied the installer to, and use pip to run the installer:
 
     > python -m pip install --user pygame-1.9.2a0-cp35-none-win32.whl
 
