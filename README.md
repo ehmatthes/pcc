@@ -12,7 +12,11 @@ If you have any questions about Python Crash Course, feel free to get in touch: 
 
 <a href="setup_instructions"></a>Setup Instructions
 ---
-There are instructions for installing and configuring Python on each operating system [here](chapter_01/README.md).
+Here you can find instructions for:
+
+- [Installing and configuring Python](chapter_01/README.md) (Chapter 1)
+- [Installing and using pip](chapter12/installing_pip.md) (Chapter 12)
+- [Installing Pygame](chapter_12/README.md) (Chapter 12)
 
 <a href="source_code"></a>Downloading source code
 ---
