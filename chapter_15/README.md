@@ -4,7 +4,7 @@ Chapter 15
 Installing matplotlib
 ---
 
-There are many different ways to install matplotlib to your system. In this section, I'll recommend one method for each operating system.
+There are many different ways to install matplotlib to your system. In this section, I'll recommend one method for each operating system. If you'd like to see the kinds of visualizations you can make with matplotlib, see the official matplotlib [sample gallery](http://matplotlib.org/gallery.html). When you click a visualization in the gallery, you can see the code used to generate the plot.
 
 Checking if matplotlib is already installed
 ---
