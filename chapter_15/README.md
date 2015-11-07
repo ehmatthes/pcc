@@ -46,16 +46,20 @@ Then use pip to install matplotlib:
 
 If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12.
 
+[top](#)
+
 Installing matplotlib on OS X
 ---
 
-Aple includes matplotlib with its standard Python installation, so make sure you <a href="checking-if-matplotlib-is-already-installed">check if it's already installed</a> before installing it yourself.
+Aple includes matplotlib with its standard Python installation, so make sure you <a href="#checking-if-matplotlib-is-already-installed">check if it's already installed</a> before installing it yourself.
 
 If matplotlib is not already installed and you used Homebrew to install Python, install it like this:
 
     $ pip install --user matplotlib
 
 If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12. If you have trouble installing matplotlib using pip, try leaving off the `--user` flag.
+
+[top](#)
 
 Installing matplotlib on Windows
 ---
@@ -72,3 +76,5 @@ Copy the *.whl* file to your project folder, open a command window, and navigate
     python_work> python -m pip install --user matplotlib-1.4.3-cp35-none-win32.whl
 
 If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12.
+
+[top](#)
