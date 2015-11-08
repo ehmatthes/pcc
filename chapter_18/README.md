@@ -24,7 +24,7 @@ If you're using Python 3, you should be able to create a virtual environment wit
 
 This command runs the *venv* module and uses it to create a virtual environment named ll_env.
 
-If this works, move on to [Activating the Virtual Environment](activating-the-virtual-environment). If it didn't work, go to [Installing virtualenv](#installing-virtuaenv).
+If this works, move on to [Activating the Virtual Environment](#activating-the-virtual-environment). If it didn't work, go to [Installing virtualenv](#installing-virtualenv).
 
 [top](#)
 
@@ -83,7 +83,7 @@ If you have more than one version of Python installed on your system, you should
 Installing Django
 ---
 
-In an activated virtual environment, you can use pip to install Django:
+In an active virtual environment, you can use pip to install Django:
 
     (ll_env)learning_log$ pip install Django
     Installing collected packages: Django
