@@ -18,6 +18,7 @@ Here you can find instructions for:
 - [Installing and using pip](chapter_12/installing_pip.md) (Chapter 12)
 - [Installing Pygame](chapter_12/README.md) (Chapter 12)
 - [Installing matplotlib](chapter_15/README.md) (Chapter 15)
+- [Creating a Virtual Environment](chapter_18/README.md) (Chapter 18)
 
 <a href="source_code"></a>Downloading source code
 ---

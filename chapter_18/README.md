@@ -3,6 +3,13 @@ Chapter 18
 
 In this chapter you'll use Django to build Learning Log, a simple web application that lets you keep track of information you've learned about particular topics. This section will help you get a virtual environment set up.
 
+- [Creating a Virtual Environment](#creating-a-virtual-environment)
+- [Activating the Virtual Environment](#activating-the-virtual-environment)
+    - [Deactivating the virtual environment](#deactivating-the-virtual-environment)
+- [Installing virtualenv](#installing-virtualenv)
+    - [Creating a virtual environment with virtualenv](#creating-a-virtual-environment-with-virtualenv)
+- [Installing Django](#installing-django)
+
 Creating a Virtual Environment
 ---
 
@@ -18,6 +25,8 @@ If you're using Python 3, you should be able to create a virtual environment wit
 This command runs the *venv* module and uses it to create a virtual environment named ll_env.
 
 If this works, move on to [Activating the Virtual Environment](activating-the-virtual-environment). If it didn't work, go to [Installing virtualenv](#installing-virtuaenv).
+
+[top](#)
 
 Activating the Virtual Environment
 ---
@@ -43,6 +52,8 @@ To stop using a virtual environment, enter **deactivate**:
 
 The environment will also become inactive if you close the terminal it's running in.
 
+[top](#)
+
 Installing virtualenv
 ---
 
@@ -67,6 +78,8 @@ If this works, move on to [Activating the virtual environment](#activating-the-v
 
 If you have more than one version of Python installed on your system, you should specify the version for virtualenv to use. For example, the command **virtualenv ll_env --python=python3** wil create a virtual environment that uses Python 3.
 
+[top](#)
+
 Installing Django
 ---
 
@@ -81,4 +94,6 @@ In an activated virtual environment, you can use pip to install Django:
 Because this command is run in a virtual environment, it's the same on all operating systems. There's no need to use the `--user` flag, and there's no need to use longer commands like `python -m pip install django`.
 
 Keep in mind that Django will only be available when the virtual environment is active.
+
+[top](#)
  
