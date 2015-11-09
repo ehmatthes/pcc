@@ -22,6 +22,7 @@ Here you can find instructions for:
 - [Installing matplotlib](chapter_15/README.md) (Chapter 15)
 - [Creating a Virtual Environment](chapter_18/README.md) (Chapter 18)
 - [Deploying a Project to Heroku](chapter_20/README.md) (Chapter 20)
+- [Installing Python](appendix_a/README.md) (Appendix A)
 
 <a href="source_code"></a>Downloading source code
 ---
