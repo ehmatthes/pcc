@@ -1,6 +1,21 @@
 Chapter 12
 ===
 
+Restore Points
+---
+
+As you work your way through the Alien Invasion project, you'll develop a number of files that work together to create a functioning game. If you make an error somewhere, it can be difficult to know exactly where things went wrong. There are several *restore points* available for this chapter. You can use these restore points in two ways:
+
+- **Compare your code to code that works:** You should try this first. Look at the code you have, and compare it to the corresonding restore point. You might be able to spot where your code differs, and simply correct your own code.
+
+- **Start over from a restore point:** If you want to just start with code that works, you can make a copy of the project using a restore point and pick up from there. For example if you want to start from a working version that fires bullets, you can copy the files and directories from [restore_point_2_fires_bullets](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_2_fires_bullets) and go from there. This might be helpful if you get lost later in the project, or if you've been adding your own features and you want to go back to the book's version of the game.
+
+There are three [restore points](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points) available for Chapter 12:
+
+- The ship moves, which corresponds to the state of the game on page 257. This is [restore_point_1_ship_moves](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_1_ship_moves).
+- The ship fires bullets, which corresponds to the state of the game on page 261. This is [restore_point_2_fires_bullets](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points).
+- The ship fires only three bullets at a time, and the code has been refactored with `fire_bullets()`. This is [restore_point_3_end_chapter_12](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_3_end_chapter_12).
+
 Installing Pygame
 ---
 
