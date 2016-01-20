@@ -13,7 +13,7 @@ As you work your way through the Alien Invasion project, you'll develop a number
 There are three [restore points](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points) available for Chapter 12:
 
 - The ship moves, which corresponds to the state of the game on page 257. This is [restore_point_1_ship_moves](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_1_ship_moves).
-- The ship fires bullets, which corresponds to the state of the game on page 261. This is [restore_point_2_fires_bullets](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points).
+- The ship fires bullets, which corresponds to the state of the game on page 261. This is [restore_point_2_fires_bullets](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_2_fires_bullets).
 - The ship fires only three bullets at a time, and the code has been refactored with `fire_bullets()`. This is [restore_point_3_end_chapter_12](https://github.com/ehmatthes/pcc/tree/master/chapter_12/restore_points/restore_point_3_end_chapter_12).
 
 Installing Pygame
