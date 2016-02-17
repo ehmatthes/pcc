@@ -4,6 +4,8 @@ Python Crash Course - Cheat Sheets
 A cheat sheet can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. 
 Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
 
+You can download any individual cheat sheet, or download all the cheat sheets in [one document](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_all.pdf).
+
 - [Beginner's Python Cheat Sheet](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc.pdf)
     - Provides an overview of the basics of Python including variables, lists, dictionaries, functions, classes, and more.
 - [Beginner's Python Cheat Sheet - Lists](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_lists.pdf)
