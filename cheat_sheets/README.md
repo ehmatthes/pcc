@@ -14,3 +14,5 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on dictionaries: how to build and modify a dictionary, access the information in a dictionary, and loop through dictionaries in a variety of ways. Includes sections on nesting lists and dictionaries, using an OrderedDict and more.
 - [Beginner's Python Cheat Sheet - Functions](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_functions.pdf)
     - Focuses on functions: how to define a function and how to pass information to a function. Covers positional and keyword arguments, return values, passing lists, using modules, and more.
+- [Beginner's Python Cheat Sheet - Classes](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_classes.pdf)
+    - Focuses on classes: how to define and use a class. Covers attributes and methods, inheritance and importing, and more.
