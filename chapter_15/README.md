@@ -1,13 +1,19 @@
 Chapter 15
 ===
 
+- [Installing matplotlib](#installing-matplotlib)
+    - [Checking if matplotlib is already installed](#checking-if-matplotlib-is-already-installed)
+    - [Installing matplotlib on Linux](#installing-matplotlib-on-linux)
+    - [Installing matplotlib on OS X](#installing-matplotlib-on-os-x)
+    - [Installing matplotlib on Windows](#installing-matplotlib-on-windows)
+- [Installing Pygal](#installing-pygal)
+
 Installing matplotlib
 ---
 
 There are many different ways to install matplotlib to your system. In this section, I'll recommend one method for each operating system. If you'd like to see the kinds of visualizations you can make with matplotlib, see the official matplotlib [sample gallery](http://matplotlib.org/gallery.html). When you click a visualization in the gallery, you can see the code used to generate the plot.
 
-Checking if matplotlib is already installed
----
+### Checking if matplotlib is already installed
 
 First, check if matplotlib is already installed on your system:
 
@@ -16,13 +22,6 @@ First, check if matplotlib is already installed on your system:
     >>>
 
 If you don't see an error message, then matplotlib is already installed on your system and you should be able to get started right away on this chapter's projects. If you get an error message, read the appropriate section below for help installing matplotlib on your operating system.
-
-Installing matplotlib
----
-
-- [Installing matplotlib on Linux](#installing-matplotlib-on-linux)
-- [Installing matplotlib on OS X](#installing-matplotlib-on-os-x)
-- [Installing matplotlib on Windows](#installing-matplotlib-on-windows)
 
 Installing matplotlib on Linux
 ---
@@ -76,5 +75,46 @@ Copy the *.whl* file to your project folder, open a command window, and navigate
     python_work> python -m pip install --user matplotlib-1.4.3-cp35-none-win32.whl
 
 If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12.
+
+[top](#)
+
+Installing Pygal
+---
+Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. This also means you have two choices about how to install Pygal. You can install version 1.7 which supports the code in the book exactly as it's written, or you can install the most recent version of Pygal and modify some of the code in the book. If you install the most recent version there are some slight changes you'll need to make for the code in the second half of chapter 16, and chapter 17.
+
+### Running Pygal code exactly as it appears in the book
+
+Pygal 1.7 allows the code to run exactly as it appears in the book. To do this, modify the command for installing pygal so pip will install version 1.7 (page 340):
+
+    $ pip install --user pygal==1.7
+
+On Windows, this would be:
+
+    > python -m pip install --user pygal==1.7
+
+If you've already installed Pygal you can see which version was installed by running the command `pip freeze`:
+
+    $ pip freeze
+    pygal==2.1.1
+
+If you installed Pygal 2.0 or later and want to install 1.7 instead, uninstall Pygal first:
+
+    $ pip uninstall pygal
+    $ pip install --user pygal==1.7
+
+### Using the latest version of Pygal
+
+The latest version of Pygal is version 2.1.1. This is the version that will be installed if you don't specify a version for pip to install:
+
+    $ pip install --user pygal
+
+or
+
+    $ python -m pip install --user pygal
+    
+If you use the latest version, you'll need to make some slight changes to the code in chapter 16 and chapter 17:
+
+- [Updates to Chapter 16 Pygal code](chapter_16/README.md)
+- [Updates to Chapter 17 Pygal code](chapter_17/README.md)
 
 [top](#)
