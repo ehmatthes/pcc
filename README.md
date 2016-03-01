@@ -28,3 +28,10 @@ Here you can find instructions for:
 ---
 The simplest way to get the online resources for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the upper right side of [this page](https://github.com/ehmatthes/pcc), which will download the source code files (and other resources) for the entire book.
 
+Updates
+---
+
+Some of the libraries featured in the book have been updated recently, which is a good thing - it means you're learning to use Python packages that are steadily being improved. When packages are updated you have the option of using the version that was featured in the book, which lets you run code exactly as it's written in the book. You can also choose to install the latest version of each package, and modify the code in the book slightly. Each approach is outlined clearly in these updates.
+
+A list of updates is kept [here](UPDATES.md)
+
