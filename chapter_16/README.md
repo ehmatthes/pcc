@@ -20,15 +20,9 @@ On Windows, this is:
 
     $ python -m pip install --user pygal_maps_world
     
-### *countries.py*
+### *countries.py*, *country_codes.py*
 
 The dictionary `COUNTRIES` needs to be imported from `pygal_maps_world` now:
-
-    from pygal.maps.world import COUNTRIES
-    
-### *country_codes.py*
-
-The module *country_codes.py* also needs an updated import statement:
 
     from pygal.maps.world import COUNTRIES
     
@@ -45,7 +39,7 @@ In the line that creates the world map, change `Worldmap` to `World`:
 Page by page updates
 ---
 
-In the following sections, bold lines of code differ slightly from the code that appears in the book:
+In the following sections, bold lines of code differ from the code that appears in the book:
 
 ### p. 365, *countries.py* and *country_codes.py*
 
