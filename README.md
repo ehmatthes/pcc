@@ -31,7 +31,9 @@ The simplest way to get the online resources for the book is to click on the [*D
 Updates
 ---
 
-Some of the libraries featured in the book have been updated recently, which is a good thing - it means you're learning to use Python packages that are steadily being improved. When packages are updated you have the option of using the version that was featured in the book, which lets you run code exactly as it's written in the book. You can also choose to install the latest version of each package, and modify the code in the book slightly. Each approach is outlined clearly in these updates.
+Some of the libraries featured in the book have been updated recently, which is a good thing - it means you're learning to use Python packages that are steadily being improved.
 
-A list of updates is kept [here](UPDATES.md)
+When packages are updated you have the option of using the version that was featured in the book, which lets you run code exactly as it's written in the book. You can also choose to install the latest version of each package, and modify the code in the book slightly. Each approach is outlined clearly in these updates.
+
+A list of updates is kept [here](UPDATES.md).
 
