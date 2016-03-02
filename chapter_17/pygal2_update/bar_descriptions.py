@@ -6,6 +6,7 @@ chart = pygal.Bar(style=my_style, x_label_rotation=45, show_legend=False)
 
 chart.title = 'Python Projects'
 chart.x_labels = ['httpie', 'django', 'flask']
+chart.force_uri_protocol = 'http'
 
 plot_dicts = [
     {'value': 16101, 'label': 'Description of httpie.'},
