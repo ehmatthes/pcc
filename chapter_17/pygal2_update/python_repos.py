@@ -29,6 +29,7 @@ for repo_dict in repo_dicts:
 my_style = LS('#333366', base_style=LCS)
 
 my_config = pygal.Config()
+my_config.force_uri_protocol = 'http'
 my_config.x_label_rotation = 45
 my_config.show_legend = False
 my_config.title_font_size = 24
