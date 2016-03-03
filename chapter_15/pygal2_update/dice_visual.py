@@ -21,6 +21,7 @@ for value in range(2, max_result+1):
     
 # Visualize the results.
 hist = pygal.Bar()
+hist.force_uri_protocol = 'http'
 
 hist.title = "Results of rolling two D6 dice 1000 times."
 hist.x_labels = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']

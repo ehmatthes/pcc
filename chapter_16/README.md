@@ -7,7 +7,7 @@ You can easily [install a version of Pygal](chapter_15/README.md#installing-pyga
 
 The first part of this update will tell you what to look for as you work through the section **Mapping Global Data Sets: JSON Format**, which begins on page 362. The second part will give you a page by page update. You can see the updated code files [here](pygal2_update/).
 
-Overall updates
+Updates
 ---
 
 ### The `pygal_maps_world` package
@@ -36,6 +36,15 @@ In the line that creates the world map, change `Worldmap` to `World`:
 
     wm = World()
     
+### Rendering tooltips correctly
+
+As you probably saw in [Chapter 15](chapter_15/README.md#updates), you need to add a line each time you make a chart in order to render tooltips correctly:
+
+<pre>
+wm = World()
+<b>wm.force_uri_protocol = 'http'</b>
+</pre>
+    
 Page by page updates
 ---
 
@@ -49,16 +58,17 @@ Use **`from pygal.maps.world import COUNTRIES`** instead of `from pygal.i18n imp
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
-Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.
 
 ### p. 368, *na_populations.py*
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
-Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.
 
 ### p. 369-370, *world_populations.py*
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
-Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.s
+
