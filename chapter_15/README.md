@@ -115,8 +115,8 @@ or
     
 If you use the latest version, you'll need to make some slight changes to the code in chapter 16 and chapter 17:
 
-- [Updates to Chapter 16 Pygal code](chapter_16/README.md)
-- [Updates to Chapter 17 Pygal code](chapter_17/README.md)
+- [Updates to Chapter 16 Pygal code](../chapter_16/README.md)
+- [Updates to Chapter 17 Pygal code](../chapter_17/README.md)
 
 [top](#)
 
@@ -125,7 +125,7 @@ Updates
 
 Pygal has been updated to version 2; make sure you've read the notes about [installing Pygal](#installing-pygal) above.
 
-If you're using Pygal version 2 or higher you'll need to add one line to each file in order to render the charts correctly. Pygal has changed the way tooltips are displayed, so if you don't add this line you won't see any tooltips when you hover over the bars on a chart.
+If you're using Pygal version 2.0 or higher you'll need to add one line to each file in order to render the charts correctly. Pygal has changed the way tooltips are displayed, so if you don't add this line you won't see any tooltips when you hover over the bars on a chart.
 
 Each time you make a chart in Pygal, add a line that tells Pygal to make an SVG file that renders correctly in a browser. For example:
 
