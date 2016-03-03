@@ -115,8 +115,8 @@ or
     
 If you use the latest version, you'll need to make some slight changes to the code in chapter 16 and chapter 17:
 
-- [Updates to Chapter 16 Pygal code](../chapter_16/README.md)
-- [Updates to Chapter 17 Pygal code](../chapter_17/README.md)
+- [Updates to Chapter 16 Pygal code](../chapter_16/README.md#updates)
+- [Updates to Chapter 17 Pygal code](../chapter_17/README.md#updates)
 
 [top](#)
 
