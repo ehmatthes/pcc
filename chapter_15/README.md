@@ -7,6 +7,7 @@ Chapter 15
     - [Installing matplotlib on OS X](#installing-matplotlib-on-os-x)
     - [Installing matplotlib on Windows](#installing-matplotlib-on-windows)
 - [Installing Pygal](#installing-pygal)
+- [Updates](#updates)
 
 Installing matplotlib
 ---
@@ -80,7 +81,7 @@ If you need help using pip, see the <a href="../chapter_12/installing_pip.md">in
 
 Installing Pygal
 ---
-Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. This also means you have two choices about how to install Pygal. You can install version 1.7 which supports the code in the book exactly as it's written, or you can install the most recent version of Pygal and modify some of the code in the book. If you install the most recent version there are some slight changes you'll need to make for the code in the second half of chapter 16, and chapter 17.
+Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. This also means you have two choices about how to install Pygal. You can install version 1.7 which supports the code in the book exactly as it's written, or you can install the most recent version of Pygal and modify some of the code in the book. If you install the most recent version there are some slight changes you'll need to make for the code in the second half of chapters 15 and 16, and chapter 17.
 
 ### Running Pygal code exactly as it appears in the book
 
@@ -118,3 +119,43 @@ If you use the latest version, you'll need to make some slight changes to the co
 - [Updates to Chapter 17 Pygal code](chapter_17/README.md)
 
 [top](#)
+
+Updates
+---
+
+Pygal has been updated to version 2; make sure you've read the notes about [installing Pygal](#installing-pygal) above.
+
+If you're using Pygal version 2 or higher you'll need to add one line to each file in order to render the charts correctly. Pygal has changed the way tooltips are displayed, so if you don't add this line you won't see any tooltips when you hover over the bars on a chart.
+
+Each time you make a chart in Pygal, add a line that tells Pygal to make an SVG file that renders correctly in a browser. For example:
+
+    hist = pygal.Bar()
+    hist.force_uri_protocol = 'http'
+    
+This causes Pygal to configure the SVG rendering engine to work correctly for displaying the files in a browser.
+
+Page by page updates
+---
+
+Code that appears in bold is new, or is modified from what appears in the book.
+
+### p. 342, die_visual.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
+    
+### p. 343-344, dice_visual.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
+
+### p. 345, different_dice.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
