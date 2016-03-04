@@ -1,3 +1,16 @@
 a.link-no-style {
   color: inherit;
 }
+
+
+@media screen and (min-width: 64em) {
+  .page-header-subpages {
+    padding: 0.5rem 0.6rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .page-header-subpages {
+    padding: 0.3rem 0.4rem; } }
+
+@media screen and (max-width: 42em) {
+  .page-header-subpages {
+    padding: 0.2rem 0.1rem; } }
