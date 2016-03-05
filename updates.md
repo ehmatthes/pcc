@@ -19,3 +19,12 @@ Chapter 17
 ---
 
 The [updates to Chapter 17](chapter_17/README.md#updates) allow tooltips to show on charts generated with Pygal.
+
+Questions
+---
+
+If you have any questions about something that doesn't seem to be working in the book, please let me know!
+
+Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
+
+Twitter: [@ehmatthes](http://twitter.com/ehmatthes/)
