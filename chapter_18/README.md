@@ -61,7 +61,7 @@ If you're using an earlier version of Python or if your system isn't set up to u
 
     $ pip install --user virtualenv.
 
-You may use pip in a slightly different manner on your system; see [installing Python Packages](../chapter_12/installing_pip.md) if you need help using pip.
+You may use pip in a slightly different manner on your system; see [installing Python Packages](../chapter_12/installing_pip.html) if you need help using pip.
 
 If you're using Linux and this still doesn't work, you can install virtualenv through your system's package manager. On Ubuntu, for example, the command **sudo apt-get install python-virtualenv** will install virtualenv.
 

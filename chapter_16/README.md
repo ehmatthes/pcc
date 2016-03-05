@@ -3,7 +3,7 @@ Chapter 16
 
 Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. If you're using the latest version of Pygal, you'll need to make some slight changes to the code in Chapter 16.
 
-You can easily [install a version of Pygal](chapter_15/README.md#installing-pygal) that allows the code in the book to run exactly as it's written.
+You can easily [install a version of Pygal](chapter_15/README.html#installing-pygal) that allows the code in the book to run exactly as it's written.
 
 The first part of this update will tell you what to look for as you work through the section **Mapping Global Data Sets: JSON Format**, which begins on page 362. The second part will give you a page by page update. You can see the updated code files [here](pygal2_update/).
 
@@ -38,7 +38,7 @@ In the line that creates the world map, change `Worldmap` to `World`:
     
 ### Rendering tooltips correctly
 
-As you probably saw in [Chapter 15](chapter_15/README.md#updates), you need to add a line each time you make a chart in order to render tooltips correctly:
+As you probably saw in [Chapter 15](chapter_15/README.html#updates), you need to add a line each time you make a chart in order to render tooltips correctly:
 
 <pre>
 wm = World()

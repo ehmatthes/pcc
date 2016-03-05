@@ -4,7 +4,7 @@ Chapter 17
 Updates
 ---
 
-As you probably saw in [Chapter 15](chapter_15/README.md#updates) and [Chapter 16](chapter_16/README.md#updates), you'll need to add a line each time you make a chart in order to render tooltips correctly:
+As you probably saw in [Chapter 15](chapter_15/README.html#updates) and [Chapter 16](chapter_16/README.html#updates), you'll need to add a line each time you make a chart in order to render tooltips correctly:
 
 <pre>
 chart = pygal.Bar()
