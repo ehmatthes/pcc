@@ -18,3 +18,7 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on functions: how to define a function and how to pass information to a function. Covers positional and keyword arguments, return values, passing lists, using modules, and more.
 - [Beginner's Python Cheat Sheet - Classes](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_classes.pdf)
     - Focuses on classes: how to define and use a class. Covers attributes and methods, inheritance and importing, and more.
+    
+- - -
+
+[![Python Crash Course](../images/cover.jpg)](http://nostarchpress.com/pythoncrashcourse)Available from [No Starch Press](http://nostarchpress.com/pythoncrashcourse) and [Amazon](http://www.amazon.com/Python-Crash-Course-Project-Based-Introduction/dp/1593276036).</p>
