@@ -1,5 +1,7 @@
-Chapter 17
-===
+---
+layout: default
+title: Chapter 17
+---
 
 Updates
 ---

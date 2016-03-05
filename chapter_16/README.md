@@ -1,5 +1,7 @@
-Chapter 16
-===
+---
+layout: default
+title: Chapter 16
+---
 
 Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. If you're using the latest version of Pygal, you'll need to make some slight changes to the code in Chapter 16.
 

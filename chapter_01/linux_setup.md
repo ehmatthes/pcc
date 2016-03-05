@@ -1,5 +1,7 @@
-Setup Instructions: Linux
-===
+---
+layout: default
+title: "Setup Instructions: Linux"
+---
 
 - [Checking your current version of Python](#current_version)
 - [Installing Python 3.5](#python3.5)

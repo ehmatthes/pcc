@@ -1,5 +1,7 @@
-Chapter 15
-===
+---
+layout: default
+title: Chapter 15
+---
 
 - [Installing matplotlib](#installing-matplotlib)
     - [Checking if matplotlib is already installed](#checking-if-matplotlib-is-already-installed)

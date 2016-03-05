@@ -1,5 +1,7 @@
-Chapter 18
-===
+---
+layout: default
+title: Chapter 18
+---
 
 In this chapter you'll use Django to build Learning Log, a simple web application that lets you keep track of information you've learned about particular topics. This section will help you get a virtual environment set up.
 

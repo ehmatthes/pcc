@@ -1,5 +1,7 @@
-Appendix A
-===
+---
+layout: default
+title: Appendix A
+---
 
 Python has several different versions and a number of ways it can be set up on each operating system. This section will help you install Python if the simple approach in Chapter 1 didn't work, or if you want to install a different version of Python than the one that came with your system.
 

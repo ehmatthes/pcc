@@ -1,5 +1,7 @@
-Setup Instructions: Windows
-===
+---
+layout: default
+title: "Setup Instructions: Windows"
+---
 
 - [Checking your current version of Python](#current_version)
 - [Installing Python 3.5](#python3.5)

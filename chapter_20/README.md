@@ -1,5 +1,7 @@
-Chapter 20
-===
+---
+layout: default
+title: Chapter 20
+---
 
 Deploying a Project to Heroku
 ---

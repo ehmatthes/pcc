@@ -1,5 +1,7 @@
-Chapter 12
-===
+---
+layout: default
+title: Chapter 12
+---
 
 Restore Points
 ---
