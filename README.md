@@ -29,6 +29,7 @@ Here you can find instructions for:
 The simplest way to get the online resources for the book is to click on the [*Download ZIP*](https://github.com/ehmatthes/pcc/archive/master.zip) button on the upper right side of [this page](https://github.com/ehmatthes/pcc), which will download the source code files (and other resources) for the entire book.
 
 [Cheat Sheets](http://ehmatthes.github.io/pcc/cheatsheets/README.html)
+---
 
 Cheat sheets can be really helpful when you're working on a set of programming exercises or a project. This set of [cheat sheets](http://ehmatthes.github.io/pcc/cheatsheets/README.html) will help remind you of the concepts you're learning, as well as the Python syntax for these concepts.
 
