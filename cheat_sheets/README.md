@@ -18,3 +18,5 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on functions: how to define a function and how to pass information to a function. Covers positional and keyword arguments, return values, passing lists, using modules, and more.
 - [Beginner's Python Cheat Sheet - Classes](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_classes.pdf)
     - Focuses on classes: how to define and use a class. Covers attributes and methods, inheritance and importing, and more.
+- [Beginner's Python Cheat Sheet - Testing Your Code](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_testing.pdf)
+    - Focuses on unit tests and test cases. How to test a function, and how to test a class.
