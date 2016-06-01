@@ -22,6 +22,8 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on classes: how to define and use a class. Covers attributes and methods, inheritance and importing, and more.
 - [Beginner's Python Cheat Sheet - Files and Exceptions](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_files_exceptions.pdf)
     - Focuses on working with files, and using exceptions to handle errors that might arise as your programs run. Covers reading and writing to files, try-except-else blocks, and storing data using the json module.
+- [Beginner's Python Cheat Sheet - Testing Your Code](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_testing.pdf)
+    - Focuses on unit tests and test cases. How to test a function, and how to test a class.
     
 - - -
 
