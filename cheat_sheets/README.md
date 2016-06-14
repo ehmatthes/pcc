@@ -22,3 +22,5 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on working with files, and using exceptions to handle errors that might arise as your programs run. Covers reading and writing to files, try-except-else blocks, and storing data using the json module.
 - [Beginner's Python Cheat Sheet - Testing Your Code](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_testing.pdf)
     - Focuses on unit tests and test cases. How to test a function, and how to test a class.
+- [Beginner's Python Cheat Sheet - Pygame](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_pygame.pdf)
+    - Focuses on creating games with Pygame. Creating a game window, rect objects, images, responding to keyboard and mouse input, groups, detecting collisions between game elements, and rendering text.
