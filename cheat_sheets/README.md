@@ -24,3 +24,5 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on unit tests and test cases. How to test a function, and how to test a class.
 - [Beginner's Python Cheat Sheet - Pygame](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_pygame.pdf)
     - Focuses on creating games with Pygame. Creating a game window, rect objects, images, responding to keyboard and mouse input, groups, detecting collisions between game elements, and rendering text.
+- [Beginner's Python Cheat Sheet - matplotlib](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_matplotlib.pdf)
+    - Focuses on creating visualizations with matplotlib. Making line graphs and scatter plots, customizing plots, making multiple plots, and working with time-based data.
