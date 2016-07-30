@@ -29,6 +29,8 @@ You can download any individual cheat sheet, or download all the cheat sheets in
 input, groups, detecting collisions between game elements, and rendering text.
 - [Beginner's Python Cheat Sheet - matplotlib](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_matplotlib.pdf)
     - Focuses on creating visualizations with matplotlib. Making line graphs and scatter plots, customizing plots, making multiple plots, and working with time-based data.
+- [Beginner's Python Cheat Sheet - Pygal](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_pygal.pdf)
+    - Focuses on creating visualizations with Pygal. Making line graphs, scatter plots, and bar graphs, styling plots, making multiple plots, and working with global datasets.
     
 - - -
 
