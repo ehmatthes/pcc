@@ -1,4 +1,4 @@
-from pygal.maps.world import World
+from pygal_maps_world.maps import World
 
 wm = World()
 wm.force_uri_protocol = 'http'
