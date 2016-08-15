@@ -28,3 +28,5 @@ You can download any individual cheat sheet, or download all the cheat sheets in
     - Focuses on creating visualizations with matplotlib. Making line graphs and scatter plots, customizing plots, making multiple plots, and working with time-based data.
 - [Beginner's Python Cheat Sheet - pygal](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_pygal.pdf)
     - Focuses on creating visualizations with Pygal. Making line graphs, scatter plots, and bar graphs, styling plots, making multiple plots, and working with global datasets.
+- [Beginner's Python Cheat Sheet - Django](https://github.com/ehmatthes/pcc/raw/master/cheat_sheets/beginners_python_cheat_sheet_pcc_django.pdf)
+    - Focuses on creating web apps with Django. Installing Django and starting a project, working with models, building a home page, using templates, using data, and making user accounts.
