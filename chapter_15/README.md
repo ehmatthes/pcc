@@ -128,6 +128,6 @@ Pygal has been updated to version 2; make sure you've read the notes about [inst
 
 On the latest version of Pygal, the code from Chapter 15 runs as it's written in the book. In Pygal versions 2.0-2.1.1, there was a change to a default setting that caused tooltips not to appear. That change has been reverted, so the code in the book is still correct. If you're using one of these versions you can upgrade your installation of Pygal:
 
-$ pip install --upgrade pygal
+    $ pip install --upgrade pygal
 
 This should upgrade your installation to the latest version of Pygal, and your code should work as it's written.
