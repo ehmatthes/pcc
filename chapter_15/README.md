@@ -26,6 +26,22 @@ First, check if matplotlib is already installed on your system:
 
 If you don't see an error message, then matplotlib is already installed on your system and you should be able to get started right away on this chapter's projects. If you get an error message, read the appropriate section below for help installing matplotlib on your operating system.
 
+### Simple installation with pip
+
+The matplotlib developers have been working hard to simplify the installation process, and sometimes you can install it using just pip. Try this and see if works on your system:
+
+    $ pip install --user matplotlib
+
+If you need help using pip, see the <a href="../chapter_12/installing_pip.html">instructions</a> in Chapter 12. If this doesn't work, try leaving off the `--user` flag.
+
+If the installation seems to run without errors, try importing matplotlib:
+
+    $ python
+    >>> import matplotlib
+    >>>
+
+If the import runs successfully, you're finished and you can start using matplotlib. If the import statement fails, look at the appropriate section below for your operating system.
+
 Installing matplotlib on Linux
 ---
 
