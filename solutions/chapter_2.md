@@ -21,6 +21,8 @@ Store a message in a variable, and print that message. Then change the value of 
     msg = "It's really satisfying!"
     print(msg)
 
+[top](#)
+
 2-5: Famous Quote
 ---
 
@@ -30,6 +32,8 @@ Find a quote from a famous person you admire. Print the quote and the name of it
 
     print('Albert Einstein once said, "A person who never made a mistake')
     print('never tried anything new."')
+
+[top](#)
 
 2-7: Stripping Names
 ---
@@ -52,6 +56,8 @@ Print the name once, so the whitespace around the name is displayed. Then print 
     print("\nUsing strip():")
     print(name.strip())
 
+[top](#)
+
 2-9: Favorite Number
 ---
 
@@ -61,3 +67,5 @@ Store your favorite number in a variable. Then, using that variable, create a me
     msg = "My favorite number is " + str(fav_num) + "."
 
     print(msg)
+
+[top](#)
