@@ -70,7 +70,7 @@ You just heard that one of your guests can't make the dinner, so you need to sen
 - Modify your list, replacing the name of the guest who can't make it with the name of the new person you are inviting.
 - Print a second set of invitation messages, one for each person who is still in your list.
 
-```python
+```
 # Invite some people to dinner.
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
@@ -100,5 +100,75 @@ print(name + ", please come to dinner.")
 name = guests[2].title()
 print(name + ", please come to dinner.")
 ```
+
+[top](#)
+
+3-6: More Guests
+---
+
+You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+
+- Start with your program from Exercise 3-4 or Exercise 3-5. Add a `print` statement to the end of your program informing people that you found a bigger dinner table.
+- Use `insert()` to add one new guest to the beginning of your list.
+- Use `insert()` to add one new guest to the middle of your list.
+- Use `append()` to add one new guest to the end of your list.
+Print a new set of invitation messages, one for each person in your list.
+
+```
+# Invite some people to dinner.
+guests = ['guido van rossum', 'jack turner', 'lynn hill']
+
+name = guests[0].title()
+print(name + ", please come to dinner.")
+
+name = guests[1].title()
+print(name + ", please come to dinner.")
+
+name = guests[2].title()
+print(name + ", please come to dinner.")
+
+name = guests[1].title()
+print("\nSorry, " + name + " can't make it to dinner.")
+
+# Jack can't make it! Let's invite Gary instead.
+del(guests[1])
+guests.insert(1, 'gary snyder')
+
+# Print the invitations again.
+name = guests[0].title()
+print("\n" + name + ", please come to dinner.")
+
+name = guests[1].title()
+print(name + ", please come to dinner.")
+
+name = guests[2].title()
+print(name + ", please come to dinner.")
+
+# We got a bigger table, so let's add some more people to the list.
+print("\nWe got a bigger table!")
+guests.insert(0, 'frida kahlo')
+guests.insert(2, 'reinhold messner')
+guests.append('elizabeth peratrovich')
+
+name = guests[0].title()
+print(name + ", please come to dinner.")
+
+name = guests[1].title()
+print(name + ", please come to dinner.")
+
+name = guests[2].title()
+print(name + ", please come to dinner.")
+
+name = guests[3].title()
+print(name + ", please come to dinner.")
+
+name = guests[4].title()
+print(name + ", please come to dinner.")
+
+name = guests[5].title()
+print(name + ", please come to dinner.")
+```
+
+[top](#)
 
 [top](#)
