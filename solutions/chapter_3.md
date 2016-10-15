@@ -71,7 +71,7 @@ You just heard that one of your guests can't make the dinner, so you need to sen
 - Modify your list, replacing the name of the guest who can't make it with the name of the new person you are inviting.
 - Print a second set of invitation messages, one for each person who is still in your list.
 
-```
+```python
 # Invite some people to dinner.
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
@@ -115,7 +115,7 @@ You just found a bigger dinner table, so now more space is available. Think of t
 - Use `append()` to add one new guest to the end of your list.
 Print a new set of invitation messages, one for each person in your list.
 
-```
+```python
 # Invite some people to dinner.
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
@@ -182,7 +182,7 @@ You just found out that your new dinner table won't arrive in time for the dinne
 - Print a message to each of the two people still on your list, letting them know they're still invited.
 - Use `del` to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
-```
+```python
 # Invite some people to dinner.
 guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
