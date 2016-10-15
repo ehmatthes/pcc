@@ -60,4 +60,11 @@ print(max(numbers))
 print(sum(numbers))
 ```
 
+Output:
+```
+1
+1000000
+500000500000
+```
+
 [top](#)
