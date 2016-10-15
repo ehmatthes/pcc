@@ -18,11 +18,13 @@ Back to [solutions](README.html).
 
 Store the names of a few of your friends in a list called `names`. Print each person's name by accessing each element in the list, one at a time.
 
-    names = ['ron', 'tyler', 'dani']
+```python
+names = ['ron', 'tyler', 'dani']
 
-    print(names[0])
-    print(names[1])
-    print(names[2])
+print(names[0])
+print(names[1])
+print(names[2])
+```
 
 [top](#)
 
@@ -31,16 +33,18 @@ Store the names of a few of your friends in a list called `names`. Print each pe
 
 Start with the list you used in Exercise 3-1, but instead of just printing each person's name, print a message to them. The text of each message should be the same, but each message should be personalized with the person's name.
 
-    names = ['ron', 'tyler', 'dani']
+```python
+names = ['ron', 'tyler', 'dani']
 
-    msg = "Hello, " + names[0].title() + "!"
-    print(msg)
+msg = "Hello, " + names[0].title() + "!"
+print(msg)
 
-    msg = "Hello, " + names[1].title() + "!"
-    print(msg)
+msg = "Hello, " + names[1].title() + "!"
+print(msg)
 
-    msg = "Hello, " + names[2].title() + "!"
-    print(msg)
+msg = "Hello, " + names[2].title() + "!"
+print(msg)
+```
 
 [top](#)
 
@@ -49,16 +53,18 @@ Start with the list you used in Exercise 3-1, but instead of just printing each 
 
 If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you'd like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
 
-    guests = ['guido van rossum', 'jack turner', 'lynn hill']
+```python
+guests = ['guido van rossum', 'jack turner', 'lynn hill']
 
-    name = guests[0].title()
-    print(name + ", please come to dinner.")
+name = guests[0].title()
+print(name + ", please come to dinner.")
 
-    name = guests[1].title()
-    print(name + ", please come to dinner.")
+name = guests[1].title()
+print(name + ", please come to dinner.")
 
-    name = guests[2].title()
-    print(name + ", please come to dinner.")
+name = guests[2].title()
+print(name + ", please come to dinner.")
+```
 
 [top](#)
 
