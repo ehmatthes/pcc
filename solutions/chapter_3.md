@@ -26,6 +26,14 @@ print(names[1])
 print(names[2])
 ```
 
+Output:
+
+```
+ron
+tyler
+dani
+```
+
 [top](#)
 
 3-2: Greetings
@@ -46,6 +54,14 @@ msg = "Hello, " + names[2].title() + "!"
 print(msg)
 ```
 
+Output:
+
+```
+Hello, Ron!
+Hello, Tyler!
+Hello, Dani!
+```
+
 [top](#)
 
 3-4: Guest List
@@ -64,6 +80,14 @@ print(name + ", please come to dinner.")
 
 name = guests[2].title()
 print(name + ", please come to dinner.")
+```
+
+Output:
+
+```
+Guido Van Rossum, please come to dinner.
+Jack Turner, please come to dinner.
+Lynn Hill, please come to dinner.
 ```
 
 [top](#)
@@ -106,6 +130,20 @@ print(name + ", please come to dinner.")
 
 name = guests[2].title()
 print(name + ", please come to dinner.")
+```
+
+Output:
+
+```
+Guido Van Rossum, please come to dinner.
+Jack Turner, please come to dinner.
+Lynn Hill, please come to dinner.
+
+Sorry, Jack Turner can't make it to dinner.
+
+Guido Van Rossum, please come to dinner.
+Gary Snyder, please come to dinner.
+Lynn Hill, please come to dinner.
 ```
 
 [top](#)
@@ -174,6 +212,28 @@ print(name + ", please come to dinner.")
 
 name = guests[5].title()
 print(name + ", please come to dinner.")
+```
+
+Output:
+
+```
+Guido Van Rossum, please come to dinner.
+Jack Turner, please come to dinner.
+Lynn Hill, please come to dinner.
+
+Sorry, Jack Turner can't make it to dinner.
+
+Guido Van Rossum, please come to dinner.
+Gary Snyder, please come to dinner.
+Lynn Hill, please come to dinner.
+
+We got a bigger table!
+Frida Kahlo, please come to dinner.
+Guido Van Rossum, please come to dinner.
+Reinhold Messner, please come to dinner.
+Gary Snyder, please come to dinner.
+Lynn Hill, please come to dinner.
+Elizabeth Peratrovich, please come to dinner.
 ```
 
 [top](#)
@@ -272,6 +332,37 @@ del(guests[0])
 print(guests)
 ```
 
+Output:
+
+```
+Guido Van Rossum, please come to dinner.
+Jack Turner, please come to dinner.
+Lynn Hill, please come to dinner.
+
+Sorry, Jack Turner can't make it to dinner.
+
+Guido Van Rossum, please come to dinner.
+Gary Snyder, please come to dinner.
+Lynn Hill, please come to dinner.
+
+We got a bigger table!
+Frida Kahlo, please come to dinner.
+Guido Van Rossum, please come to dinner.
+Reinhold Messner, please come to dinner.
+Gary Snyder, please come to dinner.
+Lynn Hill, please come to dinner.
+Elizabeth Peratrovich, please come to dinner.
+
+Sorry, we can only invite two people to dinner.
+Sorry, Elizabeth Peratrovich there's no room at the table.
+Sorry, Lynn Hill there's no room at the table.
+Sorry, Gary Snyder there's no room at the table.
+Sorry, Reinhold Messner there's no room at the table.
+Frida Kahlo, please come to dinner.
+Guido Van Rossum, please come to dinner.
+[]
+```
+
 [top](#)
 
 3-8: Seeing the World
@@ -323,6 +414,37 @@ print(locations)
 print("\nReverse alphabetical")
 locations.sort(reverse=True)
 print(locations)
+```
+
+Output:
+
+```
+Original order:
+['himalaya', 'andes', 'tierra del fuego', 'labrador', 'guam']
+
+Alphabetical:
+['andes', 'guam', 'himalaya', 'labrador', 'tierra del fuego']
+
+Original order:
+['himalaya', 'andes', 'tierra del fuego', 'labrador', 'guam']
+
+Reverse alphabetical:
+['tierra del fuego', 'labrador', 'himalaya', 'guam', 'andes']
+
+Original order:
+['himalaya', 'andes', 'tierra del fuego', 'labrador', 'guam']
+
+Reversed:
+['guam', 'labrador', 'tierra del fuego', 'andes', 'himalaya']
+
+Original order:
+['himalaya', 'andes', 'tierra del fuego', 'labrador', 'guam']
+
+Alphabetical
+['andes', 'guam', 'himalaya', 'labrador', 'tierra del fuego']
+
+Reverse alphabetical
+['tierra del fuego', 'labrador', 'himalaya', 'guam', 'andes']
 ```
 
 [top](#)
