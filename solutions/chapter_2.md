@@ -23,6 +23,13 @@ msg = "It's really satisfying!"
 print(msg)
 ```
 
+Output:
+
+```
+I love learning to use Python.
+It's really satisfying!
+```
+
 [top](#)
 
 2-5: Famous Quote
@@ -37,6 +44,13 @@ print('Albert Einstein once said, "A person who never made a mistake')
 print('never tried anything new."')
 ```
 
+Output:
+
+```
+Albert Einstein once said, "A person who never made a mistake
+never tried anything new."
+```
+
 [top](#)
 
 2-7: Stripping Names
@@ -47,7 +61,7 @@ Store a person's name, and include some whitespace characters at the beginning a
 Print the name once, so the whitespace around the name is displayed. Then print the name using each of the three stripping functions, `lstrip()`, `rstrip()`, and `strip()`.
 
 ```python
-name = "\tEric Matthes\n\n\n"
+name = "\tEric Matthes\n"
 
 print("Unmodified:")
 print(name)
@@ -62,6 +76,24 @@ print("\nUsing strip():")
 print(name.strip())
 ```
 
+Output:
+
+```
+Unmodified:
+    Eric Matthes
+
+
+Using lstrip():
+Eric Matthes
+
+
+Using rstrip():
+    Eric Matthes
+
+Using strip():
+Eric Matthes
+```
+
 [top](#)
 
 2-9: Favorite Number
@@ -74,6 +106,12 @@ fav_num = 42
 msg = "My favorite number is " + str(fav_num) + "."
 
 print(msg)
+```
+
+Output:
+
+```
+My favorite number is 42.
 ```
 
 [top](#)
