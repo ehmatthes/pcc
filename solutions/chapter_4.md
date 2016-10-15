@@ -61,6 +61,7 @@ print(sum(numbers))
 ```
 
 Output:
+
 ```
 1
 1000000
