@@ -24,11 +24,28 @@ favorite_pizzas = ['pepperoni', 'hawaiian', 'veggie']
 for pizza in favorite_pizzas:
     print(pizza)
 
+print("\n")
+
 # Print a sentence about each pizza.
 for pizza in favorite_pizzas:
     print("I really love " + pizza + " pizza!")
 
 print("\nI really love pizza!")
+```
+
+Output:
+
+```
+pepperoni
+hawaiian
+veggie
+
+
+I really love pepperoni pizza!
+I really love hawaiian pizza!
+I really love veggie pizza!
+
+I really love pizza!
 ```
 
 [top](#)
@@ -43,6 +60,31 @@ numbers = list(range(1, 21))
 
 for number in numbers:
     print(number)
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
 ```
 
 [top](#)
