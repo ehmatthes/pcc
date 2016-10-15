@@ -284,7 +284,7 @@ Think of at least five places in the world you'd like to visit.
 - Use `sort()` to change your list so it's stored in alphabetical order. Print the list to show that its order has been changed.
 - Use `sort()` to change your list so it's stored in reverse alphabetical order. Print the list to show that its order has changed.
 
-```
+```python
 locations = ['himalaya', 'andes', 'tierra del fuego', 'labrador', 'guam']
 
 print("Original order:")
