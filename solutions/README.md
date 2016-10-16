@@ -3,7 +3,7 @@ layout: default
 title: Solutions to Exercises
 ---
 
-The solutions for each chapter can be found below:
+The solutions for selected exercises from each chapter can be found below. Be careful about looking at the solutions too quickly; make sure you've given yourself time to wrestle with the concepts you just learned before looking at a solution. Also, there are several ways to solve many of the exercises, and the solutions only show one possible way to complete each exercise.
 
 - [Chapter 2](chapter_2.html)
 - [Chapter 3](chapter_3.html)

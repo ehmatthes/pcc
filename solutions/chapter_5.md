@@ -287,7 +287,7 @@ Sorry ever, that name is taken.
 Great, Iona is still available.
 ```
 
-Note: If you're not comfortable with list comprehensions yet, the list `current_users_lower` can be generated in a loop:
+Note: If you're not comfortable with list comprehensions yet, the list `current_users_lower` can be generated using a loop:
 
 ```python
 current_users_lower = []
