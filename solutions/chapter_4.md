@@ -9,6 +9,8 @@ title: Solutions - Chapter 4
 - [4-7: Threes](#threes)
 - [4-8: Cubes](#cubes)
 - [4-9: Cube Comprehension](#cube-comprehension)
+- [4-11: My Pizzas, Your Pizzas](#my-pizzas-your-pizzas)
+- [4-13: Buffet](#buffet)
 
 Back to [solutions](README.html).
 
@@ -201,6 +203,100 @@ Output:
 512
 729
 1000
+```
+
+[top](#)
+
+4-11: My Pizzas, Your Pizzas
+---
+
+Start with your program from Exercise 4-1 (page 60). Make a copy of the list of pizzas, and call it `friend_pizzas`. Then, do the following:
+
+- Add a new pizza to the original list.
+- Add a different pizza to the list `friend_pizzas`.
+- Prove that you have two separate lists. Print the message, *My favorite pizzas are:*, and then use a `for` loop to print the first list. Print the message, *My friend's favorite pizzas are:*, and then use a `for` loop to print the second list. Make sure each new pizza is stored in the appropriate list.
+
+```python
+favorite_pizzas = ['pepperoni', 'hawaiian', 'veggie']
+friend_pizzas = favorite_pizzas[:]
+
+favorite_pizzas.append("meat lover's")
+friend_pizzas.append('pesto')
+
+print("My favorite pizzas are:")
+for pizza in favorite_pizzas:
+    print("- " + pizza)
+
+print("\nMy friend's favorite pizzas are:")
+for pizza in friend_pizzas:
+    print("- " + pizza)
+```
+
+Output:
+
+```
+My favorite pizzas are:
+- pepperoni
+- hawaiian
+- veggie
+- meat lover's
+
+My friend's favorite pizzas are:
+- pepperoni
+- hawaiian
+- veggie
+- pesto
+```
+
+[top](#)
+
+4-13: Buffet
+---
+
+A buffet-style restaurant offers only five basic foods. Think of five simple foods, and store them in a tuple.
+
+- Use a `for` loop to print each food the restaurant offers.
+- Try to modify one of the items, and make sure that Python rejects the change.
+- The restaurant changes its menu, replacing two of the items with different foods. Add a block of code that rewrites the tuple, and then use a `for` loop to print each of the items on the revised menu.
+
+```python
+menu_items = (
+    'rockfish sandwich', 'halibut nuggets', 'smoked salmon chowder',
+    'salmon burger', 'crab cakes',
+    )
+
+print("You can choose from the following menu items:")
+for item in menu_items:
+    print("- " + item)
+
+menu_items = (
+    'rockfish sandwich', 'halibut nuggets', 'smoked salmon chowder',
+    'black cod tips', 'king crab legs',
+    )
+
+print("\nOur menu has been updated.")
+print("You can now choose from the following items:")
+for item in menu_items:
+    print("- " + item)
+```
+
+Output:
+
+```
+You can choose from the following menu items:
+- rockfish sandwich
+- halibut nuggets
+- smoked salmon chowder
+- salmon burger
+- crab cakes
+
+Our menu has been updated.
+You can now choose from the following items:
+- rockfish sandwich
+- halibut nuggets
+- smoked salmon chowder
+- black cod tips
+- king crab legs
 ```
 
 [top](#)
