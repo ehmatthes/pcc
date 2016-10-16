@@ -6,6 +6,9 @@ title: Solutions - Chapter 4
 - [4-1: Pizzas](#pizzas)
 - [4-3: Counting to Twenty](#counting-to-twenty)
 - [4-5: Summing a Million](#summing-a-million)
+- [4-7: Threes](#threes)
+- [4-8: Cubes](#cubes)
+- [4-9: Cube Comprehension](#cube-comprehension)
 
 Back to [solutions](README.html).
 
@@ -108,6 +111,96 @@ Output:
 1
 1000000
 500000500000
+```
+
+[top](#)
+
+4-7: Threes
+---
+
+Make a list of the multiples of 3 from 3 to 0. Use a `for` loop to print the numbers in your list.
+
+```python
+threes = list(range(3, 31, 3))
+
+for number in threes:
+    print(number)
+```
+
+Output:
+
+```
+3
+6
+9
+12
+15
+18
+21
+24
+27
+30
+```
+
+[top](#)
+
+4-8: Cubes
+---
+
+A number raised to the third power is called a *cube*. For example, the cube of 2 is written as `2**3` in Python. Make a list of the first 10 cubes (that is, the cube of each integer from 1 through 10), and use a `for` loop to print out the value of each cube.
+
+```python
+cubes = []
+for number in range(1, 11):
+    cube = number**3
+    cubes.append(cube)
+
+for cube in cubes:
+    print(cube)
+```
+
+Output:
+
+```
+1
+8
+27
+64
+125
+216
+343
+512
+729
+1000
+```
+
+[top](#)
+
+4-9: Cube Comprehension
+---
+
+Use a list comprehension to generate a list of the first 10 cubes.
+
+```python
+cubes = [number**3 for number in range(1,11)]
+
+for cube in cubes:
+    print(cube)
+```
+
+Output:
+
+```
+1
+8
+27
+64
+125
+216
+343
+512
+729
+1000
 ```
 
 [top](#)
