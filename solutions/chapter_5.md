@@ -8,6 +8,10 @@ title: Solutions - Chapter 5
 - [5-5: Alien Colors #3](#alien-colors-3)
 - [5-6: Stages of Life](#stages-of-life)
 - [5-7: Favorite Fruit](#favorite-fruit)
+- [5-8: Hello Admin](#hello-admin)
+- [5-9: No Users](#no-users)
+- [5-10: Checking Usernames](#checking-usernames)
+- [5-11: Ordinal Numbers](#ordinal-numbers)
 
 Back to [solutions](README.html).
 
@@ -191,6 +195,143 @@ You really like peaches!
 
 [top](#)
 
+5-8: Hello Admin
+---
 
+Make a list of five or more usernnames, including the name `'admin'`. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the list, and print a greeting to each user:
 
+- If the username is `'admin'`, print a special greeting, such as *Hello admin, would you like to see a status report?*
+- Otherwise, print a generic greeting, such as *Hello Eric, thank you for loggin in again.*
 
+```python
+usernames = ['eric', 'willie', 'admin', 'erin', 'ever']
+
+for username in usernames:
+    if username == 'admin':
+        print("Hello admin, would you like to see a status report?")
+    else:
+        print("Hello " + username + ", thank you for logging in again!")
+```
+
+Output:
+
+```
+Hello eric, thank you for logging in again!
+Hello willie, thank you for logging in again!
+Hello admin, would you like to see a status report?
+Hello erin, thank you for logging in again!
+Hello ever, thank you for logging in again!
+```
+
+[top](#)
+
+5-9: No Users
+---
+
+Add an `if` test to *hello_admin.py* to make sure the list of users is not empty.
+
+- If the list is emtpy, print the message *We need to find some users!*
+- Remove all of the usernames from your list, and make sure the correct message is printed.
+
+```python
+usernames = []
+
+if usernames:
+    for username in usernames:
+        if username == 'admin':
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello " + username + ", thank you for logging in again!")
+else:
+    print("We need to find some users!")
+```
+
+Output:
+
+```
+We need to find some users!
+```
+
+[top](#)
+
+5-10: Checking Usernames
+---
+
+Do the following to create a program that simulates how websites ensure that everyone has a unique username.
+
+- Make a list of five or more usernames called `current_users`.
+Make another list of five usernames called `new_users`. Make sure one or two of the new usernames are also in the `current_users` list.
+- Loop through the `new_users` list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
+- Make sure your comparison is case insensitive. If `'John'` has been used, `'JOHN'` should not be accepted.
+
+```python
+current_users = ['eric', 'willie', 'admin', 'erin', 'Ever']
+new_users = ['sarah', 'Willie', 'PHIL', 'ever', 'Iona']
+
+current_users_lower = [user.lower() for user in current_users]
+
+for new_user in new_users:
+    if new_user.lower() in current_users_lower:
+        print("Sorry " + new_user + ", that name is taken.")
+    else:
+        print("Great, " + new_user + " is still available.")
+```
+
+Output:
+
+```
+Great, sarah is still available.
+Sorry Willie, that name is taken.
+Great, PHIL is still available.
+Sorry ever, that name is taken.
+Great, Iona is still available.
+```
+
+Note: If you're not comfortable with list comprehensions yet, the list `current_users_lower` can be generated in a loop:
+
+```python
+current_users_lower = []
+for user in current_users:
+    current_users_lower.append(user.lower())
+```
+
+[top](#)
+
+5-11: Ordinal Numbers
+---
+
+Ordinal numbers indicate their position in a list, such as *1st* or *2nd*. Most ordinal numbers end in *th*, except 1, 2, and 3.
+
+- Store the numbers 1 through 9 in a list.
+- Loop through the list.
+- Use an `if-elif-else` chain inside the loop to print the proper ordinal ending for each number. Your output should read `"1st 2nd 3rd 4th 5th 6th 7th 8th 9th"`, and each result should be on a separate line.
+
+```python
+numbers = list(range(1,10))
+
+for number in numbers:
+    if number == 1:
+        print("1st")
+    elif number == 2:
+        print("2nd")
+    elif number == 3:
+        print("3rd")
+    else:
+        print(str(number) + "th")
+```
+
+Output:
+
+```
+1st
+2nd
+3rd
+4th
+5th
+6th
+7th
+8th
+9th
+```
+
+[top](#)
