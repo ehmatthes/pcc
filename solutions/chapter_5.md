@@ -6,6 +6,8 @@ title: Solutions - Chapter 5
 - [5-3: Alien Colors #1](#alien-colors-1)
 - [5-4: Alien Colors #2](#alien-colors-2)
 - [5-5: Alien Colors #3](#alien-colors-3)
+- [5-6: Stages of Life](#stages-of-life)
+- [5-7: Favorite Fruit](#favorite-fruit)
 
 Back to [solutions](README.html).
 
@@ -119,3 +121,76 @@ You just earned 15 points!
 ```
 
 [top](#)
+
+5-6: Stages of Life
+---
+
+Write an `if-elif-else` cahin that determines a person's stage of life. Set a value for the variable `age`, and then:
+
+- If the person is less than 2 years old, print a message that the person is a baby.
+- If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+- If the person is at least 4 years old but less than 13, print a message that the person is a toddler.
+- If the person is at least 13 years old but less than 20, print a message that the person is a toddler.
+- If the person is at least 20 years old but less than 65, print a message that the person is a toddler.
+- If the person is age 65 or older, print a message that the person is an elder.
+
+```python
+age = 17
+
+if age < 2:
+    print("You're a baby!")
+elif age < 4:
+    print("You're a toddler!")
+elif age < 13:
+    print("You're a kid!")
+elif age < 20:
+    print("You're a teenager!")
+elif age < 65:
+    print("You're an adult!")
+else:
+    print("You're an elder!")
+```
+
+Output:
+
+```
+You're a teenager!
+```
+
+[top](#)
+
+5-7: Favorite Fruit
+---
+
+Make a list of your favorite fruits, and then write a series of independent `if` statements that check for certain fruits in your list.
+
+- Make a list of your three favorite fruits and call it `favorite_fruits`.
+- Write five `if` statements. Each should check whether a certain kind of fruit is in your list. If the fruit is in your list, the `if` block should print a statement, such as *You really like bananas!*
+
+```python
+favorite_fruits = ['blueberries', 'salmonberries', 'peaches']
+
+if 'bananas' in favorite_fruits:
+    print("You really like bananas!")
+if 'apples' in favorite_fruits:
+    print("You really like apples!")
+if 'blueberries' in favorite_fruits:
+    print("You really like blueberries!")
+if 'kiwis' in favorite_fruits:
+    print("You really like kiwis!")
+if 'peaches' in favorite_fruits:
+    print("You really like peaches!")
+```
+
+Output:
+
+```
+You really like blueberries!
+You really like peaches!
+```
+
+[top](#)
+
+
+
+
