@@ -6,6 +6,8 @@ title: Solutions - Chapter 7
 - [7-1: Rental Car](#rental-car)
 - [7-2: Restaurant Seating](#restaurant-seating)
 - [7-3: Multiples of Ten](#multiples-of-ten)
+- [7-4: Pizza Toppings](#pizza-toppings)
+- [7-5: Movie Tickets](#movie-tickets)
 
 Back to [solutions](README.html).
 
@@ -89,6 +91,88 @@ or:
 <pre>
 Give me a number, please: <b>90</b>
 90 is a multiple of 10.
+</pre>
+
+[top](#)
+
+7-4: Pizza Toppings
+---
+
+Write a loop that prompts the user to enter a series of pizza toppings until they enter a `quit` value. As they enter each topping, print a message saying you'll add that topping to their pizza.
+
+```python
+prompt = "\nWhat topping would you like on your pizza?"
+prompt += "\nEnter 'quit' when you are finished: "
+
+while True:
+    topping = input(prompt)
+    if topping != 'quit':
+        print("  I'll add " + topping + " to your pizza.")
+    else:
+        break
+```
+
+Output:
+
+<pre>
+What topping would you like on your pizza?
+Enter 'quit' when you are finished: <b>pepperoni</b>
+  I'll add pepperoni to your pizza.
+
+What topping would you like on your pizza?
+Enter 'quit' when you are finished: <b>sausage</b>
+  I'll add sausage to your pizza.
+
+What topping would you like on your pizza?
+Enter 'quit' when you are finished: <b>bacon</b>
+  I'll add bacon to your pizza.
+
+What topping would you like on your pizza?
+Enter 'quit' when you are finished: <b>quit</b>
+</pre>
+
+[top](#)
+
+7-5: Movie Tickets
+---
+
+A movie theater charges different ticket prices depending on a person's age. If a person is under the age of 3, the ticket is free; if they are between 3 and 12, the ticket is $10; and if they are over age 12, the ticket is $15. Write a loop in which you ask users their age, and then tel them the cost of their movie ticket.
+
+```python
+prompt = "How old are you?"
+prompt += "\nEnter 'quit' when you are finished. "
+
+while True:
+    age = input(prompt)
+    if age == 'quit':
+        break
+    age = int(age)
+
+    if age < 3:
+        print("  You get in free!")
+    elif age < 13:
+        print("  Your ticket is $10.")
+    else:
+        print("  Your ticket is $15.")
+```
+
+Output:
+
+<pre>
+How old are you?
+Enter 'quit' when you are finished. <b>2</b>
+  You get in free!
+How old are you?
+Enter 'quit' when you are finished. <b>3</b>
+  Your ticket is $10.
+How old are you?
+Enter 'quit' when you are finished. <b>12</b>
+  Your ticket is $10.
+How old are you?
+Enter 'quit' when you are finished. <b>18</b>
+  Your ticket is $15.
+How old are you?
+Enter 'quit' when you are finished. <b>quit</b>
 </pre>
 
 [top](#)
