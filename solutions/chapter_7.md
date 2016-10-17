@@ -25,8 +25,37 @@ print("Let me see if I can find you a " + car.title() + ".")
 Output:
 
 ```
-What kind of car would you like? <b>Toyota Tacoma</b>
+What kind of car would you like? Toyota Tacoma
 Let me see if I can find you a Toyota Tacoma.
 ```
 
 [top](#)
+
+7-2: Restaurant Seating
+---
+
+Write a program that asks the user how many people are in their dinner group. If the answer is more than eight, print a message saying they'll have to wait for a table. Otherwise, report that their table is ready.
+
+```python
+party_size = input("How many people are in your dinner party tonight? ")
+party_size = int(party_size)
+
+if party_size > 8:
+    print("I'm sorry, you'll have to wait for a table.")
+else:
+    print("Your table is ready.")
+```
+
+Output:
+
+<pre>
+How many people are in your dinner party tonight? <b>12</b>
+I'm sorry, you'll have to wait for a table.
+</pre>
+
+Or:
+
+```
+How many people are in your dinner party tonight? 6
+Your table is ready.
+```
