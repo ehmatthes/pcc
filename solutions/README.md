@@ -11,5 +11,6 @@ The solutions for selected exercises from each chapter can be found below. Be ca
 - [Chapter 5](chapter_5.html)
 - [Chapter 6](chapter_6.html)
 - [Chapter 7](chapter_7.html)
+- [Chapter 8](chapter_8.html)
 
 *The remaining solutions should be posted by the end of October.*
