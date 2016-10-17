@@ -25,7 +25,7 @@ print("Let me see if I can find you a " + car.title() + ".")
 Output:
 
 ```
-What kind of car would you like? Toyota Tacoma
+What kind of car would you like? <b>Toyota Tacoma</b>
 Let me see if I can find you a Toyota Tacoma.
 ```
 
