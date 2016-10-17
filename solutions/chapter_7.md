@@ -61,3 +61,34 @@ Your table is ready.
 </pre>
 
 [top](#)
+
+7-3: Multiples of Ten
+---
+
+Ask the user for a number, and then report whether the number is a multiple of 10 or not.
+
+```python
+number = input("Give me a number, please: ")
+number = int(number)
+
+if number % 10 == 0:
+    print(str(number) + " is a multiple of 10.")
+else:
+    print(str(number) + " is not a multiple of 10.")
+```
+
+Output:
+
+<pre>
+Give me a number, please: <b>23</b>
+23 is not a multiple of 10.
+</pre>
+
+or:
+
+<pre>
+Give me a number, please: <b>90</b>
+90 is a multiple of 10.
+</pre>
+
+[top](#)
