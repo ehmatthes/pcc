@@ -8,6 +8,7 @@ title: Solutions - Chapter 6
 - [6-3: Glossary](#glossary)
 - [6-4: Glossary 2](#glossary-2)
 - [6-5: Rivers](#rivers)
+- [6-6: Polling](#polling)
 
 Back to [solutions](#README.html).
 
@@ -236,3 +237,55 @@ The following countries are included in this data set:
 ```
 
 *Sometimes we like to think of Alaska as our own separate country.
+
+[top](#)
+
+6-6: Polling
+---
+
+Use the code in *favorite_languages.py* (page 104).
+
+- Make a list of people who should take the favorite languages poll. Include some names that are already in the dictionary and some that are not.
+- Loop through the list of people who should take the poll. If they have already taken the poll, print a message thanking them for responding. If they have not yet taken the poll, print a message inviting them to take the poll.
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name, language in favorite_languages.items():
+    print(name.title() + "'s favorite language is " +
+        language.title() + ".")
+
+print("\n")
+
+coders = ['phil', 'josh', 'david', 'becca', 'sarah', 'matt', 'danielle']
+for coder in coders:
+    if coder in favorite_languages.keys():
+        print("Thank you for taking the poll, " + coder.title() + "!")
+    else:
+        print(coder.title() + ", what's your favorite programming language?")
+```
+
+Output:
+
+```
+Jen's favorite language is Python.
+Sarah's favorite language is C.
+Phil's favorite language is Python.
+Edward's favorite language is Ruby.
+
+
+Thank you for taking the poll, Phil!
+Josh, what's your favorite programming language?
+David, what's your favorite programming language?
+Becca, what's your favorite programming language?
+Thank you for taking the poll, Sarah!
+Matt, what's your favorite programming language?
+Danielle, what's your favorite programming language?
+```
+
+[top](#)
