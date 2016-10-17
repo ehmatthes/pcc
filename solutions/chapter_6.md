@@ -478,7 +478,8 @@ for name, numbers in favorite_numbers.items():
 
 Output:
 
-```Micah likes the following numbers:
+```
+Micah likes the following numbers:
   42
   39
   56
