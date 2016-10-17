@@ -24,10 +24,10 @@ print("Let me see if I can find you a " + car.title() + ".")
 
 Output:
 
-```
-What kind of car would you like? Toyota Tacoma
+<pre>
+What kind of car would you like? <b>Toyota Tacoma</b>
 Let me see if I can find you a Toyota Tacoma.
-```
+</pre>
 
 [top](#)
 
@@ -53,9 +53,11 @@ How many people are in your dinner party tonight? <b>12</b>
 I'm sorry, you'll have to wait for a table.
 </pre>
 
-Or:
+or:
 
-```
-How many people are in your dinner party tonight? 6
+<pre>
+How many people are in your dinner party tonight? <b>6</b>
 Your table is ready.
-```
+</pre>
+
+[top](#)
