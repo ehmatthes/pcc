@@ -9,6 +9,11 @@ title: Solutions - Chapter 6
 - [6-4: Glossary 2](#glossary-2)
 - [6-5: Rivers](#rivers)
 - [6-6: Polling](#polling)
+- [6-7: People](#people)
+- [6-8: Pets](#pets)
+- [6-9: Favorite Places](#favorite-places)
+- [6-10: Favorite Numbers](#favorite-numbers)
+- [6-11: Cities](#cities)
 
 Back to [solutions](#README.html).
 
@@ -286,6 +291,131 @@ Becca, what's your favorite programming language?
 Thank you for taking the poll, Sarah!
 Matt, what's your favorite programming language?
 Danielle, what's your favorite programming language?
+```
+
+[top](#)
+
+6-7: People
+---
+
+Start with the program you wrote for Exercise 6-1 (page 102). Make two new dictionaries representing different people, and store all three dictionaries in a list called `people`. Loop through your list of people. As you loop through the list, print everything you know about each person.
+
+```python
+# Make an empty list to store people in.
+people = []
+
+# Define some people, and add them to the list.
+person = {
+    'first_name': 'eric',
+    'last_name': 'matthes',
+    'age': 43,
+    'city': 'sitka',
+    }
+people.append(person)
+
+person = {
+    'first_name': 'ever',
+    'last_name': 'matthes',
+    'age': 5,
+    'city': 'sitka',
+    }
+people.append(person)
+
+person = {
+    'first_name': 'willie',
+    'last_name': 'matthes',
+    'age': 8,
+    'city': 'sitka',
+    }
+people.append(person)
+
+# Display all of the information in the dictionary.
+for person in people:
+    name = person['first_name'].title() + " " + person['last_name'].title()
+    age = str(person['age'])
+    city = person['city'].title()
+    
+    print(name + ", of " + city + ", is " + age + " years old.")
+```
+
+Output:
+
+```
+Eric Matthes, of Sitka, is 43 years old.
+Ever Matthes, of Sitka, is 5 years old.
+Willie Matthes, of Sitka, is 8 years old.
+```
+
+[top](#)
+
+6-8: Pets
+---
+
+Make several dictionaries, where the name of each dictionary is the name of a pet. In each dictionary, include the kind of animal and the owner's name. Store these dictionaries in a list called `pets`. Next, loop through your list and as you do print everything you know about each pet.
+
+```python
+# Make an empty list to store the pets in.
+pets = []
+
+# Make individual pets, and store each one in the list.
+pet = {
+    'animal type': 'python',
+    'name': 'john',
+    'owner': 'guido',
+    'weight': 43,
+    'eats': 'bugs',
+}
+pets.append(pet)
+
+pet = {
+    'animal type': 'chicken',
+    'name': 'clarence',
+    'owner': 'tiffany',
+    'weight': 2,
+    'eats': 'seeds',
+}
+pets.append(pet)
+
+pet = {
+    'animal type': 'dog',
+    'name': 'peso',
+    'owner': 'eric',
+    'weight': 37,
+    'eats': 'shoes',
+}
+pets.append(pet)
+
+# Display information about each pet.
+for pet in pets:
+    print("\nHere's what I know about " + pet['name'].title() + ":")
+    for key, value in pet.items():
+        print("\t" + key + ": " + str(value))
+```
+
+Output:
+
+```
+
+Here's what I know about John:
+    weight: 43
+    animal type: python
+    name: john
+    owner: guido
+    eats: bugs
+
+Here's what I know about Clarence:
+    weight: 2
+    animal type: chicken
+    name: clarence
+    owner: tiffany
+    eats: seeds
+
+Here's what I know about Peso:
+    weight: 37
+    animal type: dog
+    name: peso
+    owner: eric
+    eats: shoes
 ```
 
 [top](#)
