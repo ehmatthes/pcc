@@ -214,3 +214,105 @@ I made a veggie sandwich.
 ```
 
 [top](#)
+
+7-9: No Pastrami
+---
+
+Using the list `sandwich_orders` from Exercise 7-8, make sure the sandwich `'pastrami'` appears in the list at least three times. Add code near the beginning of your program to print a message saying the deli has run out of pastrami, and then use a `while` loop to remove all occurences of `'pastrami'` from `sandwich_orders`. Make sure no pastrami sandwiches end up in `finished_sandiches`.
+
+```python
+sandwich_orders = [
+    'pastrami', 'veggie', 'grilled cheese', 'pastrami',
+    'turkey', 'roast beef', 'pastrami']
+finished_sandwiches = []
+
+print("I'm sorry, we're all out of pastrami today.")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
+
+print("\n")
+while sandwich_orders:
+    current_sandwich = sandwich_orders.pop()
+    print("I'm working on your " + current_sandwich + " sandwich.")
+    finished_sandwiches.append(current_sandwich)
+
+print("\n")
+for sandwich in finished_sandwiches:
+    print("I made a " + sandwich + " sandwich.")
+```
+
+Output:
+
+```
+I'm sorry, we're all out of pastrami today.
+
+I'm working on your roast beef sandwich.
+I'm working on your turkey sandwich.
+I'm working on your grilled cheese sandwich.
+I'm working on your veggie sandwich.
+
+I made a roast beef sandwich.
+I made a turkey sandwich.
+I made a grilled cheese sandwich.
+I made a veggie sandwich.
+```
+
+[top](#)
+
+7-10: Dream Vacation
+---
+
+Write a program that polls users about their dream vacation. Write a prompt similar to *If you could visit one place in the world, where would you go?* Include a block of code that prints the results of the poll.
+
+```python
+name_prompt = "\nWhat's your name? "
+place_prompt = "If you could visit one place in the world, where would it be? "
+continue_prompt = "\nWould you like to let someone else respond? (yes/no) "
+
+# Responses will be stored in the form {name: place}.
+responses = {}
+
+while True:
+    # Ask the user where they'd like to go.
+    name = input(name_prompt)
+    place = input(place_prompt)
+
+    # Store the response.
+    responses[name] = place
+
+    # Ask if there's anyone else responding.
+    repeat = input(continue_prompt)
+    if repeat != 'yes':
+        break
+
+# Show results of the survey.
+print("\n--- Results ---")
+for name, place in responses.items():
+    print(name.title() + " would like to visit " + place.title() + ".")
+```
+
+Output:
+
+<pre>
+What's your name? eric
+If you could visit one place in the world, where would it be? <b>tierra del fuego</b>
+
+Would you like to let someone else respond? (yes/no) <b>yes</b>
+
+What's your name? erin
+If you could visit one place in the world, where would it be? <b>iceland</b>
+
+Would you like to let someone else respond? (yes/no) <b>yes</b>
+
+What's your name? ever
+If you could visit one place in the world, where would it be? <b>death valley</b>
+
+Would you like to let someone else respond? (yes/no) <b>no</b>
+
+--- Results ---
+Ever would like to visit Death Valley.
+Erin would like to visit Iceland.
+Eric would like to visit Tierra Del Fuego.
+</pre>
+
+[top](#)
