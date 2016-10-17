@@ -294,17 +294,17 @@ for name, place in responses.items():
 Output:
 
 <pre>
-What's your name? eric
+What's your name? <b>eric</b>
 If you could visit one place in the world, where would it be? <b>tierra del fuego</b>
 
 Would you like to let someone else respond? (yes/no) <b>yes</b>
 
-What's your name? erin
+What's your name? <b>erin</b>
 If you could visit one place in the world, where would it be? <b>iceland</b>
 
 Would you like to let someone else respond? (yes/no) <b>yes</b>
 
-What's your name? ever
+What's your name? <b>ever</b>
 If you could visit one place in the world, where would it be? <b>death valley</b>
 
 Would you like to let someone else respond? (yes/no) <b>no</b>
