@@ -241,12 +241,12 @@ print(album)
 
 Output:
 
-```
+<pre>
 {'artist': 'Metallica', 'title': 'Ride The Lightning'}
 {'artist': 'Beethoven', 'title': 'Ninth Symphony'}
 {'artist': 'Willie Nelson', 'title': 'Red-Headed Stranger'}
 {'tracks': 8, 'artist': 'Iron Maiden', 'title': 'Piece Of Mind'}
-```
+</pre>
 
 [top](#)
 
