@@ -207,11 +207,11 @@ print(album)
 
 Output:
 
-```
+<pre>
 {'title': 'Ride The Lightning', 'artist': 'Metallica'}
 {'title': 'Ninth Symphony', 'artist': 'Beethoven'}
 {'title': 'Red-Headed Stranger', 'artist': 'Willie Nelson'}
-```
+</pre>
 
 With tracks:
 
