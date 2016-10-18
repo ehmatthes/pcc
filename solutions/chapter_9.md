@@ -132,7 +132,7 @@ class User():
         """Display a personalized greeting to the user."""
         print("\nWelcome back, " + self.username + "!")
 
-eric = User('eric', 'matthes', 'e_matthes', 'ehmatthes@example.com', 'alaska')
+eric = User('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
 eric.describe_user()
 eric.greet_user()
 
@@ -146,7 +146,7 @@ Output:
 ```
 Eric Matthes
   Username: e_matthes
-  Email: ehmatthes@example.com
+  Email: e_matthes@example.com
   Location: Alaska
 
 Welcome back, e_matthes!
