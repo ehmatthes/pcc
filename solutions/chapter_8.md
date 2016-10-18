@@ -82,3 +82,60 @@ It will say, "Readability counts."
 ```
 
 [top](#)
+
+8-4: Large Shirts
+---
+
+Modify the `make_shirt()` function so that shirts are large by default with a message that reads *I love Python*. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+
+```python
+def make_shirt(size='large', message='I love Python!'):
+    """Summarize the shirt that's going to be made."""
+    print("\nI'm going to make a " + size + " t-shirt.")
+    print('It will say, "' + message + '"')
+
+make_shirt()
+make_shirt(size='medium')
+make_shirt('small', 'Programmers are loopy.')
+```
+
+Output:
+
+```
+I'm going to make a large t-shirt.
+It will say, "I love Python!"
+
+I'm going to make a medium t-shirt.
+It will say, "I love Python!"
+
+I'm going to make a small t-shirt.
+It will say, "Programmers are loopy."
+```
+
+[top](#)
+
+8-5: Cities
+---
+
+Write a function called `describe_city()` that accepts the name of a city and its country. The function should print a simple sentence, such as `Reykjavik is in Iceland.` Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+
+```python
+def describe_city(city, country='chile'):
+    """Describe a city."""
+    msg = city.title() + " is in " + country.title() + "."
+    print(msg)
+
+describe_city('santiago')
+describe_city('reykjavik', 'iceland')
+describe_city('punta arenas')
+```
+
+Output:
+
+```
+Santiago is in Chile.
+Reykjavik is in Iceland.
+Punta Arenas is in Chile.
+```
+
+[top](#)
