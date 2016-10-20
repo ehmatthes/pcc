@@ -519,7 +519,6 @@ class Privileges():
             print("- " + privilege)
 
 
-
 eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
 eric.describe_user()
 
@@ -668,7 +667,7 @@ This car has a 85-kWh battery.
 
 Using your latest `Restaurant` class, store it in a module. Make a separate file that imports `Restaurant`. Make a `Restaurant` instance, and call one of `Restaurant`'s methods to show that the `import` statement is working properly.
 
-*restaurant.py*:
+*restaurant.py:*
 
 ```python
 """A class representing a restaurant."""
@@ -701,7 +700,7 @@ class Restaurant():
         self.number_served += additional_served
 ```
 
-*my_restaurant.py*:
+*my_restaurant.py:*
 
 ```python
 from restaurant import Restaurant
@@ -717,6 +716,107 @@ Output:
 The Channel Club serves wonderful steak and seafood.
 
 The Channel Club is open. Come on in!
+```
+
+[top](#)
+
+9-11: Imported Admin
+---
+
+Start with your work from Exercise 9-8 (page 178). Store the classes `User`, `Privileges` and `Admin` in one module. Create a separate file, make an `Admin` instance, and call `show_priveleges()` to show that everything is working correctly.
+
+*user.py:*
+
+```python
+"""A collection of classes for modeling users."""
+
+class User():
+    """Represent a simple user profile."""
+
+    def __init__(self, first_name, last_name, username, email, location):
+        """Initialize the user."""
+        self.first_name = first_name.title()
+        self.last_name = last_name.title()
+        self.username = username
+        self.email = email
+        self.location = location.title()
+        self.login_attempts = 0
+
+    def describe_user(self):
+        """Display a summary of the user's information."""
+        print("\n" + self.first_name + " " + self.last_name)
+        print("  Username: " + self.username)
+        print("  Email: " + self.email)
+        print("  Location: " + self.location)
+
+    def greet_user(self):
+        """Display a personalized greeting to the user."""
+        print("\nWelcome back, " + self.username + "!")
+
+    def increment_login_attempts(self):
+        """Increment the value of login_attempts."""
+        self.login_attempts += 1
+
+    def reset_login_attempts(self):
+        """Reset login_attempts to 0."""
+        self.login_attempts = 0
+
+
+class Admin(User):
+    """A user with administrative privileges."""
+
+    def __init__(self, first_name, last_name, username, email, location):
+        """Initialize the admin."""
+        super().__init__(first_name, last_name, username, email, location)
+
+        # Initialize an empty set of privileges.
+        self.privileges = Privileges([])
+    
+
+class Privileges():
+    """Stores privileges associated with an Admin account."""
+
+    def __init__(self, privileges):
+        """Initialize the privileges object."""
+        self.privilege = privileges
+
+    def show_privileges(self):
+        """Display the privileges this administrator has."""
+        for privilege in self.privileges:
+            print("- " + privilege)
+```
+
+*my_user.py*
+
+```python
+from user import Admin
+
+eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
+eric.describe_user()
+
+eric_privileges = [
+    'can reset passwords',
+    'can moderate discussions',
+    'can suspend accounts',
+    ]
+eric.privileges.privileges = eric_privileges
+
+print("\nThe admin " + eric.username + " has these privileges: ")
+eric.privileges.show_privileges()
+```
+
+Output:
+
+```
+Eric Matthes
+  Username: e_matthes
+  Email: e_matthes@example.com
+  Location: Alaska
+
+The admin e_matthes has these privileges: 
+- can reset passwords
+- can moderate discussions
+- can suspend accounts
 ```
 
 [top](#)
