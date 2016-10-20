@@ -15,6 +15,8 @@ title: Solutions - Chapter 9
 - [9-10: Imported Restaurant](#imported-restaurant)
 - [9-11: Imported Admin](#imported-admin)
 - [9-12: Multiple Modules](#multiple-modules)
+- [9-13: OrderedDict Rewrite](#ordereddict-rewrite)
+- [9-14: Dice](#dice)
 
 Back to [solutions](README.html).
 
@@ -926,6 +928,59 @@ The admin e_matthes has these privileges:
 - can reset passwords
 - can moderate discussions
 - can suspend accounts
+```
+
+[top](#)
+
+9-13: OrderedDict Rewrite
+---
+
+Start with Exercise 6-4 (page 108), where you used a standard dictionary to represent a glossary. Rewrite the program using the `OrderedDict` class and make sure the order of the output matches the order in which key-value pairs were added to the dictionary.
+
+***Note:** In Python 3.6, dictionaries store keys in order. However, this is not guaranteed to work in all versions of Python, so you should still use an OrderedDict when you need key-value pairs to be stored in a particular order.*
+
+```python
+from collections import OrderedDict
+
+glossary = OrderedDict()
+
+glossary['string'] = 'A series of characters.'
+glossary['comment'] = 'A note in a program that the Python interpreter ignores.'
+glossary['list'] = 'A collection of items in a particular order.'
+glossary['loop'] = 'Work through a collection of items, one at a time.'
+glossary['dictionary'] = "A collection of key-value pairs."
+glossary['key'] = 'The first item in a key-value pair in a dictionary.'
+glossary['value'] = 'An item associated with a key in a dictionary.'
+glossary['conditional test'] = 'A comparison between two values.'
+glossary['float'] = 'A numerical value with a decimal component.'
+glossary['boolean expression'] = 'An expression that evaluates to True or False.'
+
+for word, definition in glossary.items():
+    print("\n" + word.title() + ": " + definition)
+```
+
+Output:
+
+```
+String: A series of characters.
+
+Comment: A note in a program that the Python interpreter ignores.
+
+List: A collection of items in a particular order.
+
+Loop: Work through a collection of items, one at a time.
+
+Dictionary: A collection of key-value pairs.
+
+Key: The first item in a key-value pair in a dictionary.
+
+Value: An item associated with a key in a dictionary.
+
+Conditional Test: A comparison between two values.
+
+Float: A numerical value with a decimal component.
+
+Boolean Expression: An expression that evaluates to True or False.
 ```
 
 [top](#)
