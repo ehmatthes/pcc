@@ -358,6 +358,8 @@ annahootz
 summit
 ```
 
+*cats_and_dogs.py:*
+
 ```python
 filenames = ['cats.txt', 'dogs.txt']
 
