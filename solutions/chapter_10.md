@@ -281,3 +281,167 @@ Sorry, I really needed a number.
 </pre>
 
 [top](#)
+
+10-7: Addition Calculator
+---
+
+Wrap your code from Exercise 10-6 in a `while` loop so the user can continue entering numbers even if they make a mistake and enter text instead of a number.
+
+```python
+print("Enter 'q' at any time to quit.\n")
+
+while True:
+    try:
+        x = input("\nGive me a number: ")
+        if x == 'q':
+            break
+
+        x = int(x)
+
+        y = input("Give me another number: ")
+        if y == 'q':
+            break
+
+        y = int(y)
+
+    except ValueError:
+        print("Sorry, I really needed a number.")
+
+    else:
+        sum = x + y
+        print("The sum of " + str(x) + " and " + str(y) + " is " + str(sum) + ".")
+```
+
+Output:
+
+<pre>
+Enter 'q' at any time to quit.
+
+Give me a number: <b>23</b>
+Give me another number: <b>47</b>
+The sum of 23 and 47 is 70.
+
+Give me a number: <b>three</b>
+Sorry, I really needed a number.
+
+Give me a number: <b>3</b>
+Give me another number: <b>five</b>
+Sorry, I really needed a number.
+
+Give me a number: <b>-12</b>
+Give me another number: <b>20</b>
+The sum of -12 and 20 is 8.
+
+Give me a number: <b>q</b>
+</pre>
+
+[top](#)
+
+10-8: Cats and Dogs
+---
+
+Make two files, `cats.txt` and `dogs.txt`. Store at least three names of cats in the first file and three names of dogs in the second file. Write a program that tries to read these files and print the contents of the file to the screen. Wrap your code ina `try-except` block to catch the `FileNotFound` error, and print a friendly message if a file is missing. Move one of the files to a different location on your system, and make sure the code in the `except` block executes properly.
+
+*cats.txt:*
+
+```
+henry
+clarence
+mildred
+```
+
+*dogs.txt:*
+
+```
+willie
+annahootz
+summit
+```
+
+```python
+filenames = ['cats.txt', 'dogs.txt']
+
+for filename in filenames:
+    print("\nReading file: " + filename)
+    try:
+        with open(filename) as f:
+            contents = f.read()
+            print(contents)
+    except FileNotFoundError:
+        print("  Sorry, I can't find that file.")
+```
+
+Output with both files:
+
+```
+Reading file: cats.txt
+henry
+clarence
+mildred
+
+Reading file: dogs.txt
+willie
+annahootz
+summit
+```
+
+Output after moving *cats.txt:*
+
+```
+Reading file: cats.txt
+  Sorry, I can't find that file.
+
+Reading file: dogs.txt
+willie
+annahootz
+summit
+```
+
+[top](#)
+
+10-9: Silent Cats and Dogs
+---
+
+Modify your `except` block in Exercise 10-8 to fail silently if either file is missing.
+
+```python
+filenames = ['cats.txt', 'dogs.txt']
+
+for filename in filenames:
+    
+    try:
+        with open(filename) as f:
+            contents = f.read()
+
+    except FileNotFoundError:
+        pass
+
+    else:
+        print("\nReading file: " + filename)
+        print(contents)
+```
+
+Output when both files exist:
+
+```
+Reading file: cats.txt
+henry
+clarence
+mildred
+
+Reading file: dogs.txt
+willie
+annahootz
+summit
+```
+
+Output when *cats.txt* has been moved:
+
+```
+Reading file: dogs.txt
+willie
+annahootz
+summit
+```
+
+[top](#)
