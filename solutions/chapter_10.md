@@ -5,6 +5,9 @@ title: Solutions - Chapter 10
 
 - [10-1: Learning Python](#learning-python)
 - [10-2: Learning C](#learning-c)
+- [10-3: Guest](#guest)
+- [10-4: Guest Book](#guest-book)
+- [10-5: Programming Poll](#programming-poll)
 
 Back to [solutions](README.html).
 
@@ -109,6 +112,129 @@ with open(filename) as f:
 for line in lines:
     # Get rid of newline, then replace Python with C.
     print(line.rstrip().replace('Python', 'C'))
+```
+
+[top](#)
+
+10-3: Guest
+---
+
+Write a program that prompts the user for their name. When they respond, write their name to a file called *guest.txt*.
+
+```python
+name = input("What's your name? ")
+
+filename = 'guest.txt'
+
+with open(filename, 'w') as f:
+    f.write(name)
+```
+
+Output:
+
+<pre>
+What's your name? <b>eric</b>
+</pre>
+
+*guest.txt:*
+
+```
+eric
+```
+
+[top](#)
+
+10-4: Guest Book
+---
+
+Write a `while` loop that prompts users for their name. When they enter their name, print a greeting to the screen and add a line recording their visit in a file called *guest_book.txt*. Make sure each entry appears on a new line in the file.
+
+```python
+filename = 'guest_book.txt'
+
+print("Enter 'quit' when you are finished.")
+while True:
+    name = input("\nWhat's your name? ")
+    if name == 'quit':
+        break
+    else:
+        with open(filename, 'a') as f:
+            f.write(name + "\n")
+        print("Hi " + name + ", you've been added to the guest book.")
+```
+
+Output:
+
+<pre>
+Enter 'quit' when you are finished.
+
+What's your name? <b>eric</b>
+Hi eric, you've been added to the guest book.
+
+What's your name? <b>willie</b>
+Hi willie, you've been added to the guest book.
+
+What's your name? <b>ever</b>
+Hi ever, you've been added to the guest book.
+
+What's your name? <b>erin</b>
+Hi erin, you've been added to the guest book.
+
+What's your name? <b>quit</b>
+</pre>
+
+*guest_book.txt:*
+
+```
+eric
+willie
+ever
+erin
+```
+
+[top](#)
+
+10-5: Programming Poll
+---
+
+Write a `while` loop that asks people why they like programming. Each time someone enters a reason, add their reason to a file that stores all the responses.
+
+```python
+filename = 'programming_poll.txt'
+
+responses = []
+while True:
+    response = input("\nWhy do you like programming? ")
+    responses.append(response)
+
+    continue_poll = input("Would you like to let someone else respond? (y/n) ")
+    if continue_poll != 'y':
+        break
+
+with open(filename, 'a') as f:
+    for response in responses:
+        f.write(response + "\n")
+```
+
+Output:
+
+<pre>
+Why do you like programming? <b>Programmers can build almost anything they can imagine.</b>
+Would you like to let someone else respond? (y/n) <b>y</b>
+
+Why do you like programming? <b>It's really fun, and really satisfying.</b>
+Would you like to let someone else respond? (y/n) <b>y</b>
+
+Why do you like programming? <b>It just never gets old.</b>
+Would you like to let someone else respond? (y/n) <b>n</b>
+</pre>
+
+*programming_poll.txt:*
+
+```
+Programmers can build almost anything they can imagine.
+It's really fun, and really satisfying.
+It just never gets old.
 ```
 
 [top](#)
