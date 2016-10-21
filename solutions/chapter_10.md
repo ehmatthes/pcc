@@ -8,6 +8,10 @@ title: Solutions - Chapter 10
 - [10-3: Guest](#guest)
 - [10-4: Guest Book](#guest-book)
 - [10-5: Programming Poll](#programming-poll)
+- [10-6: Addition](#addition)
+- [10-7: Addition Calculator](#addition-calculator)
+- [10-8: Cats and Dogs](#cats-and-dogs)
+- [10-9: Silent Cats and Dogs](#silent-cats-and-dogs)
 
 Back to [solutions](README.html).
 
@@ -236,5 +240,44 @@ Programmers can build almost anything they can imagine.
 It's really fun, and really satisfying.
 It just never gets old.
 ```
+
+[top](#)
+
+10-6: Addition
+---
+
+One common problem when prompting for numerical input occurs when people provide text instead of numbers. When you try to convert the input to an `int`, you'll get a `ValueError`. Write a program that prompts for two numbers. Add them together and print the result. Catch the `TypeError` if either input value is not a number, and print a friendly error message. Test your program by entering two numbers and then by entering some text instead of a number.
+
+```python
+try:
+    x = input("Give me a number: ")
+    x = int(x)
+
+    y = input("Give me another number: ")
+    y = int(y)
+
+except ValueError:
+    print("Sorry, I really needed a number.")
+
+else:
+    sum = x + y
+    print("The sum of " + str(x) + " and " + str(y) + " is " + str(sum) + ".")
+```
+
+Output with two integers:
+
+<pre>
+Give me a number: <b>23</b>
+Give me another number: <b>47</b>
+The sum of 23 and 47 is 70.
+</pre>
+
+Output with non-numerical input:
+
+<pre>
+Give me a number: <b>23</b>
+Give me another number: <b>fred</b>
+Sorry, I really needed a number.
+</pre>
 
 [top](#)
