@@ -5,7 +5,7 @@ title: Solutions - Chapter 10
 
 - [10-1: Learning Python](#learning-python)
 
-Back to (solutions)(README.html).
+Back to [solutions](README.html).
 
 10-1: Learning Python
 ---
@@ -41,6 +41,25 @@ with open(filename) as f:
 
 for line in lines:
     print(line.rstrip())
+```
+
+Output:
+
+```
+--- Reading in the entire file:
+In Python you can store as much information as you want.
+In Python you can connect pieces of information.
+In Python you can model real-world situations.
+
+--- Looping over the lines:
+In Python you can store as much information as you want.
+In Python you can connect pieces of information.
+In Python you can model real-world situations.
+
+--- Storing the lines in a list:
+In Python you can store as much information as you want.
+In Python you can connect pieces of information.
+In Python you can model real-world situations.
 ```
 
 [top](#)
