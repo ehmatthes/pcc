@@ -4,6 +4,8 @@ title: Solutions - Chapter 11
 ---
 
 - [11-1: City, Country](#city-country)
+- [11-2: Population](#population)
+- [11-3: Employee](#employee)
 
 Back to [solutions](README.html).
 
@@ -139,6 +141,69 @@ class CitiesTestCase(unittest.TestCase):
         """Can I include a population argument?"""
         santiago_chile = city_country('santiago', 'chile', population=5000000)
         self.assertEqual(santiago_chile, 'Santiago, Chile - population 5000000')
+
+unittest.main()
+```
+
+Output:
+
+```
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+OK
+```
+
+[top](#)
+
+11-3: Employee
+---
+
+Write a class called `Employee`. The `__init__()` method should take in a first name, a last name, and an annual salary, and store each of these as attributes. Write a method called `give_raise()` that adds $5000 to the annual salary by default but also accepts a different raise amount.
+
+Write a test case for `Employee`. Write two test methods, `test_give_default_raise()` and `test_give_custom_raise()`. Use the `setUp()` method so you don't have to create a new employee instance in each test method. Run your test case, and make sure both tests pass.
+
+*employee.py:*
+
+```python
+class Employee():
+    """A class to represent an employee."""
+
+    def __init__(self, f_name, l_name, salary):
+        """Initialize the employee."""
+        self.first = f_name.title()
+        self.last = l_name.title()
+        self.salary = salary
+
+    def give_raise(self, amount=5000):
+        """Give the employee a raise."""
+        self.salary += amount
+```
+
+*test_employee.py:*
+
+```python
+import unittest
+
+from employee import Employee
+
+class TestEmployee(unittest.TestCase):
+    """Tests for the module employee."""
+
+    def setUp(self):
+        """Make an employee to use in tests."""
+        self.eric = Employee('eric', 'matthes', 65000)
+
+    def test_give_default_raise(self):
+        """Test that a default raise works correctly."""
+        self.eric.give_raise()
+        self.assertEqual(self.eric.salary, 70000)
+
+    def test_give_custom_raise(self):
+        """Test that a custom raise works correctly."""
+        self.eric.give_raise(10000)
+        self.assertEqual(self.eric.salary, 75000)
 
 unittest.main()
 ```
