@@ -596,7 +596,7 @@ Are you ever? (y/n) <b>y</b>
 Welcome back, ever!
 </pre>
 
-You might notice the identical else blocks in this version of `greet_user()`. One way to clean this function up is to use an empty `return` statement. An empty `return` statement tells Python to leave the function without running any more code in the function.
+You might notice the identical `else` blocks in this version of `greet_user()`. One way to clean this function up is to use an empty `return` statement. An empty `return` statement tells Python to leave the function without running any more code in the function.
 
 Here's a cleaner version of `greet_user()`:
 
@@ -618,6 +618,6 @@ def greet_user():
 
 The `return` statement means the code in the function stops running after printing the welcome back message. When the username doesn't exist, or the username is incorrect, the `return` statement is never reached. The second part of the function will only run when the `if` statements fail, so we don't need an `else` block. Now the function prompts for a new username when either `if` statement fails.
 
-The only thing left to address is the nested `if` statements. This can be cleaned up by moving the code that checks whether the username is correct. If you're enjoying this exercise, you might try making a new function called `check_username()` and see if you can remove the nested `if` statement from `greet_user()`.
+The only thing left to address is the nested `if` statements. This can be cleaned up by moving the code that checks whether the username is correct to a separate function. If you're enjoying this exercise, you might try making a new function called `check_username()` and see if you can remove the nested `if` statement from `greet_user()`.
 
 [top](#)
