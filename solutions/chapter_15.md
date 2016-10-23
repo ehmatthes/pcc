@@ -96,6 +96,6 @@ plt.show()
 
 Output:
 
-~[Plot showing 5000 cubes, using a colormap](../images/cubes_5000_colormap.png)
+![Plot showing 5000 cubes, using a colormap](../images/cubes_5000_colormap.png)
 
 [top](#)
