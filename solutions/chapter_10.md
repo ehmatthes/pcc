@@ -578,20 +578,20 @@ greet_user()
 Output:
 
 <pre>
-> <b>python ex_10-13.py</b>
+> <b>python verify_user.py</b>
 What is your name? <b>eric</b>
 We'll remember you when you come back, eric!
 
-> <b>python ex_10-13.py</b>
+> <b>python verify_user.py</b>
 Are you eric? (y/n) <b>y</b>
 Welcome back, eric!
 
-> <b>python ex_10-13.py</b>
+> <b>python verify_user.py</b>
 Are you eric? (y/n) <b>n</b>
 What is your name? <b>ever</b>
 We'll remember you when you come back, ever!
 
-> <b>python ex_10-13.py</b>
+> <b>python verify_user.py</b>
 Are you ever? (y/n) <b>y</b>
 Welcome back, ever!
 </pre>
@@ -615,6 +615,8 @@ def greet_user():
     username = get_new_username()
     print("We'll remember you when you come back, " + username + "!")
 ```
+
+The `return` statement means the code in the function stops running after printing the welcome back message. When the username doesn't exist, or the username is incorrect, the `return` statement is never reached. The second part of the function will only run when the `if` statements fail, so we don't need an `else` block. Now the function prompts for a new username when either `if` statement fails.
 
 The only thing left to address is the nested `if` statements. This can be cleaned up by moving the code that checks whether the username is correct. If you're enjoying this exercise, you might try making a new function called `check_username()` and see if you can remove the nested `if` statement from `greet_user()`.
 
