@@ -12,6 +12,9 @@ title: Solutions - Chapter 10
 - [10-7: Addition Calculator](#addition-calculator)
 - [10-8: Cats and Dogs](#cats-and-dogs)
 - [10-9: Silent Cats and Dogs](#silent-cats-and-dogs)
+- [10-11: Favorite Number](#favorite-number)
+- [10-12: Favorite Number Remembered](#favorite-number-remembered)
+- [10-13: Verify User](#verify-user)
 
 Back to [solutions](README.html).
 
@@ -445,5 +448,174 @@ willie
 annahootz
 summit
 ```
+
+[top](#)
+
+10-11: Favorite Number
+---
+
+Write a program that prompts for the user's favorite number. Use `json.dump()` to store this number in a file. Write a separate program that reads in this value and prints the message, "I know your favorite number! It's _____."
+
+*favorite_number_write.py:*
+
+```python
+import json
+
+number = input("What's your favorite number? ")
+
+with open('favorite_number.json', 'w') as f:
+    json.dump(number, f)
+    print("Thanks! I'll remember that.")
+```
+
+Output:
+
+<pre>
+What's your favorite number? <b>42</b>
+Thanks! I'll remember that.
+</pre>
+
+*favorite_number_read.py:*
+
+```python
+import json
+
+with open('favorite_number.json') as f:
+    number = json.load(f)
+
+print("I know your favorite number! It's " + str(number) + ".")
+```
+
+Output:
+
+```
+I know your favorite number! It's 42.
+```
+
+[top](#)
+
+10-12: Favorite Number Remembered
+---
+
+Combine the two programs from Exercise 10-11 into one file. If the number is already stored, report the favorite number to the user. If not, prompt for the user's favorite number and store it in a file. Run the program twice to see that it works.
+
+```python
+import json
+
+try:
+    with open('favorite_number.json') as f:
+        number = json.load(f)
+except FileNotFoundError:
+    number = input("What's your favorite number? ")
+    with open('favorite_number.json', 'w') as f:
+        json.dump(number, f)
+    print("Thanks, I'll remember that.")
+else:
+    print("I know your favorite number! It's " + str(number) + ".")
+```
+
+Output, first run:
+
+<pre>
+What's your favorite number? <b>42</b>
+Thanks, I'll remember that.
+</pre>
+
+Output, second run:
+
+```
+I know your favorite number! It's 42.
+```
+
+[top](#)
+
+10-13: Verify User
+---
+
+The final listing for *remember_me.py* assumes either that the user has already entered their username or that the program is running for the first time. We should modify it in case the current user is not the person who last used the program.
+
+Before printing a welcome back message in `greet_user()`, ask the user if this is the correct username. If it's not, call `get_new_username()` to get the correct username.
+
+```python
+import json
+
+def get_stored_username():
+    """Get stored username if available."""
+    filename = 'username.json'
+    try:
+        with open(filename) as f_obj:
+            username = json.load(f_obj)
+    except FileNotFoundError:
+        return None
+    else:
+        return username
+
+def get_new_username():
+    """Prompt for a new username."""
+    username = input("What is your name? ")
+    filename = 'username.json'
+    with open(filename, 'w') as f_obj:
+        json.dump(username, f_obj)
+    return username
+
+def greet_user():
+    """Greet the user by name."""
+    username = get_stored_username()
+    if username:
+        correct = input("Are you " + username + "? (y/n) ")
+        if correct == 'y':
+            print("Welcome back, " + username + "!")
+        else:
+            username = get_new_username()
+            print("We'll remember you when you come back, " + username + "!")
+    else:
+        username = get_new_username()
+        print("We'll remember you when you come back, " + username + "!")
+
+greet_user()
+```
+
+Output:
+
+<pre>
+> <b>python ex_10-13.py</b>
+What is your name? <b>eric</b>
+We'll remember you when you come back, eric!
+
+> <b>python ex_10-13.py</b>
+Are you eric? (y/n) <b>y</b>
+Welcome back, eric!
+
+> <b>python ex_10-13.py</b>
+Are you eric? (y/n) <b>n</b>
+What is your name? <b>ever</b>
+We'll remember you when you come back, ever!
+
+> <b>python ex_10-13.py</b>
+Are you ever? (y/n) <b>y</b>
+Welcome back, ever!
+</pre>
+
+You might notice the identical else blocks in this version of `greet_user()`. One way to clean this function up is to use an empty `return` statement. An empty `return` statement tells Python to leave the function without running any more code in the function.
+
+Here's a cleaner version of `greet_user()`:
+
+```python
+def greet_user():
+    """Greet the user by name."""
+    username = get_stored_username()
+    if username:
+        correct = input("Are you " + username + "? (y/n) ")
+        if correct == 'y':
+            print("Welcome back, " + username + "!")
+            return
+
+    # We got a username, but it's not correct.
+    # Let's prompt for a new username.
+    username = get_new_username()
+    print("We'll remember you when you come back, " + username + "!")
+```
+
+The only thing left to address is the nested `if` statements. This can be cleaned up by moving the code that checks whether the username is correct. If you're enjoying this exercise, you might try making a new function called `check_username()` and see if you can remove the nested `if` statement from `greet_user()`.
 
 [top](#)
