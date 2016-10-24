@@ -242,4 +242,8 @@ class RandomWalk():
             self.y_values.append(next_y)
 ```
 
+Output:
+
+![Random walk with 50000 points](../images/rw_50000.png)
+
 [top](#)
