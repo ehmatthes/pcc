@@ -257,7 +257,7 @@ Output:
 
 Modify *die.py* and *dice_visual.py* by replacing the list we used to set the value of `hist.x_labels` with a loop to generate this list automatically. If you're comfortable with list comprehensions, try replacing the other `for` loops in *die_visual.py* and *dice_visual.py* with comprehensions as well.
 
-***Note:** This should say to modify *die_visual.py*, not *die.py*. This will be corrected in future printings.
+***Note:** This should say to modify die_visual.py, not die.py. This will be corrected in future printings.
 
 *die_visual.py:*
 
@@ -316,5 +316,52 @@ hist.y_title = "Frequency of Result"
 hist.add('D6 + D6', frequencies)
 hist.render_to_file('dice_visual.svg')
 ```
+
+[top](#)
+
+15-7: Two D8s
+---
+
+Create a simulation showing what happens if you roll two eight-sided dice 1000 times. Increase the number of rolls gradually until you start to see the limits of your system's capabilities.
+
+```python
+import pygal
+
+from die import Die
+
+# Create two D8 dice.
+die_1 = Die(8)
+die_2 = Die(8)
+
+# Make some rolls, and store results in a list.
+results = []
+for roll_num in range(1000000):
+    result = die_1.roll() + die_2.roll()
+    results.append(result)
+    
+# Analyze the results.
+frequencies = []
+max_result = die_1.num_sides + die_2.num_sides
+for value in range(2, max_result+1):
+    frequency = results.count(value)
+    frequencies.append(frequency)
+    
+# Visualize the results.
+hist = pygal.Bar()
+
+hist.title = "Results of rolling two D8 dice 1,000,000 times."
+hist.x_labels = [str(x) for x in range(2, max_result+1)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D8 + D8', frequencies)
+hist.render_to_file('dice_visual.svg')
+```
+
+Note: This solution only uses a list comprehension for the `hist.x_labels` parameter. You might want to try replacing the other loops with comprehensions as well.
+
+Output:
+
+![Graph of results of rolling two D8 dice, one million times](../images/dice_visual_2d8.png)
 
 [top](#)
