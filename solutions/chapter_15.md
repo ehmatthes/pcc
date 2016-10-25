@@ -257,7 +257,7 @@ Output:
 
 Modify *die.py* and *dice_visual.py* by replacing the list we used to set the value of `hist.x_labels` with a loop to generate this list automatically. If you're comfortable with list comprehensions, try replacing the other `for` loops in *die_visual.py* and *dice_visual.py* with comprehensions as well.
 
-***Note:** This should say to modify die_visual.py, not die.py. This will be corrected in future printings.
+***Note:** This should say to modify die_visual.py, not die.py. This will be corrected in future printings.*
 
 *die_visual.py:*
 
@@ -411,5 +411,52 @@ Note: This solution only uses a list comprehension for the `hist.x_labels` param
 Output:
 
 ![Graph of results of rolling three D6 dice, one million times](../images/dice_visual_3d6.png)
+
+[top](#)
+
+15-9: Multiplication
+---
+
+When you roll two dice, you usually add the two numbers together to get the result. Create a visualization that shows what happens if you multiply these numbers instead.
+
+```python
+import pygal
+
+from die import Die
+
+# Create two D6 dice.
+die_1 = Die()
+die_2 = Die()
+
+# Make some rolls, and store results in a list.
+results = []
+for roll_num in range(1000000):
+    result = die_1.roll() * die_2.roll()
+    results.append(result)
+    
+# Analyze the results.
+frequencies = []
+max_result = die_1.num_sides * die_2.num_sides
+for value in range(1, max_result+1):
+    frequency = results.count(value)
+    frequencies.append(frequency)
+    
+# Visualize the results.
+hist = pygal.Bar()
+
+hist.title = "Results of multiplying two D6 dice. (1,000,000 rolls)"
+hist.x_labels = [str(x) for x in range(1, max_result+1)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6 * D6', frequencies)
+hist.render_to_file('dice_visual.svg')
+```
+
+Note: This solution only uses a list comprehension for the `hist.x_labels` parameter. You might want to try replacing the other loops with comprehensions as well.
+
+Output:
+
+![Graph of results of multiplying two D6 dice, one million times](../images/dice_visual_2d6_multiplication.png)
 
 [top](#)
