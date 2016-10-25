@@ -7,6 +7,10 @@ title: Solutions - Chapter 15
 - [15-2: Colored Cubes](#colored-cubes)
 - [15-3: Molecular Motion](#molecular-motion)
 - [15-5: Refactoring](#refactoring)
+- [15-6: Automatic Labels](#automatic-labels)
+- [15-7: Two D8s](#two-d8s)
+- [15-8: Three Dice](#three-dice)
+- [15-9: Multiplication](#multiplication)
 
 Back to [solutions](README.html).
 
@@ -245,5 +249,72 @@ class RandomWalk():
 Output:
 
 ![Random walk with 50000 points](../images/rw_50000.png)
+
+[top](#)
+
+15-6: Automatic Labels
+---
+
+Modify *die.py* and *dice_visual.py* by replacing the list we used to set the value of `hist.x_labels` with a loop to generate this list automatically. If you're comfortable with list comprehensions, try replacing the other `for` loops in *die_visual.py* and *dice_visual.py* with comprehensions as well.
+
+***Note:** This should say to modify *die_visual.py*, not *die.py*. This will be corrected in future printings.
+
+*die_visual.py:*
+
+```python
+import pygal
+
+from die import Die
+
+# Create a D6.
+die = Die()
+
+# Make some rolls, and store results in a list.
+results = [die.roll() for roll_num in range(1000)]
+    
+# Analyze the results.
+frequencies = [results.count(value) for value in range(1, die.num_sides+1)]
+    
+# Visualize the results.
+hist = pygal.Bar()
+
+hist.title = "Results of rolling one D6 1000 times."
+hist.x_labels = [str(x) for x in range(1, die.num_sides+1)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6', frequencies)
+hist.render_to_file('die_visual.svg')
+```
+
+*dice_visual.py:*
+
+```python
+import pygal
+
+from die import Die
+
+# Create two D6 dice.
+die_1 = Die()
+die_2 = Die()
+
+# Make some rolls, and store results in a list.
+results = [die_1.roll() + die_2.roll() for roll_num in range(1000)]
+    
+# Analyze the results.
+max_result = die_1.num_sides + die_2.num_sides
+frequencies = [results.count(value) for value in range(2, max_result+1)]
+    
+# Visualize the results.
+hist = pygal.Bar()
+
+hist.title = "Results of rolling two D6 dice 1000 times."
+hist.x_labels = [str(x) for x in range(2, max_result+1)]
+hist.x_title = "Result"
+hist.y_title = "Frequency of Result"
+
+hist.add('D6 + D6', frequencies)
+hist.render_to_file('dice_visual.svg')
+```
 
 [top](#)
