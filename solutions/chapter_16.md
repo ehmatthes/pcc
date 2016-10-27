@@ -128,3 +128,54 @@ plt.show()
 ![Chart of high and low temperatures in Sitka, AK and Death Valley, CA](../images/sitka_death_valley.png)
 
 [top](#)
+
+16-3: Rainfall
+---
+
+Choose any location you're interested in, and make a visualization that plots its rainfall. Start by focusing on one month's data, and then once your code is working, run it for a full year's data.
+
+***Note:** You can find the data file for this example [here](https://github.com/ehmatthes/pcc/blob/gh-pages/resources/sitka_rainfall_2015.csv).*
+
+```python
+import csv
+from datetime import datetime
+
+from matplotlib import pyplot as plt
+
+# Get dates and rainfall data from data file.
+#  Rainfall data is in column 19.
+filename = 'sitka_rainfall_2015.csv'
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
+
+    dates, rainfalls = [], []
+    for row in reader:
+        try:
+            current_date = datetime.strptime(row[0], "%Y-%m-%d")
+            rainfall = float(row[19])
+        except ValueError:
+            print(current_date, 'missing data')
+        else:
+            dates.append(current_date)
+            rainfalls.append(rainfall)
+
+# Plot data.
+fig = plt.figure(dpi=128, figsize=(10, 6))
+plt.plot(dates, rainfalls, c='blue', alpha=0.5)
+plt.fill_between(dates, rainfalls, facecolor='blue', alpha=0.2)
+
+# Format plot.
+title = "Daily rainfall amounts - 2015\nSitka, AK"
+plt.title(title, fontsize=20)
+plt.xlabel('', fontsize=16)
+fig.autofmt_xdate()
+plt.ylabel("Rainfall (in)", fontsize=16)
+plt.tick_params(axis='both', which='major', labelsize=16)
+
+plt.show()
+```
+
+Output:
+
+![Daily rainfall amounts for Sitka, AK in 2015](../images/sitka_rainfall_2015.png)
