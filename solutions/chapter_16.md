@@ -5,6 +5,7 @@ title: Solutions - Chapter 16
 
 - [16-2: Sitka-Death Valley Comparison](#sitka-death-valley-comparison)
 - [16-3: Rainfall](#rainfall)
+- [16-4: Explore](#explore)
 
 Back to [solutions](README.html).
 
@@ -179,3 +180,65 @@ plt.show()
 Output:
 
 ![Daily rainfall amounts for Sitka, AK in 2015](../images/sitka_rainfall_2015.png)
+
+[top](#)
+
+16-4: Explore
+---
+
+Generate a few more visualizations that examine any other weather aspect you're interested in for any locations you're curious about.
+
+I live in a rainforest, so I was interested in playing with the rainfall data. I calculated the cumulative rainfall for the year, and plotted that over the daily rainfall. Even after living in this rain, I'm surprised to see how much we get.
+
+```python
+import csv
+from datetime import datetime
+
+from matplotlib import pyplot as plt
+
+# Get dates and rainfall data from data file.
+#  Rainfall data is in column 19.
+filename = 'sitka_rainfall_2015.csv'
+with open(filename) as f:
+    reader = csv.reader(f)
+    header_row = next(reader)
+
+    dates, rainfalls, totals = [], [], []
+    for row in reader:
+        try:
+            current_date = datetime.strptime(row[0], "%Y-%m-%d")
+            rainfall = float(row[19])
+        except ValueError:
+            print(current_date, 'missing data')
+        else:
+            dates.append(current_date)
+            rainfalls.append(rainfall)
+            if totals:
+                totals.append(totals[-1] + rainfall)
+            else:
+                totals.append(rainfall)
+
+# Plot data.
+fig = plt.figure(dpi=128, figsize=(10, 6))
+plt.plot(dates, rainfalls, c='blue', alpha=0.5)
+plt.fill_between(dates, rainfalls, facecolor='blue', alpha=0.2)
+
+plt.plot(dates, totals, c='blue', alpha=0.75)
+plt.fill_between(dates, totals, facecolor='blue', alpha=0.05)
+
+# Format plot.
+title = "Daily rainfall amounts and cumulative rainfall - 2015\nSitka, AK"
+plt.title(title, fontsize=20)
+plt.xlabel('', fontsize=16)
+fig.autofmt_xdate()
+plt.ylabel("Rainfall (in)", fontsize=16)
+plt.tick_params(axis='both', which='major', labelsize=16)
+
+plt.show()
+```
+
+Output:
+
+![Cumulative rainfall for Sitka, AK for 2015](../images/sitka_rainfall_2015_cumulative.png)
+
+[top](#)
