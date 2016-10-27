@@ -125,4 +125,6 @@ plt.ylim(10, 120)
 plt.show()
 ```
 
+![Chart of high and low temperatures in Sitka, AK and Death Valley, CA](../images/sitka_death_valley.png)
+
 [top](#)
