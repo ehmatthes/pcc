@@ -6,6 +6,8 @@ title: Solutions - Chapter 16
 - [16-2: Sitka-Death Valley Comparison](#sitka-death-valley-comparison)
 - [16-3: Rainfall](#rainfall)
 - [16-4: Explore](#explore)
+- [16-6: Gross Domestic Product](#gross-domestic-product)
+- [16-8: Testing the `country_codes` Module](#testing-the-country-codes-module)
 
 Back to [solutions](README.html).
 
@@ -240,5 +242,69 @@ plt.show()
 Output:
 
 ![Cumulative rainfall for Sitka, AK for 2015](../images/sitka_rainfall_2015_cumulative.png)
+
+[top](#)
+
+16-6: Gross Domestic Product
+---
+
+The [Open Knowledge Foundation](http://index.okfn.org/) maintains a data set containing the gross domestic product (GDP) for each country in the world, which you can find at [http://data.okfn.org/data/core/gdp/](http://data.okfn.org/data/core/gdp/). Download the JSON version of this data set, and plot the GDP of each country in the world for the most recent year in the data set.
+
+***Note:** If you're having trouble downloading the JSON file for GDP data, you can try [this direct link](http://data.okfn.org/data/core/gdp/r/gdp.json). If that still doesn't work, I've stored a copy of the file [here](../resources/global_gdp.json).*
+
+***Note:** The newest version of Pygal handles world maps in a slightly different way than what was described in the book. If you haven't seen it already, take a look at the [updates for Chapter 16](http://ehmatthes.github.io/pcc/chapter_16/README.html).*
+
+```python
+import json
+
+import pygal
+from pygal.style import LightColorizedStyle as LCS, RotateStyle as RS
+from pygal.maps.world import World
+
+from country_codes import get_country_code
+
+# Load the data into a list.
+filename = 'global_gdp.json'
+with open(filename) as f:
+    gdp_data = json.load(f)
+
+# Build a dictionary of gdp data.
+cc_gdps = {}
+for gdp_dict in gdp_data:
+    if gdp_dict['Year'] == '2014':
+        country_name = gdp_dict['Country Name']
+        gdp = int(float(gdp_dict['Value']))
+        code = get_country_code(country_name)
+        if code:
+            cc_gdps[code] = gdp
+
+# Group the countries into 3 gdp levels.
+#  Less than 5 billion, less than 50 billion, >= 50 billion.
+#  Also, convert to billions for displaying values.
+cc_gdps_1, cc_gdps_2, cc_gdps_3 = {}, {}, {}
+for cc, gdp in cc_gdps.items():
+    if gdp < 5000000000:
+        cc_gdps_1[cc] = round(gdp / 1000000000)
+    elif gdp < 50000000000:
+        cc_gdps_2[cc] = round(gdp / 1000000000)
+    else:
+        cc_gdps_3[cc] = round(gdp / 1000000000)
+
+# See how many countries are in each level.        
+print(len(cc_gdps_1), len(cc_gdps_2), len(cc_gdps_3))
+
+wm_style = RS('#336699', base_style=LCS)
+wm = World(style=wm_style)
+wm.title = 'Global GDP in 2014, by Country (in billions USD)'
+wm.add('0-5bn', cc_gdps_1)
+wm.add('5bn-50bn', cc_gdps_2)
+wm.add('>50bn', cc_gdps_3)
+    
+wm.render_to_file('global_gdp.svg')
+```
+
+Output:
+
+![World map of GDP data, by country](../images/global_gdp.png)
 
 [top](#)
