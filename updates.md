@@ -15,6 +15,11 @@ Chapter 16
 
 Pygal's world map and internationalization features have been moved to a separate module. See the section on [installing Pygal](chapter_15/README.html#installing-pygal), and see the specific [updates for Chapter 16](chapter_16/README.html#updates).
 
+Chapter 17
+---
+
+The second half of the chapter focuses on a chart representing the most popular Python projects on GitHub. One of the projects that appears on the chart currently has been removed, but still appears in the results. This causes an error, but there's a [simple fix](chapter_17/README.html).
+
 Questions
 ---
 
