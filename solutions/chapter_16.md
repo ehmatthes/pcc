@@ -7,7 +7,7 @@ title: Solutions - Chapter 16
 - [16-3: Rainfall](#rainfall)
 - [16-4: Explore](#explore)
 - [16-6: Gross Domestic Product](#gross-domestic-product)
-- [16-8: Testing the `country_codes` Module](#testing-the-country-codes-module)
+- [16-8: Testing the `country_codes` Module](#testing-the-countrycodes-module)
 
 Back to [solutions](README.html).
 
