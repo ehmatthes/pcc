@@ -312,3 +312,37 @@ Output:
 16-8: Testing the `country_codes` Module
 ---
 
+When we wrote the `country_codes` module, we used `print` statements to check whether the `get_country_code()` function worked. Write a proper test for this function using what you learned in Chapter 11.
+
+```python
+import unittest
+
+from country_codes import get_country_code
+
+class CountryCodesTestCase(unittest.TestCase):
+    """Tests for country_codes.py."""
+
+    def test_get_country_code(self):
+        country_code = get_country_code('Andorra')
+        self.assertEqual(country_code, 'ad')
+
+        country_code = get_country_code('United Arab Emirates')
+        self.assertEqual(country_code, 'ae')
+
+        country_code = get_country_code('Afghanistan')
+        self.assertEqual(country_code, 'af')
+
+unittest.main()
+```
+
+Output:
+
+```
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+```
+
+[top](#)
