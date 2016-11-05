@@ -111,7 +111,7 @@ for repo_dict in repo_dicts:
     plot_dicts.append(plot_dict)
 ```
 
-### Complete updated version
+### Complete updated version of *python_repos.py*
 
 Here's the complete, updated version of *python_repos.py*:
 
