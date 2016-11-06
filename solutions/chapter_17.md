@@ -159,3 +159,122 @@ Output:
 ![Chart of the most active discussions on Hacker News](../images/hn_discussions.png)
 
 [top](#)
+
+17-3: Testing *python_repos.py*
+---
+
+In *python_repos.py*, we printed the value of `status_code` to make sure the API call was successful. Write a program called *test_python_repos.py*, which uses `unittest` to assert that the value of `status_code` is 200. Figure out some other assertions you can make - for example, that the number of items returned is expected and that the total number of repositories is greater than a certain amount.
+
+***Note:** The code for this exercise includes an [update](../chapter_17/README.html) that keeps a project with an empty description from breaking the program, and moves the font size settings to `my_style`.*
+
+Writing tests pushes you to structure your code in a way that it can be tested. Here's a revised version of *python_repos.py*, with all of the work written as four functions:
+
+```python
+import requests
+import pygal
+from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
+
+def get_response():
+    """Make an api call, and return the response."""
+    url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
+    r = requests.get(url)
+    return r
+
+def get_repo_dicts(response):
+    """Return a set of dicts representing the most popular repositories."""
+    response_dict = r.json()
+    repo_dicts = response_dict['items']
+    return repo_dicts
+
+def get_names_plot_dicts(repo_dicts):
+    """Process the set of repository dicts, and pull out data for plotting."""
+    names, plot_dicts = [], []
+    for repo_dict in repo_dicts:
+        names.append(repo_dict['name'])
+
+        # Some projects lack a description, which causes an error when 
+        #  labeling bars. Specify a label if there's no description.
+        description = repo_dict['description']
+        if not description:
+            description = "No description provided."
+
+        plot_dict = {
+            'value': repo_dict['stargazers_count'],
+            'label': description,
+            'xlink': repo_dict['html_url'],
+            }
+        plot_dicts.append(plot_dict)
+    return names, plot_dicts
+
+def make_visualization(names, plot_dicts):
+    """Make visualization of most popular repositories."""
+    my_style = LS('#333366', base_style=LCS)
+    my_style.title_font_size = 24
+    my_style.label_font_size = 14
+    my_style.major_label_font_size = 18
+
+    my_config = pygal.Config()
+    my_config.x_label_rotation = 45
+    my_config.show_legend = False
+    my_config.truncate_label = 15
+    my_config.show_y_guides = False
+    my_config.width = 1000
+
+    chart = pygal.Bar(my_config, style=my_style)
+    chart.title = 'Most-Starred Python Projects on GitHub'
+    chart.x_labels = names
+
+    chart.add('', plot_dicts)
+    chart.render_to_file('python_repos.svg')
+
+
+r = get_response()
+repo_dicts = get_repo_dicts(r)
+names, plot_dicts = get_names_plot_dicts(repo_dicts)
+make_visualization(names, plot_dicts)
+```
+
+Now we can write tests for these functions. Here we test that we get a response with a status code of 200, and we test that some of the keys we expect to find in each repository's dictionary are in the first project's dictionary.
+
+```python
+import unittest
+
+import python_repos_for_testing as pr
+
+class PythonReposTestCase(unittest.TestCase):
+    """Tests for python_repos.py."""
+
+    def setUp(self):
+        """Call all the functions here, and test elements separately."""
+        self.r = pr.get_response()
+        self.repo_dicts = pr.get_repo_dicts(self.r)
+        self.repo_dict = self.repo_dicts[0]
+        self.names, self.plot_dicts = pr.get_names_plot_dicts(self.repo_dicts)
+
+    def test_get_response(self):
+        """Test that we get a valid response."""
+        self.assertEqual(self.r.status_code, 200)
+
+    def test_repo_dicts(self):
+        """Test that we're getting the data we think we are."""
+        # We should get dicts for 30 repositories.
+        self.assertEqual(len(self.repo_dicts), 30)
+
+        # Repositories should have required keys.
+        required_keys = ['name', 'owner', 'stargazers_count', 'html_url']
+        for key in required_keys:
+            self.assertTrue(key in self.repo_dict.keys())
+
+unittest.main()
+```
+
+Output:
+
+..
+----------------------------------------------------------------------
+Ran 2 tests in 1.969s
+
+OK
+```
+
+[top](#)
