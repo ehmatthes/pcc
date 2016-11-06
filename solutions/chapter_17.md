@@ -5,7 +5,7 @@ title: Solutions - Chapter 17
 
 - [17-1: Other Languages](#other-languages)
 - [17-2: Active Discussions](#active-discussions)
-- [17-3: Testing *python_repos.py*](#testing-pythonrepos)
+- [17-3: Testing *python_repos.py*](#testing-pythonrepospy)
 
 Back to [solutions](README.html).
 
@@ -270,6 +270,7 @@ unittest.main()
 
 Output:
 
+```
 ..
 ----------------------------------------------------------------------
 Ran 2 tests in 1.969s
