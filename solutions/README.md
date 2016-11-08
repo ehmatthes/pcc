@@ -5,7 +5,7 @@ title: Solutions to Exercises
 
 The solutions for selected exercises from each chapter can be found below. Be careful about looking at the solutions too quickly; make sure you've given yourself time to wrestle with the concepts you just learned before looking at a solution. Also, there are several ways to solve many of the exercises, and the solutions only show one possible way to complete each exercise.
 
-I haven't included solutions for Chapters 12-14 and 18-20, because the exercises for those chapters are really projects in themselves. If you're having trouble with an exercise from one of those chapters consider posting on [Stack Overflow](http://stackoverflow.com/), [r/learnpython](https://www.reddit.com/r/learnpython/), or [get in touch](#getintouch).
+I haven't included solutions for Chapters 12-14 and 18-20, because the exercises for those chapters are really projects in themselves. If you're having trouble with an exercise from one of those chapters consider posting on [Stack Overflow](http://stackoverflow.com/), [r/learnpython](https://www.reddit.com/r/learnpython/), or [get in touch](#questions).
 
 - [Chapter 2](chapter_2.html)
 - [Chapter 3](chapter_3.html)
@@ -21,7 +21,7 @@ I haven't included solutions for Chapters 12-14 and 18-20, because the exercises
 - [Chapter 16](chapter_16.html)
 - [Chapter 17](chapter_17.html)
 
-<a name="getintouch"></a>Get in touch
+<a name="questions"></a>Questions and Feedback
 ---
 
 If you're stuck on something and what you see here isn't helping, please feel free to get in touch. Also, if you think you've found a mistake in the book, I'd love to know about it!
