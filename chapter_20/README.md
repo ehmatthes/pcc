@@ -10,6 +10,8 @@ title: Chapter 20
 - [Updates](#updates)
     - [Checking for the /tmp directory](#checking-for-the-tmp-directory)
     - [Using WhiteNoise to manage static files](#using-whitenoise-to-manage-static-files)
+- [Resources](#resources)
+- [Questions](#questions)
 
 Deploying a Project to Heroku
 ---
@@ -150,6 +152,8 @@ If you want to know more about the deployment process, here are some helpful res
 - [Configuring Django Apps for Heroku](https://devcenter.heroku.com/articles/django-app-configuration)
 - [The WhiteNoise project](http://whitenoise.evans.io/en/stable/index.html)
 
+[top](#)
+
 Questions
 ---
 
@@ -158,3 +162,5 @@ This is the most complicated project in the book, but it's really satisfying to 
 Email: [ehmatthes@gmail.com](mailto:ehmatthes@gmail.com)
 
 Twitter: [@ehmatthes](http://twitter.com/ehmatthes/)
+
+[top](#)
