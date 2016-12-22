@@ -71,7 +71,7 @@ With this update, your project should deploy without any issues. If you want to 
 
 The WhiteNoise project provides a better way to serve static files for Django projects. This project doesn't significantly change the way Learning Log works, but if you create a project that sees a lot of traffic you'll be better off with WhiteNoise.
 
-If you haven't worked through the second half of Chapter 20 yet, you can build your project with WhiteNoise. On page 466, under *Installing Required Packages*, install these packages:
+If you haven't worked through the second half of Chapter 20 yet, you can build your project with WhiteNoise. On page 466, under *Installing Required Packages*, install these packages instead:
 
     (ll_env)learning_log$ pip install dj-database-url
     (ll_env)learning_log$ pip install whitenoise
@@ -79,7 +79,7 @@ If you haven't worked through the second half of Chapter 20 yet, you can build y
 
 After this your *requirements.txt* file will look slightly different. You'll see `whitenoise` listed instead of `dj-static` and `static3`.
 
-The *settings.py* file needs one additional line in the Heroku section:
+The *settings.py* file needs one additional line in the Heroku section. Add the `STATICFILES_STORAGE` setting, shown on the last line here:
 
 ```python
 # Heroku settings
@@ -111,6 +111,15 @@ if cwd == '/app' or cwd[:4] == '/tmp':
 Finally, the *wsgi.py* file needs to use WhiteNoise instead of Cling:
 
 ```python
+"""
+WSGI config for learning_log project.
+
+It exposes the WSGI callable as a module-level variable named ``application``.
+
+For more information on this file, see
+https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
+"""
+
 import os
 
 from django.core.wsgi import get_wsgi_application
