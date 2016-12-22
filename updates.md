@@ -20,6 +20,11 @@ Pygal's world map and internationalization features have been moved to a separat
 
 The second half of the chapter focuses on a chart representing the most popular Python projects on GitHub. One of the projects that appears on the chart currently has been removed, but still appears in the results. This causes an error, but there's a [simple fix](chapter_17/README.html). Also, the font size settings have been moved from `config` to `style`.
 
+[Chapter 20](chapter_20/README.html)
+---
+
+The process of deploying a Django project to Heroku has changed slightly. The build process runs from a temporary directory, so the `if` statement in *settings.py* needs to check for this directory as well. Also, there's an improved way of managing static files that you might want to use. See the [updates for Chapter 20](chapter_20/README.html).
+
 Questions
 ---
 
