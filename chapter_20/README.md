@@ -140,7 +140,11 @@ If you've already built your project using `dj-static` and `static3`, you can un
     (ll_env)learning_log$ pip uninstall static3
     (ll_env)learning_log$ pip install whitenoise
 
-Now you can reissue the `pip freeze > requirements.txt` command, and update *settings.py* and *wsgi.py*. Commit your changes using Git, and you're ready to deploy your app to Heroku.
+Now you can reissue the `pip freeze > requirements.txt` command, and update *settings.py* and *wsgi.py*. Commit your changes using Git, and you're ready to deploy your app to Heroku:
+
+    (ll_env)learning_log$ pip freeze > requirements.txt
+    (ll_env)learning_log$ git commit -am "Updated project to use WhiteNoise."
+    (ll_env)learning_log$ git push heroku master
 
 Resources
 ---
