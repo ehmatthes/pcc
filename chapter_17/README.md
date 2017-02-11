@@ -73,8 +73,7 @@ names, plot_dicts = [], []
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
 
-    # Some projects lack a description, which causes an error when 
-    #  labeling bars. Specify a label if there's no description.
+    # Get the project description, if one is available.
     description = repo_dict['description']
     if not description:
         description = "No description provided."
@@ -97,8 +96,7 @@ names, plot_dicts = [], []
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
 
-    # Some projects lack a description, which causes an error when 
-    #  labeling bars. Specify a label if there's no description.
+    # Get the project description, if one is available.
     description = repo_dict['description']
     if not description:
         description = "No description provided."
@@ -136,8 +134,7 @@ names, plot_dicts = [], []
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
 
-    # Some projects lack a description, which causes an error when 
-    #  labeling bars. Specify a label if there's no description.
+    # Get the project description, if one is available.
     description = repo_dict['description']
     if not description:
         description = "No description provided."
