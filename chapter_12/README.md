@@ -56,7 +56,7 @@ Run the following commands to install the packages required to run Alien Invasio
 If you want to enable some more advanced functionality in Pygame such as the ability to add sounds, you can also install the following libraries:
 
     $ sudo apt-get install libsdl-mixer1.2-dev libportmidi-dev
-    $ sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcode-dev
+    $ sudo apt-get install libswscale-dev libsmpeg-dev libavformat-dev libavcodec-dev
     $ sudo apt-get install python-numpy
 
 You'll need pip for the next step; if you haven't set up pip yet, see the [instructions for seting up pip](installing_pip.html). Enter the following to install Pygame:
