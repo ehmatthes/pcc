@@ -505,33 +505,35 @@ class Admin(User):
         super().__init__(first_name, last_name, username, email, location)
 
         # Initialize an empty set of privileges.
-        self.privileges = Privileges([])
-    
+        self.privileges = Privileges()
 
 class Privileges():
-    """Stores privileges associated with an Admin account."""
+    """A class to store an admin's privileges."""
 
-    def __init__(self, privileges):
-        """Initialize the privileges object."""
-        self.privilege = privileges
+    def __init__(self, privileges=[]):
+        self.privileges = privileges
 
     def show_privileges(self):
-        """Display the privileges this administrator has."""
-        for privilege in self.privileges:
-            print("- " + privilege)
+        print("\nPrivileges:")
+        if self.privileges:
+            for privilege in self.privileges:
+                print("- " + privilege)
+        else:
+            print("- This user has no privileges.")
 
 
 eric = Admin('eric', 'matthes', 'e_matthes', 'e_matthes@example.com', 'alaska')
 eric.describe_user()
 
+eric.privileges.show_privileges()
+
+print("\nAdding privileges...")
 eric_privileges = [
     'can reset passwords',
     'can moderate discussions',
     'can suspend accounts',
     ]
 eric.privileges.privileges = eric_privileges
-
-print("\nThe admin " + eric.username + " has these privileges: ")
 eric.privileges.show_privileges()
 ```
 
@@ -543,7 +545,12 @@ Eric Matthes
   Email: e_matthes@example.com
   Location: Alaska
 
-The admin e_matthes has these privileges: 
+Privileges:
+- This user has no privileges.
+
+Adding privileges...
+
+Privileges:
 - can reset passwords
 - can moderate discussions
 - can suspend accounts
