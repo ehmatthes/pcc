@@ -51,7 +51,7 @@ If you need help using pip, see the <a href="../chapter_12/installing_pip.md">in
 Installing matplotlib on OS X
 ---
 
-Aple includes matplotlib with its standard Python installation, so make sure you <a href="#checking-if-matplotlib-is-already-installed">check if it's already installed</a> before installing it yourself.
+Apple includes matplotlib with its standard Python installation, so make sure you <a href="#checking-if-matplotlib-is-already-installed">check if it's already installed</a> before installing it yourself.
 
 If matplotlib is not already installed and you used Homebrew to install Python, install it like this:
 
