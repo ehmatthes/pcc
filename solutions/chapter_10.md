@@ -3,18 +3,18 @@ layout: default
 title: Solutions - Chapter 10
 ---
 
-- [10-1: Learning Python](#learning-python)
-- [10-2: Learning C](#learning-c)
-- [10-3: Guest](#guest)
-- [10-4: Guest Book](#guest-book)
-- [10-5: Programming Poll](#programming-poll)
-- [10-6: Addition](#addition)
-- [10-7: Addition Calculator](#addition-calculator)
-- [10-8: Cats and Dogs](#cats-and-dogs)
-- [10-9: Silent Cats and Dogs](#silent-cats-and-dogs)
-- [10-11: Favorite Number](#favorite-number)
-- [10-12: Favorite Number Remembered](#favorite-number-remembered)
-- [10-13: Verify User](#verify-user)
+- [10-1: Learning Python](#10-1-learning-python)
+- [10-2: Learning C](#10-2-learning-c)
+- [10-3: Guest](#10-3-guest)
+- [10-4: Guest Book](#10-4-guest-book)
+- [10-5: Programming Poll](#10-5-programming-poll)
+- [10-6: Addition](#10-6-addition)
+- [10-7: Addition Calculator](#10-7-addition-calculator)
+- [10-8: Cats and Dogs](#10-8-cats-and-dogs)
+- [10-9: Silent Cats and Dogs](#10-9-silent-cats-and-dogs)
+- [10-11: Favorite Number](#10-11-favorite-number)
+- [10-12: Favorite Number Remembered](#10-12-favorite-number-remembered)
+- [10-13: Verify User](#10-13-verify-user)
 
 Back to [solutions](README.html).
 

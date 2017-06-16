@@ -3,14 +3,14 @@ layout: default
 title: Solutions - Chapter 7
 ---
 
-- [7-1: Rental Car](#rental-car)
-- [7-2: Restaurant Seating](#restaurant-seating)
-- [7-3: Multiples of Ten](#multiples-of-ten)
-- [7-4: Pizza Toppings](#pizza-toppings)
-- [7-5: Movie Tickets](#movie-tickets)
-- [7-8: Deli](#deli)
-- [7-9: No Pastrami](#no-pastrami)
-- [7-10: Dream Vacation](#dream-vacation)
+- [7-1: Rental Car](#7-1-rental-car)
+- [7-2: Restaurant Seating](#7-2-restaurant-seating)
+- [7-3: Multiples of Ten](#7-3-multiples-of-ten)
+- [7-4: Pizza Toppings](#7-4-pizza-toppings)
+- [7-5: Movie Tickets](#7-5-movie-tickets)
+- [7-8: Deli](#7-8-deli)
+- [7-9: No Pastrami](#7-9-no-pastrami)
+- [7-10: Dream Vacation](#7-10-dream-vacation)
 
 Back to [solutions](README.html).
 

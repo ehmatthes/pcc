@@ -3,15 +3,15 @@ layout: default
 title: Solutions - Chapter 5
 ---
 
-- [5-3: Alien Colors #1](#alien-colors-1)
-- [5-4: Alien Colors #2](#alien-colors-2)
-- [5-5: Alien Colors #3](#alien-colors-3)
-- [5-6: Stages of Life](#stages-of-life)
-- [5-7: Favorite Fruit](#favorite-fruit)
-- [5-8: Hello Admin](#hello-admin)
-- [5-9: No Users](#no-users)
-- [5-10: Checking Usernames](#checking-usernames)
-- [5-11: Ordinal Numbers](#ordinal-numbers)
+- [5-3: Alien Colors #1](#5-3-alien-colors-1)
+- [5-4: Alien Colors #2](#5-4-alien-colors-2)
+- [5-5: Alien Colors #3](#5-5-alien-colors-3)
+- [5-6: Stages of Life](#5-6-stages-of-life)
+- [5-7: Favorite Fruit](#5-7-favorite-fruit)
+- [5-8: Hello Admin](#5-8-hello-admin)
+- [5-9: No Users](#5-9-no-users)
+- [5-10: Checking Usernames](#5-10-checking-usernames)
+- [5-11: Ordinal Numbers](#5-11-ordinal-numbers)
 
 Back to [solutions](README.html).
 

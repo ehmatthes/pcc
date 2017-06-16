@@ -3,20 +3,20 @@ layout: default
 title: Solutions - Chapter 8
 ---
 
-- [8-1: Message](#message)
-- [8-2: Favorite Book](#favorite-book)
-- [8-3: T-Shirt](#t-shirt)
-- [8-4: Large Shirts](#large-shirts)
-- [8-5: Cities](#cities)
-- [8-6: City Names](#city-names)
-- [8-7: Album](#album)
-- [8-8: User Albums](#user-albums)
-- [8-9: Magicians](#magicians)
-- [8-10: Great Magicians](#great-magicians)
-- [8-11: Unchanged Magicians](#unchanged-magicians)
-- [8-12: Sandwiches](#sandwiches)
-- [8-14: Cars](#cars)
-- [8-15: Printing Models](#printing-models)
+- [8-1: Message](#8-1-message)
+- [8-2: Favorite Book](#8-2-favorite-book)
+- [8-3: T-Shirt](#8-3-t-shirt)
+- [8-4: Large Shirts](#8-4-large-shirts)
+- [8-5: Cities](#8-5-cities)
+- [8-6: City Names](#8-6-city-names)
+- [8-7: Album](#8-7-album)
+- [8-8: User Albums](#8-8-user-albums)
+- [8-9: Magicians](#8-9-magicians)
+- [8-10: Great Magicians](#8-10-great-magicians)
+- [8-11: Unchanged Magicians](#8-11-unchanged-magicians)
+- [8-12: Sandwiches](#8-12-sandwiches)
+- [8-14: Cars](#8-14-cars)
+- [8-15: Printing Models](#8-15-printing-models)
 
 Back to [solutions](README.html).
 

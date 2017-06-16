@@ -3,17 +3,17 @@ layout: default
 title: Solutions - Chapter 6
 ---
 
-- [6-1: Person](#person)
-- [6-2: Favorite Numbers](#favorite-numbers)
-- [6-3: Glossary](#glossary)
-- [6-4: Glossary 2](#glossary-2)
-- [6-5: Rivers](#rivers)
-- [6-6: Polling](#polling)
-- [6-7: People](#people)
-- [6-8: Pets](#pets)
-- [6-9: Favorite Places](#favorite-places)
-- [6-10: Favorite Numbers](#favorite-numbers)
-- [6-11: Cities](#cities)
+- [6-1: Person](#6-1-person)
+- [6-2: Favorite Numbers](#6-2-favorite-numbers)
+- [6-3: Glossary](#6-3-glossary)
+- [6-4: Glossary 2](#6-4-glossary-2)
+- [6-5: Rivers](#6-5-rivers)
+- [6-6: Polling](#6-6-polling)
+- [6-7: People](#6-7-people)
+- [6-8: Pets](#6-8-pets)
+- [6-9: Favorite Places](#6-9-favorite-places)
+- [6-10: Favorite Numbers](#6-10-favorite-numbers)
+- [6-11: Cities](#6-11-cities)
 
 Back to [solutions](README.html).
 

@@ -3,9 +3,9 @@ layout: default
 title: Solutions - Chapter 11
 ---
 
-- [11-1: City, Country](#city-country)
-- [11-2: Population](#population)
-- [11-3: Employee](#employee)
+- [11-1: City, Country](#11-1-city-country)
+- [11-2: Population](#11-2-population)
+- [11-3: Employee](#11-3-employee)
 
 Back to [solutions](README.html).
 

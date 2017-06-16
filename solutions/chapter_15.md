@@ -3,14 +3,14 @@ layout: default
 title: Solutions - Chapter 15
 ---
 
-- [15-1: Cubes](#cubes)
-- [15-2: Colored Cubes](#colored-cubes)
-- [15-3: Molecular Motion](#molecular-motion)
-- [15-5: Refactoring](#refactoring)
-- [15-6: Automatic Labels](#automatic-labels)
-- [15-7: Two D8s](#two-d8s)
-- [15-8: Three Dice](#three-dice)
-- [15-9: Multiplication](#multiplication)
+- [15-1: Cubes](#15-1-cubes)
+- [15-2: Colored Cubes](#15-2-colored-cubes)
+- [15-3: Molecular Motion](#15-3-molecular-motion)
+- [15-5: Refactoring](#15-5-refactoring)
+- [15-6: Automatic Labels](#15-6-automatic-labels)
+- [15-7: Two D8s](#15-7-two-d8s)
+- [15-8: Three Dice](#15-8-three-dice)
+- [15-9: Multiplication](#15-9-multiplication)
 
 Back to [solutions](README.html).
 

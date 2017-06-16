@@ -3,11 +3,11 @@ layout: default
 title: Solutions - Chapter 16
 ---
 
-- [16-2: Sitka-Death Valley Comparison](#sitka-death-valley-comparison)
-- [16-3: Rainfall](#rainfall)
-- [16-4: Explore](#explore)
-- [16-6: Gross Domestic Product](#gross-domestic-product)
-- [16-8: Testing the `country_codes` Module](#testing-the-countrycodes-module)
+- [16-2: Sitka-Death Valley Comparison](#16-2-sitka-death-valley-comparison)
+- [16-3: Rainfall](#16-3-rainfall)
+- [16-4: Explore](#16-4-explore)
+- [16-6: Gross Domestic Product](#16-6-gross-domestic-product)
+- [16-8: Testing the `country_codes` Module](#16-8-testing-the-countrycodes-module)
 
 Back to [solutions](README.html).
 

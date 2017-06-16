@@ -3,20 +3,20 @@ layout: default
 title: Solutions - Chapter 9
 ---
 
-- [9-1: Restaurant](#restaurant)
-- [9-2: Three Restaurants](#three-restaurants)
-- [9-3: Users](#users)
-- [9-4: Number Served](#number-served)
-- [9-5: Login Attempts](#login-attempts)
-- [9-6: Ice Cream Stand](#ice-cream-stand)
-- [9-7: Admin](#admin)
-- [9-8: Privileges](#privileges)
-- [9-9: Battery Upgrade](#battery-upgrade)
-- [9-10: Imported Restaurant](#imported-restaurant)
-- [9-11: Imported Admin](#imported-admin)
-- [9-12: Multiple Modules](#multiple-modules)
-- [9-13: OrderedDict Rewrite](#ordereddict-rewrite)
-- [9-14: Dice](#dice)
+- [9-1: Restaurant](#9-1-restaurant)
+- [9-2: Three Restaurants](#9-2-three-restaurants)
+- [9-3: Users](#9-3-users)
+- [9-4: Number Served](#9-4-number-served)
+- [9-5: Login Attempts](#9-5-login-attempts)
+- [9-6: Ice Cream Stand](#9-6-ice-cream-stand)
+- [9-7: Admin](#9-7-admin)
+- [9-8: Privileges](#9-8-privileges)
+- [9-9: Battery Upgrade](#9-9-battery-upgrade)
+- [9-10: Imported Restaurant](#9-10-imported-restaurant)
+- [9-11: Imported Admin](#9-11-imported-admin)
+- [9-12: Multiple Modules](#9-12-multiple-modules)
+- [9-13: OrderedDict Rewrite](#9-13-ordereddict-rewrite)
+- [9-14: Dice](#9-14-dice)
 
 Back to [solutions](README.html).
 
