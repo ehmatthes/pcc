@@ -3,7 +3,7 @@ layout: default
 title: Solutions - Chapter 2
 ---
 
-- [2-2: Simple Messages](#simple-messages)
+- [2-2: Simple Messages](#2-2-simple-messages)
 - [2-5: Famous Quote](#famous-quote)
 - [2-7: Stripping Names](#stripping-names)
 - [2-9: Favorite Number](#favorite-number)
