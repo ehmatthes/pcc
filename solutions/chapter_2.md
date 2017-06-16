@@ -4,9 +4,9 @@ title: Solutions - Chapter 2
 ---
 
 - [2-2: Simple Messages](#2-2-simple-messages)
-- [2-5: Famous Quote](#famous-quote)
-- [2-7: Stripping Names](#stripping-names)
-- [2-9: Favorite Number](#favorite-number)
+- [2-5: Famous Quote](#2-5-famous-quote)
+- [2-7: Stripping Names](#2-7-stripping-names)
+- [2-9: Favorite Number](#2-9-favorite-number)
 
 Back to [solutions](README.html).
 

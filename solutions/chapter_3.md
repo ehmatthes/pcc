@@ -3,13 +3,13 @@ layout: default
 title: Solutions - Chapter 3
 ---
 
-- [3-1: Names](#names)
-- [3-2: Greetings](#greetings)
-- [3-4: Guest List](#guest-list)
-- [3-5: Changing Guest List](#changing-guest-list)
-- [3-6: More Guests](#more-guests)
-- [3-7: Shrinking Guest List](#shrinking-guest-list)
-- [3-8: Seeing the World](#seeing-the-world)
+- [3-1: Names](#3-1-names)
+- [3-2: Greetings](#3-2-greetings)
+- [3-4: Guest List](#3-4-guest-list)
+- [3-5: Changing Guest List](#3-5-changing-guest-list)
+- [3-6: More Guests](#3-6-more-guests)
+- [3-7: Shrinking Guest List](#3-7-shrinking-guest-list)
+- [3-8: Seeing the World](#3-8-seeing-the-world)
 
 Back to [solutions](README.html).
 

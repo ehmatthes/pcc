@@ -3,14 +3,14 @@ layout: default
 title: Solutions - Chapter 4
 ---
 
-- [4-1: Pizzas](#pizzas)
-- [4-3: Counting to Twenty](#counting-to-twenty)
-- [4-5: Summing a Million](#summing-a-million)
-- [4-7: Threes](#threes)
-- [4-8: Cubes](#cubes)
-- [4-9: Cube Comprehension](#cube-comprehension)
-- [4-11: My Pizzas, Your Pizzas](#my-pizzas-your-pizzas)
-- [4-13: Buffet](#buffet)
+- [4-1: Pizzas](#4-1-pizzas)
+- [4-3: Counting to Twenty](#4-3-counting-to-twenty)
+- [4-5: Summing a Million](#4-5-summing-a-million)
+- [4-7: Threes](#4-7-threes)
+- [4-8: Cubes](#4-8-cubes)
+- [4-9: Cube Comprehension](#4-9-cube-comprehension)
+- [4-11: My Pizzas, Your Pizzas](#4-11-my-pizzas-your-pizzas)
+- [4-13: Buffet](#4-13-buffet)
 
 Back to [solutions](README.html).
 
