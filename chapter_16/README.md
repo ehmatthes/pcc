@@ -3,6 +3,8 @@ layout: default
 title: Chapter 16
 ---
 
+There's a slight change to [Exercise 16-1](#exercise-16-1-san-francisco).
+
 Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. If you're using the latest version of Pygal, you'll need to make some slight changes to the code in Chapter 16.
 
 You can easily [install a version of Pygal](chapter_15/README.html#installing-pygal) that allows the code in the book to run exactly as it's written.
@@ -11,6 +13,14 @@ The first part of this update will tell you what to look for as you work through
 
 Updates
 ---
+
+### Exercise 16-1: San Francisco
+
+You can still get historical weather data from Weather Underground in the CSV format, but the link to the CSV file is not visible on the screen. To get historical weather data, go to the [Weather Underground home page](wunderground.com), click on the Menu on the right side of the screen, and click on [Historical Weather](https://www.wunderground.com/history/). Enter a location, pick a starting date, and click Submit. A summary for this date will appear, with several tabs. Click on Custom, enter an end date on the next page, and click Get History.
+
+If you scroll down you'll see the weather data for the range you requested, in a neatly formatted table. To get the CSV version of this data, append `&format=1` to the URL in your browser's address bar. You can do this by clicking in the address bar, pressing Ctrl-End, typing `&format=1`, and pressing Enter. Your URL should look something like this:
+
+[https://www.wunderground.com/history/airport/PASI/2017/1/1/CustomHistory.html?dayend=1&monthend=7&yearend=2017&req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=&format=1](https://www.wunderground.com/history/airport/PASI/2017/1/1/CustomHistory.html?dayend=1&monthend=7&yearend=2017&req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=&format=1)
 
 ### The `pygal_maps_world` package
 

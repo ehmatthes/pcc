@@ -13,7 +13,7 @@ Pygal has been updated to version 2. You can install a version of Pygal that run
 [Chapter 16](chapter_16/README.html)
 ---
 
-Pygal's world map and internationalization features have been moved to a separate module. See the section on [installing Pygal](chapter_15/README.html#installing-pygal), and see the specific [updates for Chapter 16](chapter_16/README.html#updates).
+Pygal's world map and internationalization features have been moved to a separate module, and there's a slight change to Exercise 16-1. See the section on [installing Pygal](chapter_15/README.html#installing-pygal), and see the specific [updates for Chapter 16](chapter_16/README.html#updates).
 
 [Chapter 17](chapter_17/README.html)
 ---
