@@ -22,6 +22,8 @@ If you scroll down you'll see the weather data for the range you requested, in a
 
 [https://www.wunderground.com/history/airport/PASI/2017/1/1/CustomHistory.html?dayend=1&monthend=7&yearend=2017&req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=&format=1](https://www.wunderground.com/history/airport/PASI/2017/1/1/CustomHistory.html?dayend=1&monthend=7&yearend=2017&req_city=&req_state=&req_statename=&reqdb.zip=&reqdb.magic=&reqdb.wmo=&format=1)
 
+Once you see the data in CSV format you can either use the Save As dialog from your browser, or you can copy the data and paste it into a text editor to save it. It's good practice to use the *.csv* file extension when saving this kind of file.
+
 ### The `pygal_maps_world` package
 
 The dictionary `COUNTRIES` and the world map module have been moved to a separate package called `pygal_maps_world`. Here's how to install this package:
