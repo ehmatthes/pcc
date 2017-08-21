@@ -14,4 +14,4 @@ Some of the text files from [Project Gutenberg](https://www.gutenberg.org/) are 
         with open(filename, encoding='utf-8') as f_obj:
             contents = f_obj.read()
 
-The `encoding` argument should be added to the `open()` calls in *word_count.py* as well.
+The `encoding` argument should be added to the `open()` calls in *word_count.py* as well on pages 205-206.
