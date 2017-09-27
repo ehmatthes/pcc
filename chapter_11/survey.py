@@ -17,5 +17,5 @@ class AnonymousSurvey():
     def show_results(self):
         """Show all the responses that have been given."""
         print("Survey results:")
-        for response in self.responses:
-            print('- ' + response)
+        for self.response in self.responses:
+            print('- ' + self.response)
