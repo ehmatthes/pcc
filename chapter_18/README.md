@@ -153,7 +153,7 @@ Here are the specific changes to look out for in Chapter 17. It might look like 
 
 The default home page for a new Django project has been updated, and it's beautiful!
 
-![The default home page for a new Django project]({{ site.url }}/chapter_18/default_homepage.png)
+![The default home page for a new Django project]({{ site.url }}/pcc/chapter_18/default_homepage.png)
 
 ### p. 408, *Defining the Entry Model*
 
