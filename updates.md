@@ -25,6 +25,16 @@ Pygal's world map and internationalization features have been moved to a separat
 
 The second half of the chapter focuses on a chart representing the most popular Python projects on GitHub. One of the projects that appears on the chart currently has been removed, but still appears in the results. This causes an error, but there's a [simple fix](chapter_17/README.html). Also, the font size settings have been moved from `config` to `style`.
 
+[Chapter 18](chapter_18/README.html#updates)
+---
+
+Django 2.0 was released recently, and there are a few changes that affect the Learning Log project. There's a small change to how foreign keys are defined, URLs are specified in a cleaner way, and an import path changed. You also have the option of using Django 1.11 if you'd rather not deal with these updates.
+
+[Chapter 19](chapter_19/README.html)
+---
+
+The changes introduced in Django 2.0 affect some of the code in chapter 19 as well.
+
 [Chapter 20](chapter_20/README.html)
 ---
 

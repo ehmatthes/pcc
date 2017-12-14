@@ -11,6 +11,11 @@ In this chapter you'll use Django to build Learning Log, a simple web applicatio
 - [Installing virtualenv](#installing-virtualenv)
     - [Creating a virtual environment with virtualenv](#creating-a-virtual-environment-with-virtualenv)
 - [Installing Django](#installing-django)
+    - [Installing a specific version of django](#installing-a-specific-version-of-django)
+- [Updates](#updates)
+    - [Overview](#overview)
+    - [Checking which version of Django you're using](#checking-which-version-of-django-youre-using)
+    - [Specific updates](#specific-updates)
 
 Creating a Virtual Environment
 ---
@@ -97,5 +102,134 @@ Because this command is run in a virtual environment, it's the same on all opera
 
 Keep in mind that Django will only be available when the virtual environment is active.
 
+### Installing a specific version of Django
+
+Django 2.0 introduced some changes that affect the Learning Log project. The updates described below will allow you to run the project in the latest version of Django, but you can also install the previous version if you want to match what's in the book exactly.
+
+To do this, specify the version of Django you want to install when you use pip:
+
+    (ll_env)learning_log$ pip install Django==1.11
+    Collecting Django==1.11
+    Installing collected packages: pytz, Django
+    Successfully installed Django-1.11 pytz-2017.3
+
+This should work even if you've already install a different version of Django. When you ask pip to install a specific version of a library, it will uninstall any other versions first.
+
+
 [top](#)
  
+Updates
+---
+
+Django 2.0 was released recently, and there are a number of changes that affect the Learning Log project. The overall changes are described briefly, and then specific updates to the chapter are listed.
+
+### Overview
+
+Here's an overview of recent changes to Django:
+
+- Foreign keys need an explicit `on_delete=models.CASCADE` argument set. This was set by default in previous versions. When a user deletes a topic in their learning log, the `on_delete` argument tells Django what to do with the entries in that topic. The `CASCADE` value tells Django to delete any entries associated with a topic that's being deleted.
+
+- There's a new way to define the `namespace` for an app's URLs. Rather than setting the namespace in the project's *urls.py* file, the namespace is set in each app's *urls.py*.
+
+- There's a simpler approach to defining URLs. In previous versions, you had to write a regular expression for any URL that included an identifier, such as http://localhost:8000/topics/1/. This new approach is not required, but you'll probably appreciate it and want to know about it.
+
+- The `reverse()` function has been moved from `django.core.urlresolvers` to the `django.urls` module.
+
+### Checking which version of Django you're using
+
+The command `pip freeze` lists the specific versions of all packages you have installed in a virtual environment. To see which version of Django you're using, make sure you're in an active virtual environment, and then issue this command:
+
+    (ll_env)learning_log$ pip freeze
+    Django==2.0
+    pytz==2017.3
+
+If you decide you'd rather use the previous version of Django so you can ignore these updates for now, you can install Django 1.11 [as described above](#installing-a-specific-version-of-django).
+
+### Specific updates
+
+Here are the specific changes to look out for in Chapter 17. It might look like there's a lot of changes, but once you start working through the project you'll see that many of these changes follow a consistent pattern. If you have any trouble with this that you can't resolve, please reach out for help ([ehmatthes@gmail.com](mailto:ehmatthes@gmail.com) or [@ehmatthes](http://twitter.com/ehmatthes/))
+
+### p. 402, *Figure 18-1*
+
+The default home page for a new Django project has been updated, and it's beautiful!
+
+![The default home page for a new Django project](chapter_18/default_homepage.png)
+
+### p. 408, *Defining the Entry Model*
+
+Replace the line that reads
+
+    topic = models.ForeignKey(Topic)
+
+with
+
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
+
+This tells Django that when a topic is deleted, all of the entries associated with that topic should be deleted as well. This is known as a cascading delete.
+
+### p. 413, *Mapping a URL*
+
+When you start a project in Django 2.0, this is what you'll see in the project's main *urls.py* file:
+
+	from django.contrib import admin
+	from django.urls import path
+
+	urlpatterns = [
+	    path('admin/', admin.site.urls),
+	]
+
+Django 2.0 introduces a new `path()` function that simplifies how we define URLs. The older `url()` approach still works, but in these updates I'll show you how to use the new `path()` function.
+
+Here's how to include the URLs for the `learning_logs` app:
+
+	from django.urls import path, include
+	from django.contrib import admin
+
+	urlpatterns = [
+	    path('admin/', admin.site.urls),
+	    path('', include('learning_logs.urls'))
+	]
+
+The `include()` function is now imported from the `django.urls` module. Since the new URL routing approach doesn't require regular expressions, we don't need to include a carat at the beginning of the URL string. We also don't need to include a `namespace` argument in the `include()` call; that will be specified in the app's *urls.py* in a moment.
+
+Here's what the *learning_logs/urls.py* file should look like:
+
+	"""Defines url patterns for learning_logs."""
+
+	from django.urls import path
+
+	from . import views
+
+	app_name = 'learning_logs'
+	urlpatterns = [
+	    # Home page.
+	    path('', views.index, name='index'),
+	]
+
+We need to import the new `path()` function from `django.urls`. In Django 2.0, the app's namespace is defined through an `app_name` variable in the app's *urls.py*. Finally, the URL pattern for the home page is simpler without the need to define a regular expression.
+
+### p. 419, *The Topics URL Pattern*
+
+The topics URL pattern should look like this:
+
+	urlpatterns = [
+	    --snip--
+	    # Show all topics.
+	    path('topics/', views.topics, name='topics'),
+	]
+
+### p. 422, *The Topic URL Pattern*
+
+The topic URL pattern should look like this:
+
+	urlpatterns = [
+	    --snip--
+	    # Detail page for a single topic.
+        path('topics/<int:topic_id>/', views.topic, name='topic'),
+	]
+
+In this new `path()`-based approach you figure out what you want the URL to look like:
+
+    http://localhost:8000/topics/5/
+
+Then you write this as a string, with any variables in the URL inside angle brackets. In the angle brackets you describe the type of variable to expect, `int` in this case, and provide a name for the value in the URL. This is much simpler than writing a regular expression to capture the value in the URL.
