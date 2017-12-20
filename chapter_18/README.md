@@ -135,6 +135,8 @@ Here's an overview of recent changes to Django:
 
 - The `reverse()` function has been moved from `django.core.urlresolvers` to the `django.urls` module.
 
+- Django 2.0 only works with Python 3. If you're still using Python 2.7, you'll need to [install Django 1.11](#installing-a-specific-version-of-django).
+
 ### Checking which version of Django you're using
 
 The command `pip freeze` lists the specific versions of all packages you have installed in a virtual environment. To see which version of Django you're using, make sure you're in an active virtual environment, and then issue this command:

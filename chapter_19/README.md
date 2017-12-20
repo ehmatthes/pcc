@@ -34,14 +34,14 @@ The new_entry URL pattern should look like this:
 	    path('new_entry/<int:topic_id>/', views.new_entry, name='new_entry'),
 	]
 
-### p. 435, *The edit_entry URL*
+### p. 436, *The edit_entry URL*
 
 The edit_entry URL pattern should look like this:
 
 	urlpatterns = [
 	    --snip--
 	    # Page for editing an entry.
-    	path('edit_entry/<int:entry_id>/', views.edit_entry, name='edit_entry'),
+        path('edit_entry/<int:entry_id>/', views.edit_entry, name='edit_entry'),
 	]
 
 ### p. 439, *Including the URLs from users*
@@ -54,7 +54,7 @@ The line to include the URLs from the `users` app should look like this:
 	urlpatterns = [
 	    path('admin/', admin.site.urls),
 	    path('users/', include('users.urls')),
-	    path('', include('learning_logs.urls'))
+	    path('', include('learning_logs.urls')),
 	]
 
 As we saw when including the URLs from `learning_logs`, we write a simple string for the base of the URL, `'users/'`. We leave out the `namespace` argument, because the namespace will be defined in the *users/urls.py* file.
