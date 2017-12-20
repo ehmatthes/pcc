@@ -187,7 +187,7 @@ Here's how to include the URLs for the `learning_logs` app:
 
 	urlpatterns = [
 	    path('admin/', admin.site.urls),
-	    path('', include('learning_logs.urls'))
+	    path('', include('learning_logs.urls')),
 	]
 
 The `include()` function is now imported from the `django.urls` module. Since the new URL routing approach doesn't require regular expressions, we don't need to include a carat at the beginning of the URL string. We also don't need to include a `namespace` argument in the `include()` call; that will be specified in the app's *urls.py* in a moment.
