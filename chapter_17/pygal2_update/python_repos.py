@@ -17,10 +17,15 @@ repo_dicts = response_dict['items']
 names, plot_dicts = [], []
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
-    
+
+    # Get the project description, if one is available.
+    description = repo_dict['description']
+    if not description:
+        description = "No description provided."
+
     plot_dict = {
         'value': repo_dict['stargazers_count'],
-        'label': repo_dict['description'],
+        'label': description,
         'xlink': repo_dict['html_url'],
         }
     plot_dicts.append(plot_dict)
