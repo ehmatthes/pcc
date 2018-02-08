@@ -252,6 +252,8 @@ The [Open Knowledge Foundation](http://index.okfn.org/) maintains a data set con
 
 ***Note:** If you're having trouble downloading the JSON file for GDP data, you can try [this direct link](http://data.okfn.org/data/core/gdp/r/gdp.json). If that still doesn't work, I've stored a copy of the file [here](../resources/global_gdp.json).*
 
+***Note:** Be aware that some versions of this data file have years in quotes, and some have the years unquoted. When the years are quoted they're treated as strings. When they're unquoted they're treated as numerical data. You may need to change comparisons like `if gdp_dict['Year'] == '2014'` to `if gdp_dict['Year'] == 2014:`.
+
 ***Note:** The newest version of Pygal handles world maps in a slightly different way than what was described in the book. If you haven't seen it already, take a look at the [updates for Chapter 16](http://ehmatthes.github.io/pcc/chapter_16/README.html).*
 
 ```python
