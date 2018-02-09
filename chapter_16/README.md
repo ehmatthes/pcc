@@ -72,3 +72,8 @@ Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
 Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.s
 
+### p. 372-373, *world_populations.py*
+
+Use **`from pygal.maps.world import World`** instead of `import pygal`.
+
+Use **`wm = World(style=wm_style)`** instead of `wm = pygal.Worldmap(style=wm_style)`. Then add the line **`wm.force_uri_protocol = 'http'`**.
