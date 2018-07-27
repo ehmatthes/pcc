@@ -9,6 +9,10 @@ The first part of this update will tell you what to look for as you work through
 
 Updates
 ---
+### Exercise 16-1 link doesn't work anymore
+
+The site http://wunderground.com/history/ no longer provides access to the CSV files for free usage as per this announcement: 
+https://twitter.com/wunderground/status/824755412666683392?lang=en and this link https://www.wunderground.com/weather/api/ 
 
 ### The `pygal_maps_world` package
 
