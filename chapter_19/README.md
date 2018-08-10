@@ -6,8 +6,8 @@ title: Chapter 19
 Updates
 ---
 
-- [Updates for Django 2.1](#updates-for-django-2.1)
-- [Updates for Django 2.0](#updates-for-django-2.0)
+- [Updates for Django 2.1](#updates-for-django-21)
+- [Updates for Django 2.0](#updates-for-django-20)
 
 Updates for Django 2.1
 ---
