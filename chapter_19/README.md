@@ -6,6 +6,79 @@ title: Chapter 19
 Updates
 ---
 
+- [Updates for Django 2.1](#updates-for-django-2.1)
+- [Updates for Django 2.0](#updates-for-django-2.0)
+
+Updates for Django 2.1
+---
+
+In Django 2.1, there is a slight change to the way user authentication is handled. This affects the way URLs in the `users` app are structured, and it affects the */users/views.py* file as well.
+
+### p. 440, *The Login Page*
+
+The */users/urls.py* file should look like this:
+
+	"""Defines url patterns for users."""
+
+	from django.urls import path
+	from django.contrib.auth import views as auth_views
+
+	from . import views
+
+	app_name = 'users'
+	urlpatterns = [
+		# Login page.
+	    path('login/',
+	    	auth_views.LoginView.as_view(template_name='users/login.html'),
+	    	name='login'),
+	]
+
+There are two differences here. We're importing a set of views from `django.contrib.auth`, as `auth_views`. Also, the path to the login view is structured differently, to use the default class-based view for logins, `LoginView`. In order to use our own login template, we provide the `template_name` argument in the call to the default view.
+
+### p. 442, *The logout URL*
+
+The */users/urls.py* file should look like this:
+
+	"""Defines url patterns for users."""
+
+	from django.urls import path
+	from django.contrib.auth import views as auth_views
+
+	from . import views
+
+	app_name = 'users'
+	urlpatterns = [
+		# Login page.
+	    path('login/',
+	    	auth_views.LoginView.as_view(template_name='users/login.html'),
+	    	name='login'),
+
+	    # Logout page.
+	    path('logout/', auth_views.LogoutView.as_view(), name='logout'),
+	]
+
+Again, the logout view uses the default class-based `LogoutView`. We don't need to pass a template name, because there is no template for logging out.
+
+### p. 442-443, *The logout_view() View Function*
+
+In Django 2.1 there is no need for a logout view, so ignore what you see in this section in the book. Instead, we'll use a setting called `LOGOUT_REDIRECT_URL` in *settings.py*. It doesn't really matter where this setting goes, but I like to put it in a section at the end of the file labeled `# My settings`:
+
+	--snip--
+	# My settings
+	LOGOUT_REDIRECT_URL = '/'
+
+This tells Django what page to redirect the user to when they click the logout link. After adding this setting to *settings.py*, move on to the section *Linking to the logout View*.
+
+### p. 444, *The register() View Function*
+
+Nothing has really changed about the way the register page is built. The only thing to note here is that the `django.contrib.auth` import line will look slightly different in Django 2.1, because we don't need to import the logout function. The import statement will look like this:
+
+    from django.contrib.auth import login, authenticate
+
+
+Updates for Django 2.0
+---
+
 ### p. 429, *The new_topic URL*
 
 The new_topic URL pattern should look like this:
@@ -112,4 +185,3 @@ In *learning_logs/models.py*, the line that defines the foreign key relationship
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
 This tells Django that when a user is deleted, all of the topics owned by that user should be deleted as well.
-

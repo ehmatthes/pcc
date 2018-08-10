@@ -35,6 +35,8 @@ Django 2.0 was released recently, and there are a few changes that affect the Le
 
 The changes introduced in Django 2.0 affect some of the code in chapter 19 as well.
 
+The changes introduced in Django 2.1 affect the way user registration, logins, and logouts are handled.
+
 [Chapter 20](chapter_20/README.html)
 ---
 
