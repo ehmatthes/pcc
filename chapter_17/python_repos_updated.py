@@ -1,3 +1,4 @@
+import sys
 import requests
 import pygal
 from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
@@ -19,9 +20,12 @@ for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
 
     # Get the project description, if one is available.
+    non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
     description = repo_dict['description']
     if not description:
         description = "No description provided."
+    else:
+        good_description = description.translate(non_bmp_map)
 
     plot_dict = {
         'value': repo_dict['stargazers_count'],
