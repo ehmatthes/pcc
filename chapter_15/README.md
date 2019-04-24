@@ -131,8 +131,24 @@ Each time you make a chart in Pygal, add a line that tells Pygal to make an SVG 
 
     hist = pygal.Bar()
     hist.force_uri_protocol = 'http'
-    
+
 This causes Pygal to configure the SVG rendering engine to work correctly for displaying the files in a browser.
+
+**Rendering directly to your default browswer using lxml
+---**
+To render the Pygal chart directly to your default browser: 
+
+<pre>
+<b>$ pip install --user lxml</b>
+</pre>
+
+Finally, add the render_in_broswer() method below the render_to_file() method:
+<pre>
+hist.render_to_file('die_visual.svg')
+<b>hist.render_in_browser()</b>
+</pre>
+
+Now everytime you run your python file, it will open a new tab with the rendered SVG file as well as outputting a hyperlink in your terminal.
 
 Page by page updates
 ---
