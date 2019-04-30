@@ -81,55 +81,14 @@ If you haven't worked through the second half of Chapter 20 yet, you can build y
 
 After this your *requirements.txt* file will look slightly different. You'll see `whitenoise` listed instead of `dj-static` and `static3`.
 
-The *settings.py* file needs one additional line in the Heroku section. Add the `STATICFILES_STORAGE` setting, shown on the last line here:
+The *settings.py* file needs one additional line in the `MIDDLEWARE` section. The WhiteNoise middleware should be placed right after the Django security middleware:
 
 ```python
-# Heroku settings
-cwd = os.getcwd()
-print("--- CWD ---\n", cwd, "\n---\n")
-if cwd == '/app' or cwd[:4] == '/tmp':
-    import dj_database_url
-    DATABASES = {
-        'default': dj_database_url.config(default='postgres://localhost')
-    }
-    
-    # Honor the 'X-Forwarded-Proto' header for request.is_secure().
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    
-    # Only allow heroku to host the project.
-    ALLOWED_HOSTS = ['*']
-    DEBUG = True
-
-    # Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = 'staticfiles'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
-
-    STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-```
-
-Finally, the *wsgi.py* file needs to use WhiteNoise instead of Cling:
-
-```python
-"""
-WSGI config for learning_log project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/1.10/howto/deployment/wsgi/
-"""
-
-import os
-
-from django.core.wsgi import get_wsgi_application
-from whitenoise.django import DjangoWhiteNoise
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "learning_log.settings")
-application = get_wsgi_application()
-application = DjangoWhiteNoise(application)
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    --snip--
+]
 ```
 
 With these changes your project should run well on Heroku, even if you start to see higher levels of traffic.
