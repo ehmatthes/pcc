@@ -8,6 +8,8 @@ def get_stored_username():
             username = json.load(f_obj)
     except FileNotFoundError:
         return None
+    except json.decoder.JSONDecodeError:
+        return None
     else:
         return username
 
