@@ -14,3 +14,7 @@ a.link-no-style {
 @media screen and (max-width: 42em) {
   .page-header-subpages {
     padding: 0.2rem 0.1rem; } }
+
+.page-header-home {
+    padding: 2rem 6rem;
+}
