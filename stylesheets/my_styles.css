@@ -18,3 +18,7 @@ a.link-no-style {
 .page-header-home {
     padding: 2rem 6rem;
 }
+
+.survey-link {
+    font-style: italic;
+}
