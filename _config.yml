@@ -1,1 +1,7 @@
 baseurl: /pcc
+
+exclude:
+    - vendor/bundle/
+    - vendor/cache/
+    - vendor/gems/
+    - vendor/ruby/

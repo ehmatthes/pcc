@@ -1,4 +1,6 @@
 _site/
+vendor/
+.bundle/
 
 */__pycache__
 
