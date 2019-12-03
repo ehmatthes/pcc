@@ -3,6 +3,10 @@ layout: default
 title: Python Crash Course - Cheat Sheets
 ---
 
+**Note:** Updated cheat sheets [for the second edition are here](https://ehmatthes.github.io/pcc_2e/cheat_sheets/cheat_sheets/). If you're working from the first edition of Python Crash Course, you should use the sheets described below. If you're working from the second edition, or any other Python resource, you should use the updated sheets.
+
+---
+
 A cheat sheet can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. 
 Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
 
