@@ -43,7 +43,7 @@ On Windows, run the following equivalent command:
 
 This command runs the script *activate*, which is located in *ll_env/bin*. When the environment is active, you'll see the name of the environment in parentheses. This means you can install packages to the environment and use packages that have already been installed. Packages you install in *ll_env* will be available only when the environment is active; if you run into errors, make sure you see *(ll_env)* in parentheses at the beginng of your terminal prompt. If you don't see it, issue the *activate* command again.
 
-###Deactivating the virtual environment
+### Deactivating the virtual environment
 
 To stop using a virtual environment, enter **deactivate**:
 
