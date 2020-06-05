@@ -1,6 +1,6 @@
 dj-database-url==0.5.0
 dj-static==0.0.6
-Django==2.1
+Django==2.2.13
 django-bootstrap3==10.0.1
 gunicorn==19.9.0
 psycopg2==2.7.5
