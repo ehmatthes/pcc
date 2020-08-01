@@ -11,7 +11,9 @@ If you have any questions about Python Crash Course, feel free to get in touch:
 Email: ehmatthes@gmail.com
 
 Twitter: [@ehmatthes](http://twitter.com/ehmatthes/)
-<img src="https://pbs.twimg.com/profile_images/1153801365543538688/6ZRVUWah.png" width=20>
+
+<img src="https://pbs.twimg.com/profile_images/1153801365543538688/6ZRVUWah.png"  data-canonical-src="https://pbs.twimg.com/profile_images/1153801365543538688/6ZRVUWah.png" style="float: left;position: relative;display: flex; width: 10vw;">
+
 <a href="setup_instructions"></a>Setup Instructions
 ---
 Here you can find instructions for:
