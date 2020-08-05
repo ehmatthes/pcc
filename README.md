@@ -4,7 +4,7 @@ Python Crash Course
 A Hands-On, Project-Based Introduction to Programming
 ---
 
-This is a collection of resources for [Python Crash Course](http://www.nostarch.com/pythoncrashcourse/), an introductory programming book from [No Starch Press](http://www.nostarch.com) by Eric Matthes. Click here for an [aesthetically tidier version](https://ehmatthes.github.io/pcc/) of these online resources.
+This is a collection of resources for [Python Crash Course](http://www.nostarch.com/pythoncrashcourse/), an introductory programming book from [No Starch Press](http://www.nostarch.com) by Eric Matthes. Click [here](https://ehmatthes.github.io/pcc/) for a visually tidier presentation of these online resources.
 
 If you have any questions about Python Crash Course, feel free to get in touch:
 
@@ -38,7 +38,7 @@ Cheat sheets can be really helpful when you're working on a set of programming e
 [Updates](http://ehmatthes.github.io/pcc/updates.html)
 ---
 
-Some of the libraries featured in the book have been updated recently, which is a good thing &mdash; it means you're learning to use Python packages that are steadily being improved.
+Some of the [PyPI](https://en.wikipedia.org/wiki/Python_Package_Index) libraries featured in the book have been updated recently, which is a good thing &mdash; it means you're learning to use Python packages that are steadily being improved.
 
 When packages are updated you have the option of using the version that was featured in the book, which lets you run code exactly as it's written in the book. You can also choose to install the latest version of each package, and modify the code in the book slightly. Each approach is outlined clearly in these updates.
 
