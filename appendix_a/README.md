@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: Appendix A
 ---
+=======
+Appendix A
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 Python has several different versions and a number of ways it can be set up on each operating system. This section will help you install Python if the simple approach in Chapter 1 didn't work, or if you want to install a different version of Python than the one that came with your system.
 
@@ -30,7 +35,11 @@ This shows that the default version is Python 2.7.6. However, you might have a v
 
 Python 3.5.0 is also installed. It's worth running both commands before you attempt to install a new version.
 
+<<<<<<< HEAD
 ### Installing Python 3 on Linux
+=======
+###Installing Python 3 on Linux
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 If you don't have Python 3 or if you want to install a newer version of Python 3, you can use a package called `deadsnakes`, which makes it easy to install multiple versions of Python:
 
@@ -57,7 +66,11 @@ Python is already installed on most OS X systems, but you might want to use a di
 
 This shows that the default version is Python 2.7.6. However, you might have a version of Python 3 installed as well. To check, issue the command **python3 --version**. You'll probably get an error message, but it's worth checking to see if the version you want is already installed.
 
+<<<<<<< HEAD
 ### Installing Homebrew
+=======
+###Installing Homebrew
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 If you only have Python 2 installed, or if you have an older version of Python 3, you can install the latest version of Python 3 using a package called Homebrew.
 
@@ -78,7 +91,11 @@ To confirm that Homebrew was installed correctly, run the following command:
 
 This output means you're ready to install Python packages through Homebrew.
 
+<<<<<<< HEAD
 ### Installing Python 3
+=======
+###Installing Python 3
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 To install the latest version of Python 3, enter the following:
 
@@ -104,11 +121,19 @@ Python isn't usually included by default on Windows, but it's worth checking to 
 
 If you see output like this, Python is already installed, but you might want to install a newer version if your version is not up to date. If you see an error message, you'll need to download and install Python.
 
+<<<<<<< HEAD
 ### Installing Python 3 on Windows
 
 Go to [http://python.org/downloads/](http://python.org/downloads/) and click the version of Python you want. Download the installer, and when you run it make sure to check the *Add Python to PATH* option. This will let you use the `python` command instead of having to enter your system’s full path to python, and you won’t have to modify your system’s environment variables manually. After you’ve installed Python, issue the `python --version` command in a new terminal window. If it works, you’re done.
 
 ### Finding the Python interpreter
+=======
+###Installing Python 3 on Windows
+
+Go to [http://python.org/downloads/](http://python.org/downloads/) and click the version of Python you want. Download the installer, and when you run it make sure to check the *Add Python to PATH* option. This will let you use the `python` command instead of having to enter your system’s full path to python, and you won’t have to modify your system’s environment variables manually. After you’ve installed Python, issue the `python --version` command in a new terminal window. If it works, you’re done.
+
+###Finding the Python interpreter
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 If you've installed Python and the simple command `python` doesn't work, you'll need to tell Windows where to find the Python interpreter. To find it, open your C drive and find the folder with a name starting with *Python* (you might need to enter the word `python` in the Windows Explorer search bar to find the right folder). Open the folder, and look for a file with the lowercase name *python*. Right-click this file and choose **Properties**; you'll see the path to this file under the heading *Location*.
 
@@ -117,7 +142,11 @@ In the terminal window, use the path to confirm the version you just installed:
     $ C:\\Python35\python --version
     Python 3.5.0
 
+<<<<<<< HEAD
 ### Adding Python to your Path variable
+=======
+###Adding Python to your Path variable
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 It's annoying to type the full path each time you want to start a Python terminal session. If you add the path to the system you can just use the command `python`. (If you already check the *Add Python to PATH* box when installing, you can skip this step.)
 

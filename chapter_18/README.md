@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: Chapter 18
 ---
+=======
+Chapter 18
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 In this chapter you'll use Django to build Learning Log, a simple web application that lets you keep track of information you've learned about particular topics. This section will help you get a virtual environment set up.
 
@@ -11,11 +16,14 @@ In this chapter you'll use Django to build Learning Log, a simple web applicatio
 - [Installing virtualenv](#installing-virtualenv)
     - [Creating a virtual environment with virtualenv](#creating-a-virtual-environment-with-virtualenv)
 - [Installing Django](#installing-django)
+<<<<<<< HEAD
     - [Installing a specific version of django](#installing-a-specific-version-of-django)
 - [Updates](#updates)
     - [Overview](#overview)
     - [Checking which version of Django you're using](#checking-which-version-of-django-youre-using)
     - [Specific updates](#specific-updates)
+=======
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 Creating a Virtual Environment
 ---
@@ -66,9 +74,15 @@ Installing virtualenv
 
 If you're using an earlier version of Python or if your system isn't set up to use the *venv* module correctly, you can install the *virtualenv* package. To install virtualenv, enter the following:
 
+<<<<<<< HEAD
     $ pip install --user virtualenv.
 
 You may use pip in a slightly different manner on your system; see [installing Python Packages](../chapter_12/installing_pip.html) if you need help using pip.
+=======
+    $ pip install --user virtualenv
+
+You may use pip in a slightly different manner on your system; see [installing Python Packages](../chapter_12/installing_pip.md) if you need help using pip.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 If you're using Linux and this still doesn't work, you can install virtualenv through your system's package manager. On Ubuntu, for example, the command **sudo apt-get install python-virtualenv** will install virtualenv.
 
@@ -102,6 +116,7 @@ Because this command is run in a virtual environment, it's the same on all opera
 
 Keep in mind that Django will only be available when the virtual environment is active.
 
+<<<<<<< HEAD
 ### Installing a specific version of Django
 
 Django 2.0 introduced some changes that affect the Learning Log project. The updates described below will allow you to run the project in the latest version of Django, but you can also install the previous version if you want to match what's in the book exactly.
@@ -239,3 +254,7 @@ Then you write this as a string, with any variables in the URL inside angle brac
 ### Next
 
 [Updates for Chapter 19](../chapter_19/README.html)
+=======
+[top](#)
+ 
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c

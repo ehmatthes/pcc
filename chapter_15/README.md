@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: Chapter 15
 ---
+=======
+Chapter 15
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 - [Installing matplotlib](#installing-matplotlib)
     - [Checking if matplotlib is already installed](#checking-if-matplotlib-is-already-installed)
@@ -26,6 +31,7 @@ First, check if matplotlib is already installed on your system:
 
 If you don't see an error message, then matplotlib is already installed on your system and you should be able to get started right away on this chapter's projects. If you get an error message, read the appropriate section below for help installing matplotlib on your operating system.
 
+<<<<<<< HEAD
 ### Simple installation with pip
 
 The matplotlib developers have been working hard to simplify the installation process, and sometimes you can install it using just pip. Try this and see if works on your system:
@@ -42,6 +48,8 @@ If the installation seems to run without errors, try importing matplotlib:
 
 If the import runs successfully, you're finished and you can start using matplotlib. If the import statement fails, look at the appropriate section below for your operating system.
 
+=======
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 Installing matplotlib on Linux
 ---
 
@@ -62,7 +70,11 @@ Then use pip to install matplotlib:
 
     $ pip install --user matplotlib
 
+<<<<<<< HEAD
 If you need help using pip, see the <a href="../chapter_12/installing_pip.html">instructions</a> in Chapter 12.
+=======
+If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 [top](#)
 
@@ -75,7 +87,11 @@ If matplotlib is not already installed and you used Homebrew to install Python, 
 
     $ pip install --user matplotlib
 
+<<<<<<< HEAD
 If you need help using pip, see the <a href="../chapter_12/installing_pip.html">instructions</a> in Chapter 12. If you have trouble installing matplotlib using pip, try leaving off the `--user` flag.
+=======
+If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12. If you have trouble installing matplotlib using pip, try leaving off the `--user` flag.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 [top](#)
 
@@ -93,13 +109,21 @@ Copy the *.whl* file to your project folder, open a command window, and navigate
     > cd python_work
     python_work> python -m pip install --user matplotlib-1.4.3-cp35-none-win32.whl
 
+<<<<<<< HEAD
 If you need help using pip, see the <a href="../chapter_12/installing_pip.html">instructions</a> in Chapter 12.
+=======
+If you need help using pip, see the <a href="../chapter_12/installing_pip.md">instructions</a> in Chapter 12.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 [top](#)
 
 Installing Pygal
 ---
+<<<<<<< HEAD
 Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. This also means you have two choices about how to install Pygal. You can install version 1.7 which supports the code in the book exactly as it's written, or you can install the most recent version of Pygal and modify some of the code in the book. If you install the most recent version there are some slight changes you'll need to make for the code in chapter 16.
+=======
+Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. This also means you have two choices about how to install Pygal. You can install version 1.7 which supports the code in the book exactly as it's written, or you can install the most recent version of Pygal and modify some of the code in the book. If you install the most recent version there are some slight changes you'll need to make for the code in the second half of chapters 15 and 16, and chapter 17.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 ### Running Pygal code exactly as it appears in the book
 
@@ -114,7 +138,11 @@ On Windows, this would be:
 If you've already installed Pygal you can see which version was installed by running the command `pip freeze`:
 
     $ pip freeze
+<<<<<<< HEAD
     pygal==2.2.3
+=======
+    pygal==2.1.1
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 If you installed Pygal 2.0 or later and want to install 1.7 instead, uninstall Pygal first:
 
@@ -123,7 +151,11 @@ If you installed Pygal 2.0 or later and want to install 1.7 instead, uninstall P
 
 ### Using the latest version of Pygal
 
+<<<<<<< HEAD
 The latest version of Pygal is version 2.2.3. This is the version that will be installed if you don't specify a version for pip to install:
+=======
+The latest version of Pygal is version 2.1.1. This is the version that will be installed if you don't specify a version for pip to install:
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
     $ pip install --user pygal
 
@@ -131,9 +163,16 @@ or
 
     $ python -m pip install --user pygal
     
+<<<<<<< HEAD
 If you use the latest version, you'll need to make some slight changes to the code in chapter 16:
 
 - [Updates to Chapter 16 Pygal code](../chapter_16/README.html#updates)
+=======
+If you use the latest version, you'll need to make some slight changes to the code in chapter 16 and chapter 17:
+
+- [Updates to Chapter 16 Pygal code](../chapter_16/README.md#updates)
+- [Updates to Chapter 17 Pygal code](../chapter_17/README.md#updates)
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 [top](#)
 
@@ -142,8 +181,45 @@ Updates
 
 Pygal has been updated to version 2; make sure you've read the notes about [installing Pygal](#installing-pygal) above.
 
+<<<<<<< HEAD
 On the latest version of Pygal, the code from Chapter 15 runs as it's written in the book. In Pygal versions 2.0-2.1.1, there was a change to a default setting that caused tooltips not to appear. That change has been reverted, so the code in the book is still correct. If you're using one of these versions you can upgrade your installation of Pygal:
 
     $ pip install --upgrade pygal
 
 This should upgrade your installation to the latest version of Pygal, and your code should work as it's written.
+=======
+If you're using Pygal version 2.0 or higher you'll need to add one line to each file in order to render the charts correctly. Pygal has changed the way tooltips are displayed, so if you don't add this line you won't see any tooltips when you hover over the bars on a chart.
+
+Each time you make a chart in Pygal, add a line that tells Pygal to make an SVG file that renders correctly in a browser. For example:
+
+    hist = pygal.Bar()
+    hist.force_uri_protocol = 'http'
+    
+This causes Pygal to configure the SVG rendering engine to work correctly for displaying the files in a browser.
+
+Page by page updates
+---
+
+Code that appears in bold is new, or is modified from what appears in the book.
+
+### p. 342, die_visual.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
+    
+### p. 343-344, dice_visual.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
+
+### p. 345, different_dice.py
+
+<pre>
+hist = pygal.Bar()
+<b>hist.force_uri_protocol = 'http'</b>
+</pre>
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c

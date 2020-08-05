@@ -6,6 +6,7 @@ title: Chapter 19
 Updates
 ---
 
+<<<<<<< HEAD
 - [Updates for Django 2.1](#updates-for-django-21)
 - [Updates for Django 2.0](#updates-for-django-20)
 
@@ -79,6 +80,8 @@ Nothing has really changed about the way the register page is built. The only th
 Updates for Django 2.0
 ---
 
+=======
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 ### p. 429, *The new_topic URL*
 
 The new_topic URL pattern should look like this:
@@ -185,3 +188,7 @@ In *learning_logs/models.py*, the line that defines the foreign key relationship
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
 
 This tells Django that when a user is deleted, all of the topics owned by that user should be deleted as well.
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c

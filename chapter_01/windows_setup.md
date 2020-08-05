@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: "Setup Instructions: Windows"
 ---
+=======
+Setup Instructions: Windows
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 - [Checking your current version of Python](#current_version)
 - [Installing Python 3.5](#python3.5)

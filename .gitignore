@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _site/
 vendor/
 .bundle/
@@ -6,3 +7,15 @@ vendor/
 
 *.DS_Store
 
+=======
+*.pyc
+notes/
+
+*_env/
+*_env*/
+pg_env_1.7/
+
+*.svg
+
+*.DS_Store
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c

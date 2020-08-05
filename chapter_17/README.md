@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: Chapter 17
@@ -6,10 +7,15 @@ title: Chapter 17
 The second part of Chapter 17 walks you through a visualization summarizing the most popular Python projects on GitHub. One of the projects has been removed, but the project is still included in the results when you make an API call requesting the most popular projects. The project's name and number of stars is included, but there's no description. This causes an error in Pygal, but we can add a little code to address this. Also, the settings for font sizes have moved from `config` to `style` in Pygal 2.0.0.
 
 This update affects the section *Visualizing Repositories Using Pygal*, which begins on page 384.
+=======
+Chapter 17
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 Updates
 ---
 
+<<<<<<< HEAD
 ### p. 386, *python_repos.py*
 
 Here's the original code for styling the chart:
@@ -166,3 +172,28 @@ chart.x_labels = names
 chart.add('', plot_dicts)
 chart.render_to_file('python_repos.svg')
 ```
+=======
+As you probably saw in [Chapter 15](chapter_15/README.md#updates) and [Chapter 16](chapter_16/README.md#updates), you'll need to add a line each time you make a chart in order to render tooltips correctly:
+
+<pre>
+chart = pygal.Bar()
+<b>chart.force_uri_protocol = 'http'</b>
+</pre>
+
+Page by page updates
+---
+
+### p. 384-385, python_repos.py
+
+<pre>
+chart = pygal.Bar(style=my_style, x_label_rotation=45, show_legend=False)
+<b>chart.force_uri_protocol = 'http'</b>
+</pre>
+
+### p. 387-388, bar_descriptions.py
+
+<pre>
+chart = pygal.Bar(style=my_style, x_label_rotation=45, show_legend=False)
+<b>chart.force_uri_protocol = 'http'</b>
+</pre>
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c

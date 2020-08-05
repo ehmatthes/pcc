@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: Chapter 16
@@ -10,10 +11,21 @@ Pygal has been updated recently, which is a good thing; you're learning a librar
 You can easily [install a version of Pygal](chapter_15/README.html#installing-pygal) that allows the code in the book to run exactly as it's written.
 
 The first part of this update will tell you what to look for as you work through the section **Mapping Global Data Sets: JSON Format**, which begins on page 362. The second part will give you a page by page update.
+=======
+Chapter 16
+===
+
+Pygal has been updated recently, which is a good thing; you're learning a library that's being steadily improved. If you're using the latest version of Pygal, you'll need to make some slight changes to the code in Chapter 16.
+
+You can easily [install a version of Pygal](chapter_15/README.md#installing-pygal) that allows the code in the book to run exactly as it's written.
+
+The first part of this update will tell you what to look for as you work through the section **Mapping Global Data Sets: JSON Format**, which begins on page 362. The second part will give you a page by page update. You can see the updated code files [here](pygal2_update/).
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 Updates
 ---
 
+<<<<<<< HEAD
 ### Exercise 16-1: San Francisco
 
 You can still get historical weather data from Weather Underground in the CSV format, but the link to the CSV file is not visible on the screen. To get historical weather data, go to the [Weather Underground home page](wunderground.com), click on the Menu on the right side of the screen, and click on [Historical Weather](https://www.wunderground.com/history/). Enter a location, pick a starting date, and click Submit. A summary for this date will appear, with several tabs. Click on Custom, enter an end date on the next page, and click Get History.
@@ -24,6 +36,8 @@ If you scroll down you'll see the weather data for the range you requested, in a
 
 Once you see the data in CSV format you can either use the Save As dialog from your browser, or you can copy the data and paste it into a text editor to save it. It's good practice to use the *.csv* file extension when saving this kind of file.
 
+=======
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 ### The `pygal_maps_world` package
 
 The dictionary `COUNTRIES` and the world map module have been moved to a separate package called `pygal_maps_world`. Here's how to install this package:
@@ -50,6 +64,18 @@ In the line that creates the world map, change `Worldmap` to `World`:
 
     wm = World()
     
+<<<<<<< HEAD
+=======
+### Rendering tooltips correctly
+
+As you probably saw in [Chapter 15](chapter_15/README.md#updates), you need to add a line each time you make a chart in order to render tooltips correctly:
+
+<pre>
+wm = World()
+<b>wm.force_uri_protocol = 'http'</b>
+</pre>
+    
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 Page by page updates
 ---
 
@@ -63,17 +89,29 @@ Use **`from pygal.maps.world import COUNTRIES`** instead of `from pygal.i18n imp
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
+<<<<<<< HEAD
 Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+=======
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 ### p. 368, *na_populations.py*
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
+<<<<<<< HEAD
 Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+=======
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 ### p. 369-370, *world_populations.py*
 
 Use **`from pygal.maps.world import World`** instead of `import pygal`.
 
+<<<<<<< HEAD
 Use **`wm = World()`** instead of `wm = pygal.Worldmap()`.
+=======
+Use **`wm = World()`** instead of `wm = pygal.Worldmap()`. Then add the line **`wm.force_uri_protocol = 'http'`**.s
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 

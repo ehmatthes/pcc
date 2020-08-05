@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 ---
 layout: default
 title: "Pip: Installing Python Packages"
 ---
+=======
+Pip: Installing Python Packages
+===
+>>>>>>> 7d67f0238b7c252b7959ba1f2b5516064ac05a7c
 
 Pip is a special program used to install Python packages to your system. Pip is sometimes included automatically when Python is installed to your system, and sometimes you have to install it yourself. These instructions will help you check if pip is on your system, and help you upgrade or install it if necessary.
 
