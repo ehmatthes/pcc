@@ -38,7 +38,7 @@ Cheat sheets can be really helpful when you're working on a set of programming e
 [Updates](http://ehmatthes.github.io/pcc/updates.html)
 ---
 
-Some of the [PyPI](https://en.wikipedia.org/wiki/Python_Package_Index) libraries featured in the book have been updated recently, which is a good thing &mdash; it means you're learning to use Python packages that are steadily being improved.
+Some of the [PyPI](https://en.wikipedia.org/wiki/Python_Package_Index) libraries featured in the book have been updated recently, which is a good thing &mdash; it means that the Python packages you're learning to use are steadily being improved.
 
 When packages are updated you have the option of using the version that was featured in the book, which lets you run code exactly as it's written in the book. You can also choose to install the latest version of each package, and modify the code in the book slightly. Each approach is outlined clearly in these updates.
 
