@@ -28,7 +28,7 @@ The dictionary `COUNTRIES` needs to be imported from `pygal_maps_world` now:
     
 ### *world_populations.py*, *americas.py*, *na_populations.py*
 
-Pygal's world map has been moved and renamed, so these progams need an additional import statement. This update also affects one other line of code. Add the following import statement near the top of the file:
+Pygal's world map has been moved and renamed, so these programs need an additional import statement. This update also affects one other line of code. Add the following import statement near the top of the file:
 
     from pygal.maps.world import World
     
