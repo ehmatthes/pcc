@@ -22,3 +22,16 @@ a.link-no-style {
 .survey-link {
     font-style: italic;
 }
+
+
+.cheat-sheet-button {
+    background-color: #56945c;
+    color: white;
+    margin-bottom 8px;
+}
+
+.cheat-sheet-button:hover {
+    background-color: #56945c;
+    color: white;
+    margin-bottom 8px;
+}
