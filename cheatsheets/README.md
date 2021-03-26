@@ -3,13 +3,9 @@ layout: default
 title: Python Crash Course - Cheat Sheets
 ---
 
-Cheat sheets can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. 
-Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
+Cheat sheets can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
 
-The cheat sheets are hosted on Gumroad and Leanpub, and there's an option to download them at no charge on both platforms. If you want the sheets that match the first edition, make sure you select the option that includes the first edition sheets.
-
-<a href="https://gum.co/python-cheat-sheets/" class="btn cheat-sheet-button">Download from Gumroad</a>
-<a href="https://leanpub.com/beginners-python-cheat-sheets/" class="btn cheat-sheet-button">Download from Leanpub</a>
+An updated version of these sheets is available through [Gumroad](https://gum.co/python-cheat-sheets/), and also through [Leanpub](https://leanpub.com/beginners-python-cheat-sheets/). The updated version includes a sheet that focuses on Git basics, a printer-friendly b&w version of each sheet, and each sheet as a separate document. If you prefer, you can simply click here and [download all of the original sheets directly](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf).
 
 - - -
 
