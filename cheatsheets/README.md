@@ -3,9 +3,9 @@ layout: default
 title: Python Crash Course - Cheat Sheets
 ---
 
-Cheat sheets can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well.
+Cheat sheets can be really helpful when you're trying a set of exercises related to a specific topic, or working on a project. Because you can only fit so much information on a single sheet of paper, most cheat sheets are a simple listing of syntax rules. This set of cheat sheets aims to remind you of syntax rules, but also remind you of important concepts as well. You can click here and download [all of the original cheat sheets in a single document](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf).
 
-You can click here and download [all of the original cheat sheets in a single document](https://github.com/ehmatthes/pcc/releases/download/v1.0.0/beginners_python_cheat_sheet_pcc_all.pdf). An updated version of these sheets is also available through [Leanpub](https://leanpub.com/beginners-python-cheat-sheets/) and [Gumroad](https://gum.co/python-cheat-sheets/). The updated version includes a sheet that focuses on Git basics, a printer-friendly b&w version of each sheet, and each sheet as a separate document. The updated versions are available at no cost on both Leanpub and Gumroad.
+An updated version of these sheets is also available through [Leanpub](https://leanpub.com/beginners-python-cheat-sheets/) and [Gumroad](https://gum.co/python-cheat-sheets/). The updated version includes a sheet that focuses on Git basics, a printer-friendly b&w version of each sheet, and each sheet as a separate document. The updated versions are available at no cost on both platforms.
 
 - - -
 
